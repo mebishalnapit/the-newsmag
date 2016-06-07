@@ -37,5 +37,8 @@ In this theme, we have added the Contact Page template so that you can make your
 If you've translated this theme into your native language, then, feel free to send the translation file to mebishalnapit@gmail.com and we will include it within the theme from next version update.
 
 == CHANGELOG ==
+= VERSION 0.2 =
+* Font Awesome icons updated to version 4.6.3
+
 = VERSION 0.1 =
 * Initial release
