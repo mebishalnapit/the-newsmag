@@ -34,6 +34,10 @@ function the_newsmag_customize_register($wp_customize) {
                     'link' => esc_url('http://demo.napitwptech.com/the-newsmag/'),
                     'text' => esc_html__('View Theme Demo', 'the-newsmag'),
                 ),
+                'support' => array(
+                    'link' => esc_url('http://napitwptech.com/contact-us/'),
+                    'text' => esc_html__('Theme Support', 'the-newsmag'),
+                ),
                 'rating' => array(
                     'link' => esc_url('http://wordpress.org/support/view/theme-reviews/the-newsmag'),
                     'text' => esc_html__('Rate This Theme', 'the-newsmag'),
