@@ -202,6 +202,72 @@ function the_newsmag_widgets_init() {
         'after_title' => '</span></h3>',
     ));
 
+    // registering the magazine slider sidebar area
+    register_sidebar(array(
+        'name' => esc_html__('Magazine Slider Sidebar', 'the-newsmag'),
+        'id' => 'the-newsmag-magazine-slider-sidebar',
+        'description' => esc_html__('Display your widgets in the Magazine Slider Sidebar Area.', 'the-newsmag'),
+        'before_widget' => '<section id="%1$s" class="widget %2$s">',
+        'after_widget' => '</section>',
+        'before_title' => '<h3 class="widget-title"><span>',
+        'after_title' => '</span></h3>',
+    ));
+
+    // registering the magazine beside slider sidebar area
+    register_sidebar(array(
+        'name' => esc_html__('Magazine Beside Slider Sidebar', 'the-newsmag'),
+        'id' => 'the-newsmag-magazine-beside-slider-sidebar',
+        'description' => esc_html__('Display your widgets in the Magazine Beside Slider Sidebar Area.', 'the-newsmag'),
+        'before_widget' => '<section id="%1$s" class="widget %2$s">',
+        'after_widget' => '</section>',
+        'before_title' => '<h3 class="widget-title"><span>',
+        'after_title' => '</span></h3>',
+    ));
+
+    // registering the magazine top content sidebar area
+    register_sidebar(array(
+        'name' => esc_html__('Magazine Top Content Sidebar', 'the-newsmag'),
+        'id' => 'the-newsmag-magazine-top-content-sidebar',
+        'description' => esc_html__('Display your widgets in the Magazine Top Content Sidebar Area.', 'the-newsmag'),
+        'before_widget' => '<section id="%1$s" class="widget %2$s">',
+        'after_widget' => '</section>',
+        'before_title' => '<h3 class="widget-title"><span>',
+        'after_title' => '</span></h3>',
+    ));
+
+    // registering the magazine content middle left sidebar area
+    register_sidebar(array(
+        'name' => esc_html__('Magazine Middle Left Sidebar', 'the-newsmag'),
+        'id' => 'the-newsmag-magazine-middle-left-sidebar',
+        'description' => esc_html__('Display your widgets in the Magazine Middle Left Sidebar Area.', 'the-newsmag'),
+        'before_widget' => '<section id="%1$s" class="widget %2$s">',
+        'after_widget' => '</section>',
+        'before_title' => '<h3 class="widget-title"><span>',
+        'after_title' => '</span></h3>',
+    ));
+
+    // registering the magazine content middle right sidebar area
+    register_sidebar(array(
+        'name' => esc_html__('Magazine Middle Right Sidebar', 'the-newsmag'),
+        'id' => 'the-newsmag-magazine-middle-right-sidebar',
+        'description' => esc_html__('Display your widgets in the Magazine Middle Right Sidebar Area.', 'the-newsmag'),
+        'before_widget' => '<section id="%1$s" class="widget %2$s">',
+        'after_widget' => '</section>',
+        'before_title' => '<h3 class="widget-title"><span>',
+        'after_title' => '</span></h3>',
+    ));
+
+    // registering the magazine bottom content sidebar area
+    register_sidebar(array(
+        'name' => esc_html__('Magazine Bottom Content Sidebar', 'the-newsmag'),
+        'id' => 'the-newsmag-magazine-bottom-content-sidebar',
+        'description' => esc_html__('Display your widgets in the Magazine Bottom Content Sidebar Area.', 'the-newsmag'),
+        'before_widget' => '<section id="%1$s" class="widget %2$s">',
+        'after_widget' => '</section>',
+        'before_title' => '<h3 class="widget-title"><span>',
+        'after_title' => '</span></h3>',
+    ));
+
     // registering the content top sidebar area
     register_sidebar(array(
         'name' => esc_html__('Content Top Sidebar', 'the-newsmag'),
@@ -376,6 +442,10 @@ function the_newsmag_scripts() {
     // enqueueing the fitvids javascript file
     wp_enqueue_script('jquery-fitvids', get_template_directory_uri() . '/js/fitvids/jquery.fitvids' . $suffix . '.js', array('jquery'), false, true);
 
+    if (is_active_sidebar('the-newsmag-masonry-footer-sidebar')) {
+        wp_enqueue_script('jquery-masonry');
+    }
+
     // menu animation using superfish
     if (get_theme_mod('the_newsmag_superfish_menu', 0) == 1) {
         // enqueueing the superfish script
@@ -413,7 +483,7 @@ function the_newsmag_scripts() {
     wp_enqueue_script('the-newsmag-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix' . $suffix . '.js', array(), '20151215', true);
 
     // enqueueing the theme's main javascript file
-    wp_enqueue_script('the-newsmag-main-script', get_template_directory_uri() . '/js/the-newsmag-custom' . $suffix . '.js', array('jquery-masonry'), false, true);
+    wp_enqueue_script('the-newsmag-main-script', get_template_directory_uri() . '/js/the-newsmag-custom' . $suffix . '.js', array('jquery'), false, true);
 
     // enqueueing the comment reply script
     if (is_singular() && comments_open() && get_option('thread_comments')) {

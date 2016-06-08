@@ -2274,6 +2274,34 @@ li.comments-tab-widget p {
 }
 
 /*--------------------------------------------------------------
+# Magazine templates
+--------------------------------------------------------------*/
+.magazine-page-top-area .slider-area,
+.magazine-page-top-area .beside-slider-area {
+    width: 50%;
+    float: left;
+}
+
+.magazine-page-half {
+    width: 49%;
+    float: left;
+    margin-right: 2%;
+}
+
+.magazine-page-half-last {
+    margin-right: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .magazine-page-top-area .slider-area,
+    .magazine-page-top-area .beside-slider-area,
+    .magazine-page-half {
+        width: 100%;
+        float: none;
+    }
+}
+
+/*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
@@ -2326,7 +2354,7 @@ li.comments-tab-widget p {
     word-wrap: break-word;
 }
 
-.post, .page {
+.post, #primary .page {
     margin: 0 0 50px;
 }
 
