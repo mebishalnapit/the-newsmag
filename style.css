@@ -8,7 +8,7 @@ Version: 0.2
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: the-newsmag
-Tags: white, two-columns, right-sidebar, left-sidebar, fluid-layout, responsive-layout, custom-header, custom-background, custom-menu, custom-colors, sticky-post, threaded-comments, translation-ready, featured-images, theme-options, post-formats
+Tags: one-column, two-columns, right-sidebar, left-sidebar, custom-header, flexible-header, custom-background, custom-menu, custom-colors, sticky-post, featured-images, post-formats, footer-widgets, blog, news, entertainment, threaded-comments, translation-ready, theme-options
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -3062,7 +3062,7 @@ a.entry-meta-comments:hover {
     border-top: 2px solid #4169e1;
     border-bottom: 2px solid #4169e1;
     text-align: center;
-    font-family: "Noto Sans", cursive;
+    font-family: "Noto Sans", sans-serif;
 }
 
 .nav-links .page-numbers.current {
@@ -3133,16 +3133,16 @@ a.entry-meta-comments:hover {
 
 .comment-reply-title {
     font-size: 30px;
-    font-family: "Noto Sans", cursive;
+    font-family: "Noto Sans", sans-serif;
 }
 
 .comments-title {
     font-size: 30px;
-    font-family: "Noto Sans", cursive;
+    font-family: "Noto Sans", sans-serif;
 }
 
 .comment-metadata, .comment-author {
-    font-family: "Noto Sans", cursive;
+    font-family: "Noto Sans", sans-serif;
 }
 
 .comments-area > ol {

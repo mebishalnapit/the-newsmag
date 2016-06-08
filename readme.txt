@@ -39,6 +39,7 @@ If you've translated this theme into your native language, then, feel free to se
 == CHANGELOG ==
 = VERSION 0.2 =
 * Font Awesome icons updated to version 4.6.3
+* Theme tags updated according to the new introduced theme tags.
 
 = VERSION 0.1 =
 * Initial release
