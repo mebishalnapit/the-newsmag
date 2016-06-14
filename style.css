@@ -1653,8 +1653,7 @@ a:active {
     button.dropdown-toggle, button.dropdown-toggle.toggle-on {
         position: absolute;
         right: 10px;
-        top: 6px;
-        z-index: 999999;
+        top: 7px;
     }
 
     button.dropdown-toggle i {
@@ -1664,9 +1663,11 @@ a:active {
 }
 
 @media screen and (max-width: 767px) {
-    .sticky-wrapper .main-navigation, .main-navigation.headroom--pinned {
-        max-height: 240px;
+    .sticky-wrapper .main-navigation #primary-menu,
+    .main-navigation.headroom--pinned #primary-menu {
+        max-height: 200px;
         overflow: auto;
+        width: 100%;
     }
 }
 
