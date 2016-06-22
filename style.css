@@ -2399,7 +2399,6 @@ li.comments-tab-widget p {
 }
 
 .page-links {
-    clear: both;
     margin: 0 0 24px;
 }
 
@@ -2407,12 +2406,6 @@ li.comments-tab-widget p {
     background: #4169e1;
     padding: 2px 8px;
     color: #fff;
-}
-
-.blog .page-links,
-.search .page-links,
-.archive .page-links {
-    clear: none;
 }
 
 .category-links {
@@ -2558,9 +2551,11 @@ a.entry-meta-comments:hover {
 }
 
 .post .entry-meta {
-    margin: 20px 0;
-    width: 120px;
-    max-width: 120px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-right: 1%;
+    width: 24%;
+    max-width: 24%;
     float: left;
 }
 
@@ -2586,16 +2581,9 @@ a.entry-meta-comments:hover {
 }
 
 .post .entry-content {
-    margin-left: 140px;
-}
-
-.post .entry-content > h1,
-.post .entry-content > h2,
-.post .entry-content > h3,
-.post .entry-content > h4,
-.post .entry-content > h5,
-.post .entry-content > h6 {
-    clear: none;
+    float: right;
+    width: 75%;
+    max-width: 75%;
 }
 
 .sticky .continue-more-link, .continue-more-link {
@@ -2653,16 +2641,19 @@ a.entry-meta-comments:hover {
     .post .entry-meta {
         width: 100%;
         max-width: 100%;
+        margin: 0;
         text-align: center;
     }
 
     .format-standard.has-post-thumbnail .entry-meta {
-        margin: 20px 0;
+        margin: 20px 0 0;
     }
 
     .post .entry-content {
-        margin-left: 0;
         clear: both;
+        width: 100%;
+        margin: 0;
+        max-width: 100%;
     }
 
     .entry-meta .byline,
