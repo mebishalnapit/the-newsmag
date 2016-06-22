@@ -31,10 +31,11 @@ The NewsMag is distributed under the terms of the GNU GPL
 All the available options of this theme can be used from Appearance > Customize.
 
 = Page Template =
-In this theme, we have added the Contact Page template so that you can make your contact page sidebar to be unique without using the plugins for this feature.
+Contact Page: In this theme, we have added the Contact Page template so that you can make your contact page sidebar to be unique without using the plugins for this feature.
+Magazine: In this theme, we have added the Magazine template so that you can display the post of your site in the news or magazine style that best suits your site by using the bundled widgets in this theme.
 
 == TRANSLATIONS ==
-If you've translated this theme into your native language, then, feel free to send the translation file to mebishalnapit@gmail.com and we will include it within the theme from next version update.
+If you would like to contribute to the translations of this theme to your native language, then, you can visit this link: https://translate.wordpress.org/projects/wp-themes/the-newsmag/ and then contribute to the translation.
 
 == CHANGELOG ==
 = VERSION 0.2 =

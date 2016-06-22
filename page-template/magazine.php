@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Magazine Template
+ * Template Name: Magazine
  *
  * @package The NewsMag
  */
