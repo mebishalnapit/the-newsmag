@@ -1832,7 +1832,7 @@ a:active {
     display: inline;
     float: left;
     margin-right: 24px;
-    margin-left: -100px;
+    margin-left: -20%;
 }
 
 .page .alignleft {
@@ -2349,6 +2349,10 @@ li.comments-tab-widget p {
 
 .entry-meta, .entry-footer {
     font-size: 18px;
+}
+
+.entry-footer {
+    clear: both;
 }
 
 .entry-title, .entry-content {

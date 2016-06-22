@@ -52,7 +52,13 @@
                 </div><!-- .entry-meta -->
             <?php endif; ?>
 
-            <?php if (('post' === get_post_type() && !post_password_required()) && (comments_open() || get_comments_number())) : ?>
+            <?php if (has_post_thumbnail() && ('post' === get_post_type() && !post_password_required()) && (comments_open() || get_comments_number())) : ?>
+                <a href="<?php esc_url(comments_link()); ?>" class="entry-meta-comments">
+                    <?php
+                    printf(_nx('<i class="fa fa-comment"></i> 1', '<i class="fa fa-comment"></i> %1$s', get_comments_number(), 'comments title', 'the-newsmag'), number_format_i18n(get_comments_number()));
+                    ?>
+                </a>
+            <?php elseif ((!has_post_thumbnail() && !is_single()) && ('post' === get_post_type() && !post_password_required()) && (comments_open() || get_comments_number())) : ?>
                 <a href="<?php esc_url(comments_link()); ?>" class="entry-meta-comments">
                     <?php
                     printf(_nx('<i class="fa fa-comment"></i> 1', '<i class="fa fa-comment"></i> %1$s', get_comments_number(), 'comments title', 'the-newsmag'), number_format_i18n(get_comments_number()));
