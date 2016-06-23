@@ -26,14 +26,18 @@
                     ?>
                 </a>
             <?php endif; ?>
+
+            <header class="entry-header clear">
+                <?php
+                if (is_single()) {
+                    the_title('<h1 class="entry-title">', '</h1>');
+                }
+                ?>
+            </header><!-- .entry-header -->
         </div>
 
-        <header class="entry-header">
+        <div class="entry-header-meta">
             <?php
-            if (is_single()) {
-                the_title('<h1 class="entry-title">', '</h1>');
-            }
-
             if ('post' === get_post_type()) :
                 ?>
                 <div class="entry-meta">
@@ -41,7 +45,7 @@
                 </div><!-- .entry-meta -->
             <?php endif;
             ?>
-        </header><!-- .entry-header -->
+        </div><!-- .entry-header-meta -->
 
         <div class="entry-content">
             <?php

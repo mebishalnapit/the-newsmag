@@ -2274,6 +2274,10 @@ li.comments-tab-widget p {
     margin-top: 0;
 }
 
+.tabs-panel {
+    display: none;
+}
+
 /*--------------------------------------------------------------
 # Magazine templates
 --------------------------------------------------------------*/
@@ -2555,7 +2559,7 @@ a.entry-meta-comments:hover {
 }
 
 .post .entry-meta {
-    margin-top: 30px;
+    margin-top: 0;
     margin-bottom: 20px;
     margin-right: 1%;
     width: 24%;
@@ -2588,6 +2592,7 @@ a.entry-meta-comments:hover {
     float: right;
     width: 75%;
     max-width: 75%;
+    margin-top: 0;
 }
 
 .sticky .continue-more-link, .continue-more-link {
@@ -2817,6 +2822,10 @@ a.entry-meta-comments:hover {
 .format-image.has-post-thumbnail .post-header-wrapper,
 .format-image.has-post-thumbnail .entry-header {
     position: relative;
+}
+
+.entry-header {
+    clear: both;
 }
 
 .format-image.has-post-thumbnail .category-links {

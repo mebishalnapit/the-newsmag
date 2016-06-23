@@ -29,17 +29,17 @@
                 </figure>
 
             <?php endif; ?>
-        </div>
 
-        <header class="entry-header">
-            <?php
-            if (is_front_page()) :
-                the_title('<h2 class="entry-title">', '</h2>');
-            else :
-                the_title('<h1 class="entry-title">', '</h1>');
-            endif;
-            ?>
-        </header><!-- .entry-header -->
+            <header class="entry-header clear">
+                <?php
+                if (is_front_page()) :
+                    the_title('<h2 class="entry-title">', '</h2>');
+                else :
+                    the_title('<h1 class="entry-title">', '</h1>');
+                endif;
+                ?>
+            </header><!-- .entry-header -->
+        </div>
 
         <div class="entry-content">
             <?php

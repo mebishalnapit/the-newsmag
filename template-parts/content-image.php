@@ -52,29 +52,33 @@
                 </div><!-- .entry-meta -->
             <?php endif; ?>
 
-            <?php if (has_post_thumbnail() && ('post' === get_post_type() && !post_password_required()) && (comments_open() || get_comments_number())) : ?>
-                <a href="<?php esc_url(comments_link()); ?>" class="entry-meta-comments">
-                    <?php
-                    printf(_nx('<i class="fa fa-comment"></i> 1', '<i class="fa fa-comment"></i> %1$s', get_comments_number(), 'comments title', 'the-newsmag'), number_format_i18n(get_comments_number()));
+            <?php
+            if (('post' === get_post_type() && !post_password_required()) && (comments_open() || get_comments_number())) :
+                if ((has_post_thumbnail()) || (!has_post_thumbnail() && !is_single())) :
                     ?>
-                </a>
-            <?php elseif ((!has_post_thumbnail() && !is_single()) && ('post' === get_post_type() && !post_password_required()) && (comments_open() || get_comments_number())) : ?>
-                <a href="<?php esc_url(comments_link()); ?>" class="entry-meta-comments">
+                    <a href="<?php esc_url(comments_link()); ?>" class="entry-meta-comments">
+                        <?php
+                        printf(_nx('<i class="fa fa-comment"></i> 1', '<i class="fa fa-comment"></i> %1$s', get_comments_number(), 'comments title', 'the-newsmag'), number_format_i18n(get_comments_number()));
+                        ?>
+                    </a>
                     <?php
-                    printf(_nx('<i class="fa fa-comment"></i> 1', '<i class="fa fa-comment"></i> %1$s', get_comments_number(), 'comments title', 'the-newsmag'), number_format_i18n(get_comments_number()));
-                    ?>
-                </a>
-            <?php endif; ?>
+                endif;
+            endif;
+            ?>
+
+            <header class="entry-header clear">
+                <?php
+                if (is_single()) {
+                    the_title('<h1 class="entry-title">', '</h1>');
+                } else {
+                    the_title('<h2 class="entry-title"><a href="' . esc_url(get_permalink()) . '" rel="bookmark">', '</a></h2>');
+                }
+                ?>
+            </header><!-- .entry-header -->
         </div>
 
-        <header class="entry-header">
+        <div class="entry-header-meta">
             <?php
-            if (is_single()) {
-                the_title('<h1 class="entry-title">', '</h1>');
-            } else {
-                the_title('<h2 class="entry-title"><a href="' . esc_url(get_permalink()) . '" rel="bookmark">', '</a></h2>');
-            }
-
             if ('post' === get_post_type()) :
                 ?>
                 <div class="entry-meta">
@@ -82,7 +86,7 @@
                 </div><!-- .entry-meta -->
             <?php endif;
             ?>
-        </header><!-- .entry-header -->
+        </div><!-- .entry-header-meta -->
 
         <div class="entry-content">
             <?php
