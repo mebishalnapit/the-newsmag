@@ -89,8 +89,8 @@ if (!function_exists('the_newsmag_setup')) :
 
         // Set up the WordPress core custom logo feature.
         add_theme_support('custom-logo', array(
-            'height' => 150,
-            'width' => 150,
+            'height' => 100,
+            'width' => 300,
             'flex-width' => true,
             'flex-height' => true,
         ));

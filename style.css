@@ -1846,6 +1846,7 @@ a:active {
 }
 
 .aligncenter {
+    clear: both;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -2621,6 +2622,15 @@ a.entry-meta-comments:hover {
     display: none;
 }
 
+.single #primary .entry-content p:first-child:first-letter,
+.page #primary .entry-content p:first-child:first-letter {
+    font-size: 80px;
+    float: left;
+    line-height: 1;
+    padding-right: 5px;
+    color: #4169e1;
+}
+
 @media screen and (max-width: 768px) {
     .entry-title {
         font-size: 27px;
@@ -2634,6 +2644,11 @@ a.entry-meta-comments:hover {
     .page-title {
         font-size: 30px;
     }
+
+    .single #primary .entry-content p:first-child:first-letter,
+    .page #primary .entry-content p:first-child:first-letter {
+        font-size: 60px;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -2643,6 +2658,11 @@ a.entry-meta-comments:hover {
 
     .entry-title {
         font-size: 24px;
+    }
+
+    .single #primary .entry-content p:first-child:first-letter,
+    .page #primary .entry-content p:first-child:first-letter {
+        font-size: 40px;
     }
 }
 
