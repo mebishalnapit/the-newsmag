@@ -359,6 +359,7 @@ function the_newsmag_widgets_init() {
     register_widget('The_NewsMag_Random_Posts_Widget');
     register_widget('The_NewsMag_Tabbed_Widget');
     register_widget('The_NewsMag_Posts_Slider_Widget');
+    register_widget('The_NewsMag_Posts_Grid_Widget');
 }
 
 add_action('widgets_init', 'the_newsmag_widgets_init');

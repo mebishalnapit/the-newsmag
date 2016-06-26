@@ -139,7 +139,7 @@ jQuery(document).ready(function () {
             }
         });
 
-        jQuery('.the-newsmag-category-slider').bxSlider({
+        jQuery('.the-newsmag-category-slider').show().bxSlider({
             mode: 'horizontal',
             speed: 2000,
             auto: true,

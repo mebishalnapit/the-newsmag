@@ -2285,6 +2285,7 @@ li.comments-tab-widget p {
 .the-newsmag-category-slider {
     visibility: hidden;
     height: 0;
+    display: none;
 }
 
 .the-newsmag-posts-slider-widget .bx-wrapper {
@@ -2384,6 +2385,92 @@ li.comments-tab-widget p {
 }
 
 /*--------------------------------------------------------------
+# Posts grid widget
+--------------------------------------------------------------*/
+.the-newsmag-posts-grid .single-article-content {
+    width: 50%;
+    float: left;
+    position: relative;
+}
+
+.widget .the-newsmag-posts-grid .single-article-content .featured-image {
+    margin-right: 0;
+}
+
+.the-newsmag-posts-grid .category-title-meta-wrapper {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(65,105,255,0.5);
+    padding: 10px;
+}
+
+.the-newsmag-posts-grid .entry-title {
+    margin-bottom: 6px;
+}
+
+.the-newsmag-posts-grid .entry-title a {
+    font-size: 20px;
+}
+
+.the-newsmag-posts-grid .entry-title a,
+.the-newsmag-posts-grid .entry-meta a,
+.the-newsmag-posts-grid .entry-title a:hover,
+.the-newsmag-posts-grid .entry-meta a:hover {
+    color: #fff;
+}
+
+.the-newsmag-posts-grid .entry-meta .author.vcard,
+.the-newsmag-posts-grid .entry-meta .entry-date,
+.the-newsmag-posts-grid .comments-link,
+.the-newsmag-posts-grid .comments-link .fa {
+    font-size: 14px;
+}
+
+.the-newsmag-posts-grid .posted-on .fa-calendar,
+.the-newsmag-posts-grid .comments-link .fa-comment {
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.the-newsmag-posts-grid .byline img.avatar {
+    margin-top: -2px;
+}
+
+.the-newsmag-posts-grid .category-links {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.the-newsmag-posts-grid .category-links a {
+    font-size: 14px;
+}
+
+.widget .the-newsmag-posts-grid .single-article-content {
+    margin-bottom: 0;
+}
+
+.widget .the-newsmag-posts-grid .featured-image {
+    margin-bottom: -8px;
+}
+
+@media screen and (max-width: 480px) {
+    .the-newsmag-posts-grid .entry-title a {
+        font-size: 16px;
+    }
+
+    .widget .the-newsmag-posts-grid .single-article-content {
+        margin-bottom: 0;
+    }
+
+    .the-newsmag-posts-grid .single-article-content {
+        width: 100%;
+        float: none;
+    }
+}
+
+/*--------------------------------------------------------------
 # Magazine templates
 --------------------------------------------------------------*/
 .magazine-page-top-area .slider-area,
@@ -2408,6 +2495,10 @@ li.comments-tab-widget p {
     .magazine-page-half {
         width: 100%;
         float: none;
+    }
+
+    .magazine-page-top-area .slider-area .widget {
+        margin-bottom: -8px;
     }
 }
 
