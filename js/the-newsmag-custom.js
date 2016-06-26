@@ -138,6 +138,21 @@ jQuery(document).ready(function () {
                 jQuery('.gallery-slider').css('height', 'auto');
             }
         });
+
+        jQuery('.the-newsmag-category-slider').bxSlider({
+            mode: 'horizontal',
+            speed: 2000,
+            auto: true,
+            pause: 6000,
+            adaptiveHeight: true,
+            pager: false,
+            nextText: '<span class="slide-next"><i class="fa fa-angle-right"></i></span>',
+            prevText: '<span class="slide-prev"><i class="fa fa-angle-left"></i></span>',
+            onSliderLoad: function () {
+                jQuery('.the-newsmag-category-slider').css('visibility', 'visible');
+                jQuery('.the-newsmag-category-slider').css('height', 'auto');
+            }
+        });
     }
 
     // setting for the popup featured image

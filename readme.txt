@@ -39,6 +39,7 @@ If you would like to contribute to the translations of this theme to your native
 
 == CHANGELOG ==
 = VERSION 0.2 =
+* Added TNM: Posts Slider Widget
 * Font Awesome icons updated to version 4.6.3
 * Theme tags updated according to the new introduced theme tags.
 

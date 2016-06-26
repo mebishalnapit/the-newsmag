@@ -232,4 +232,125 @@ class The_NewsMag_Tabbed_Widget extends WP_Widget {
     }
 
 }
+
+class The_NewsMag_Posts_Slider_Widget extends WP_Widget {
+
+    function __construct() {
+        parent::__construct(
+                'the_newsmag_posts_slider_widget', esc_html__('TNM: Posts Slider Widget', 'the-newsmag'), // Name of the widget
+                array('description' => esc_html__('Displays the latest posts or posts from certain category chosen to be used as the slider.', 'the-newsmag'), 'classname' => 'widget-entry-meta the-newsmag-posts-slider-widget') // Arguments of the widget, here it is provided with the description
+        );
+    }
+
+    function form($instance) {
+        $number = !empty($instance['number']) ? $instance['number'] : 4;
+        $type = !empty($instance['type']) ? $instance['type'] : 'latest';
+        $category = !empty($instance['category']) ? $instance['category'] : '';
+        ?>
+        <p>
+            <label>
+                <input type="radio" <?php checked($type, 'latest') ?> id="<?php echo $this->get_field_id('type'); ?>" name="<?php echo $this->get_field_name('type'); ?>" value="latest"><?php esc_html_e('Show latest posts.', 'the-newsmag'); ?>
+            </label>
+            <br/>
+            <label>
+                <input type="radio" <?php checked($type, 'category') ?> id="<?php echo $this->get_field_id('type'); ?>" name="<?php echo $this->get_field_name('type'); ?>" value="category"><?php esc_html_e('Show posts from a certain category.', 'the-newsmag'); ?>
+            </label>
+        </p>
+
+        <p>
+            <label for="<?php echo $this->get_field_id('category'); ?>"><?php esc_html_e('Select the category:', 'the-newsmag'); ?>
+                <?php
+                wp_dropdown_categories(array(
+                    'show_option_none' => ' ',
+                    'name' => $this->get_field_name('category'),
+                    'selected' => $category
+                ));
+                ?>
+            </label>
+        </p>
+
+        <p>
+            <label for="<?php echo $this->get_field_id('number'); ?>"><?php esc_html_e('Number of posts to display:', 'the-newsmag'); ?></label>
+            <input id="<?php echo $this->get_field_id('number'); ?>" name="<?php echo $this->get_field_name('number'); ?>" type="text" value="<?php echo absint($number); ?>" size="3">
+        </p>
+        <?php
+    }
+
+    function update($new_instance, $old_instance) {
+        $instance = array();
+        $instance['number'] = (!empty($new_instance['number']) ) ? absint($new_instance['number']) : 4;
+        $instance['type'] = sanitize_key($new_instance['type']);
+        $instance['category'] = absint($new_instance['category']);
+
+        return $instance;
+    }
+
+    function widget($args, $instance) {
+        // enqueue the required js files
+        if (is_active_widget(false, false, $this->id_base) || is_customize_preview()) {
+            wp_enqueue_script('jquery-bxslider');
+        }
+
+        $number = (!empty($instance['number']) ) ? $instance['number'] : 4;
+        $type = isset($instance['type']) ? $instance['type'] : 'latest';
+        $category = isset($instance['category']) ? $instance['category'] : '';
+
+        echo $args['before_widget'];
+        ?>
+        <?php
+        global $post;
+        if ($type == 'latest') {
+            $category_posts_slider = new WP_Query(array(
+                'posts_per_page' => $number,
+                'post_type' => 'post',
+                'ignore_sticky_posts' => true,
+                'no_found_rows' => true
+            ));
+        } else {
+            $category_posts_slider = new WP_Query(array(
+                'posts_per_page' => $number,
+                'post_type' => 'post',
+                'ignore_sticky_posts' => true,
+                'category__in' => $category,
+                'no_found_rows' => true
+            ));
+        }
+        ?>
+
+        <div class="the-newsmag-category-slider">
+            <?php
+            while ($category_posts_slider->have_posts()) :
+                $category_posts_slider->the_post();
+                ?>
+                <?php if (has_post_thumbnail()) { ?>
+                    <div class="single-article-content clear">
+                        <div class="category-links">
+                            <?php the_newsmag_colored_category(); ?>
+                        </div><!-- .entry-meta -->
+
+                        <figure class="featured-image">
+                            <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail('the-newsmag-featured-large-thumbnail'); ?></a>
+                        </figure>
+
+                        <div class="category-title-meta-wrapper clear">
+                            <h3 class="entry-title">
+                                <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
+                            </h3>
+                            <div class="entry-meta">
+                                <?php the_newsmag_widget_posts_posted_on(); ?>
+                            </div>
+                        </div>
+                    </div>
+                <?php } ?>
+                <?php
+            endwhile;
+            // Reset Post Data
+            wp_reset_postdata();
+            ?>
+        </div>
+        <?php
+        echo $args['after_widget'];
+    }
+
+}
 ?>
