@@ -469,4 +469,179 @@ class The_NewsMag_Posts_Grid_Widget extends WP_Widget {
     }
 
 }
+
+class The_NewsMag_One_Column_Widget extends WP_Widget {
+
+    function __construct() {
+        parent::__construct(
+                'the_newsmag_one_column_widget', esc_html__('TNM: One Column Widget', 'the-newsmag'), // Name of the widget
+                array('description' => esc_html__('Displays the latest posts or posts from certain category chosen to display the posts in single column.', 'the-newsmag'), 'classname' => 'widget-entry-meta the-newsmag-one-column-widget clear') // Arguments of the widget, here it is provided with the description
+        );
+    }
+
+    function form($instance) {
+        $title = !empty($instance['title']) ? $instance['title'] : '';
+        $text = !empty($instance['text']) ? $instance['text'] : '';
+        $number = !empty($instance['number']) ? $instance['number'] : 4;
+        $type = !empty($instance['type']) ? $instance['type'] : 'latest';
+        $category = !empty($instance['category']) ? $instance['category'] : '';
+        ?>
+        <p>
+            <label for="<?php echo $this->get_field_id('title'); ?>"><?php esc_html_e('Title', 'the-newsmag'); ?></label>
+            <input id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo esc_attr($title); ?>" />
+        </p>
+
+        <p>
+            <label for="<?php echo $this->get_field_id('text'); ?>"><?php esc_html_e('Description', 'the-newsmag'); ?></label>
+            <textarea class="widefat" rows="5" cols="20" id="<?php echo $this->get_field_id('text'); ?>" name="<?php echo $this->get_field_name('text'); ?>"><?php echo esc_attr($text); ?></textarea>
+        </p>
+
+        <p>
+            <label>
+                <input type="radio" <?php checked($type, 'latest') ?> id="<?php echo $this->get_field_id('type'); ?>" name="<?php echo $this->get_field_name('type'); ?>" value="latest"><?php esc_html_e('Show latest posts.', 'the-newsmag'); ?>
+            </label>
+            <br/>
+            <label>
+                <input type="radio" <?php checked($type, 'category') ?> id="<?php echo $this->get_field_id('type'); ?>" name="<?php echo $this->get_field_name('type'); ?>" value="category"><?php esc_html_e('Show posts from a certain category.', 'the-newsmag'); ?>
+            </label>
+        </p>
+
+        <p>
+            <label for="<?php echo $this->get_field_id('category'); ?>"><?php esc_html_e('Select the category:', 'the-newsmag'); ?>
+                <?php
+                wp_dropdown_categories(array(
+                    'show_option_none' => ' ',
+                    'name' => $this->get_field_name('category'),
+                    'selected' => $category
+                ));
+                ?>
+            </label>
+        </p>
+
+        <p>
+            <label for="<?php echo $this->get_field_id('number'); ?>"><?php esc_html_e('Number of posts to display:', 'the-newsmag'); ?></label>
+            <input id="<?php echo $this->get_field_id('number'); ?>" name="<?php echo $this->get_field_name('number'); ?>" type="text" value="<?php echo absint($number); ?>" size="3">
+        </p>
+        <?php
+    }
+
+    function update($new_instance, $old_instance) {
+        $instance = array();
+        $instance['title'] = strip_tags($new_instance['title']);
+        $instance['text'] = sanitize_text_field($new_instance['text']);
+        $instance['number'] = (!empty($new_instance['number']) ) ? absint($new_instance['number']) : 4;
+        $instance['type'] = sanitize_key($new_instance['type']);
+        $instance['category'] = absint($new_instance['category']);
+
+        return $instance;
+    }
+
+    function widget($args, $instance) {
+        $title = isset($instance['title']) ? $instance['title'] : '';
+        $text = isset($instance['text']) ? $instance['text'] : '';
+        $number = (!empty($instance['number']) ) ? $instance['number'] : 4;
+        $type = isset($instance['type']) ? $instance['type'] : 'latest';
+        $category = isset($instance['category']) ? $instance['category'] : '';
+
+        echo $args['before_widget'];
+        ?>
+        <?php
+        global $post;
+        if ($type == 'latest') {
+            $category_column_one = new WP_Query(array(
+                'posts_per_page' => $number,
+                'post_type' => 'post',
+                'ignore_sticky_posts' => true,
+                'no_found_rows' => true
+            ));
+        } else {
+            $category_column_one = new WP_Query(array(
+                'posts_per_page' => $number,
+                'post_type' => 'post',
+                'ignore_sticky_posts' => true,
+                'category__in' => $category,
+                'no_found_rows' => true
+            ));
+        }
+        ?>
+
+        <?php
+        if ($type != 'latest') {
+            $border_color = 'style="border-bottom-color:' . the_newsmag_category_color($category) . ';"';
+            $title_color = 'style="background-color:' . the_newsmag_category_color($category) . ';"';
+        } else {
+            $border_color = '';
+            $title_color = '';
+        }
+
+        if (!empty($title)) {
+            echo '<h3 class="widget-title" ' . $border_color . '><span ' . $title_color . '>' . esc_html($title) . '</span></h3>';
+        }
+        if (!empty($text)) {
+            ?>
+            <p><?php echo esc_textarea($text); ?></p>
+        <?php } ?>
+
+        <div class="the-newsmag-one-column-posts">
+            <?php
+            $i = 1;
+            while ($category_column_one->have_posts()) :
+                $category_column_one->the_post();
+                if ($i == 1) {
+                    echo '<div class="first-post">';
+                    $featured_image_size = 'the-newsmag-featured-medium-thumbnail';
+                } elseif ($i == 2) {
+                    echo '<div class="following-post">';
+                    $featured_image_size = 'the-newsmag-featured-small-thumbnail';
+                }
+                ?>
+            <?php if (has_post_thumbnail()) { ?>
+                    <div class="single-article-content clear">
+                        <div class="posts-column-wrapper clear">
+                                <?php if ($i == 1) { ?>
+                                <div class="category-links">
+                                <?php the_newsmag_colored_category(); ?>
+                                </div><!-- .entry-meta -->
+                <?php } ?>
+
+                            <figure class="featured-image">
+                                <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail($featured_image_size); ?></a>
+                            </figure>
+
+                            <div class="category-title-meta-wrapper clear">
+                                <h3 class="entry-title">
+                                    <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
+                                </h3>
+                                <div class="entry-meta">
+                <?php the_newsmag_widget_posts_posted_on(); ?>
+                                </div>
+                            </div>
+                        </div>
+
+                            <?php if ($i == 1) { ?>
+                            <div class="entry-content">
+                            <?php the_excerpt(); ?>
+                            </div>
+                <?php } ?>
+
+                    </div>
+                <?php
+                }
+                if ($i == 1) {
+                    echo '</div>';
+                }
+                $i++;
+            endwhile;
+            if ($i > 2) {
+                echo '</div>';
+            }
+            // Reset Post Data
+            wp_reset_postdata();
+            ?>
+        </div>
+        <?php
+        echo $args['after_widget'];
+    }
+
+}
 ?>

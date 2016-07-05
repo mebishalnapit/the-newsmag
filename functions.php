@@ -44,7 +44,7 @@ if (!function_exists('the_newsmag_setup')) :
         add_theme_support('post-thumbnails');
         add_image_size('the-newsmag-featured-small-thumbnail', 120, 90, true);
         add_image_size('the-newsmag-featured-medium-thumbnail', 600, 450, true);
-        add_image_size('the-newsmag-featured-large-thumbnail', 1200, 900, true);
+        add_image_size('the-newsmag-featured-large-thumbnail', 880, 660, true);
 
         // This theme uses wp_nav_menu() in one location.
         register_nav_menus(array(
@@ -360,6 +360,7 @@ function the_newsmag_widgets_init() {
     register_widget('The_NewsMag_Tabbed_Widget');
     register_widget('The_NewsMag_Posts_Slider_Widget');
     register_widget('The_NewsMag_Posts_Grid_Widget');
+    register_widget('The_NewsMag_One_Column_Widget');
 }
 
 add_action('widgets_init', 'the_newsmag_widgets_init');
