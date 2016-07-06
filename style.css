@@ -2522,17 +2522,36 @@ li.comments-tab-widget p {
     padding: 0;
 }
 
+.the-newsmag-one-column-widget .first-post .no-featured-image .category-links,
+.the-newsmag-one-column-widget .first-post .no-featured-image .category-title-meta-wrapper {
+    position: static;
+}
+
+.the-newsmag-one-column-widget .first-post .no-featured-image .category-title-meta-wrapper {
+    background: none;
+    padding: 0;
+    clear: both;
+}
+
 .the-newsmag-one-column-widget .following-post .entry-title a,
 .the-newsmag-one-column-widget .following-post .author a,
 .the-newsmag-one-column-widget .following-post .posted-on a,
-.the-newsmag-one-column-widget .following-post .comments-link a {
+.the-newsmag-one-column-widget .following-post .comments-link a,
+.the-newsmag-one-column-widget .first-post .no-featured-image .entry-title a,
+.the-newsmag-one-column-widget .first-post .no-featured-image .author a,
+.the-newsmag-one-column-widget .first-post .no-featured-image .posted-on a,
+.the-newsmag-one-column-widget .first-post .no-featured-image .comments-link a {
     color: #222;
 }
 
 .the-newsmag-one-column-widget .following-post .entry-title a:hover,
 .the-newsmag-one-column-widget .following-post .author a:hover,
 .the-newsmag-one-column-widget .following-post .posted-on a:hover,
-.the-newsmag-one-column-widget .following-post .comments-link a:hover {
+.the-newsmag-one-column-widget .following-post .comments-link a:hover,
+.the-newsmag-one-column-widget .first-post .no-featured-image .entry-title a:hover,
+.the-newsmag-one-column-widget .first-post .no-featured-image .author a:hover,
+.the-newsmag-one-column-widget .first-post .no-featured-image .posted-on a:hover,
+.the-newsmag-one-column-widget .first-post .no-featured-image .comments-link a:hover {
     color: #4169e1;
 }
 
@@ -2554,6 +2573,26 @@ li.comments-tab-widget p {
 
 .the-newsmag-one-column-widget .first-post .featured-image {
     float: none;
+}
+
+.the-newsmag-one-column-widget .entry-meta .author.vcard,
+.the-newsmag-one-column-widget .entry-meta .entry-date,
+.the-newsmag-one-column-widget .entry-meta .comments-link,
+.the-newsmag-one-column-widget .entry-meta .comments-link .fa,
+.the-newsmag-one-column-widget .entry-meta .posted-on .fa-calendar {
+    font-size: 14px;
+}
+
+.the-newsmag-one-column-widget .entry-meta .posted-on .fa-calendar {
+    margin-top: 4px;
+}
+
+.the-newsmag-one-column-widget .entry-meta .byline img.avatar {
+    margin-top: -2px;
+}
+
+.the-newsmag-one-column-widget .entry-content p {
+    font-size: 16px;
 }
 
 /*--------------------------------------------------------------

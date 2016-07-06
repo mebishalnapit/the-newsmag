@@ -594,39 +594,45 @@ class The_NewsMag_One_Column_Widget extends WP_Widget {
                     echo '<div class="following-post">';
                     $featured_image_size = 'the-newsmag-featured-small-thumbnail';
                 }
+                // adding the class name upon thumbnail availablility
+                if (has_post_thumbnail()) {
+                    $class = 'has-featured-image';
+                } else {
+                    $class = 'no-featured-image';
+                }
                 ?>
-            <?php if (has_post_thumbnail()) { ?>
-                    <div class="single-article-content clear">
-                        <div class="posts-column-wrapper clear">
-                                <?php if ($i == 1) { ?>
-                                <div class="category-links">
+                <div class="single-article-content clear">
+                    <div class="posts-column-wrapper <?php echo esc_attr($class); ?> clear">
+                        <?php if ($i == 1) { ?>
+                            <div class="category-links">
                                 <?php the_newsmag_colored_category(); ?>
-                                </div><!-- .entry-meta -->
-                <?php } ?>
+                            </div><!-- .entry-meta -->
+                        <?php } ?>
 
+                        <?php if (has_post_thumbnail()) { ?>
                             <figure class="featured-image">
                                 <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail($featured_image_size); ?></a>
                             </figure>
+                        <?php } ?>
 
-                            <div class="category-title-meta-wrapper clear">
-                                <h3 class="entry-title">
-                                    <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
-                                </h3>
-                                <div class="entry-meta">
-                <?php the_newsmag_widget_posts_posted_on(); ?>
-                                </div>
+                        <div class="category-title-meta-wrapper clear">
+                            <h3 class="entry-title">
+                                <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
+                            </h3>
+                            <div class="entry-meta">
+                                <?php the_newsmag_widget_posts_posted_on(); ?>
                             </div>
                         </div>
-
-                            <?php if ($i == 1) { ?>
-                            <div class="entry-content">
-                            <?php the_excerpt(); ?>
-                            </div>
-                <?php } ?>
-
                     </div>
+
+                    <?php if ($i == 1) { ?>
+                        <div class="entry-content">
+                            <?php the_excerpt(); ?>
+                        </div>
+                    <?php } ?>
+
+                </div>
                 <?php
-                }
                 if ($i == 1) {
                     echo '</div>';
                 }
