@@ -470,11 +470,11 @@ class The_NewsMag_Posts_Grid_Widget extends WP_Widget {
 
 }
 
-class The_NewsMag_One_Column_Widget extends WP_Widget {
+class The_NewsMag_Posts_One_Column_Widget extends WP_Widget {
 
     function __construct() {
         parent::__construct(
-                'the_newsmag_one_column_widget', esc_html__('TNM: One Column Widget', 'the-newsmag'), // Name of the widget
+                'the_newsmag_posts_one_column_widget', esc_html__('TNM: Posts One Column Widget', 'the-newsmag'), // Name of the widget
                 array('description' => esc_html__('Displays the latest posts or posts from certain category chosen to display the posts in single column.', 'the-newsmag'), 'classname' => 'widget-entry-meta the-newsmag-one-column-widget clear') // Arguments of the widget, here it is provided with the description
         );
     }
