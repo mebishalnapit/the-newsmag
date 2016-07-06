@@ -2614,6 +2614,10 @@ li.comments-tab-widget p {
     margin-right: 0;
 }
 
+.magazine-page-top-area {
+    display: none;
+}
+
 @media screen and (max-width: 768px) {
     .magazine-page-top-area .slider-area,
     .magazine-page-top-area .beside-slider-area,
@@ -3319,6 +3323,10 @@ a.entry-meta-comments:hover {
     font-weight: bold;
     font-size: 22px;
     margin: 0;
+}
+
+.gallery-slider {
+    display: none;
 }
 
 .format-gallery .gallery-slider {

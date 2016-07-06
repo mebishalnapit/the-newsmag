@@ -19,6 +19,9 @@ jQuery(document).ready(function () {
     }
     initMainNavigation(jQuery('.main-navigation'));
 
+    // display the magazine top area on full page load
+    jQuery('.magazine-page-top-area').show();
+
     // scroll up function
     jQuery('#scroll-up').hide();
     jQuery(function () {
@@ -124,7 +127,7 @@ jQuery(document).ready(function () {
             }
         });
 
-        jQuery('.gallery-slider').bxSlider({
+        jQuery('.gallery-slider').show().bxSlider({
             mode: 'horizontal',
             speed: 2000,
             auto: true,
