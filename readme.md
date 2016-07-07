@@ -43,6 +43,7 @@ If you would like to contribute to the translations of this theme to your native
 * Added TNM: Posts Grid Widget
 * Added TNM: Posts One Column Widget
 * Added TNM: Posts Two Column Widget
+* Added TNM: Posts Extended Widget
 * Font Awesome icons updated to version 4.6.3
 * Theme tags updated according to the new introduced theme tags.
 

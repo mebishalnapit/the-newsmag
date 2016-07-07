@@ -2732,6 +2732,93 @@ li.comments-tab-widget p {
 }
 
 /*--------------------------------------------------------------
+# Posts extended widget
+--------------------------------------------------------------*/
+.the-newsmag-posts-extended-widget .posts-column-wrapper.has-featured-image {
+    position: relative;
+}
+
+.the-newsmag-posts-extended-widget .featured-image {
+    width: 50%;
+    margin-right: 15px;
+}
+
+.the-newsmag-posts-extended-widget .category-links {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: 14px;
+}
+
+.the-newsmag-posts-extended-widget .posts-column-wrapper.no-featured-image .category-links {
+    position: static;
+}
+
+.the-newsmag-posts-extended-widget .post-details .entry-meta {
+    display: inline-block;
+}
+
+.the-newsmag-posts-extended-widget .no-featured-image .post-details {
+    clear: both;
+}
+
+.the-newsmag-posts-extended-widget .entry-content p {
+    display: inline;
+    font-size: 16px;
+}
+
+.the-newsmag-posts-extended-widget .entry-title {
+    font-size: 22px;
+}
+
+.the-newsmag-posts-extended-widget .no-featured-image .entry-title {
+    margin: 15px 0 15px;
+}
+
+.the-newsmag-posts-extended-widget .entry-meta .author.vcard,
+.the-newsmag-posts-extended-widget .entry-meta .entry-date,
+.the-newsmag-posts-extended-widget .entry-meta .comments-link,
+.the-newsmag-posts-extended-widget .entry-meta .comments-link .fa,
+.the-newsmag-posts-extended-widget .entry-meta .posted-on .fa-calendar {
+    font-size: 14px;
+}
+
+.the-newsmag-posts-extended-widget .entry-meta .posted-on .fa-calendar {
+    margin-top: 4px;
+}
+
+.the-newsmag-posts-extended-widget .entry-meta .byline img.avatar {
+    margin-top: -2px;
+}
+
+.the-newsmag-posts-extended-widget .entry-meta .entry-title a,
+.the-newsmag-posts-extended-widget .entry-meta .author a,
+.the-newsmag-posts-extended-widget .entry-meta .posted-on a,
+.the-newsmag-posts-extended-widget .entry-meta .comments-link a {
+    color: #222;
+}
+
+.the-newsmag-posts-extended-widget .entry-meta .entry-title a:hover,
+.the-newsmag-posts-extended-widget .entry-meta .author a:hover,
+.the-newsmag-posts-extended-widget .entry-meta .posted-on a:hover,
+.the-newsmag-posts-extended-widget .entry-meta .comments-link a:hover {
+    color: #4169e1;
+}
+
+@media screen and (max-width: 600px) {
+    .the-newsmag-posts-extended-widget .no-featured-image .entry-title {
+        margin: 5px 0 5px;
+        font-size: 18px;
+    }
+
+    .the-newsmag-posts-extended-widget .featured-image {
+        float: none;
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+/*--------------------------------------------------------------
 # Magazine templates
 --------------------------------------------------------------*/
 .magazine-page-top-area .slider-area,
