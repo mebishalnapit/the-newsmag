@@ -363,6 +363,7 @@ function the_newsmag_widgets_init() {
     register_widget('The_NewsMag_Posts_One_Column_Widget');
     register_widget('The_NewsMag_Posts_Two_Column_Widget');
     register_widget('The_NewsMag_Posts_Extended_Widget');
+    register_widget('The_NewsMag_728x90_Widget');
 }
 
 add_action('widgets_init', 'the_newsmag_widgets_init');
@@ -514,6 +515,21 @@ function the_newsmag_customizer_scripts() {
 }
 
 add_action('customize_controls_enqueue_scripts', 'the_newsmag_customizer_scripts');
+
+/**
+ * Enqueue scripts for use in media upload in widgets
+ */
+function the_newsmag_widgets_scripts($hook) {
+    // adding the function to load the minified version if SCRIPT_DEFUG is disable
+    $suffix = ( defined('SCRIPT_DEBUG') && SCRIPT_DEBUG ) ? '' : '.min';
+    if ($hook == 'widgets.php' || $hook == 'customize.php') {
+        // image uploader enqueue
+        wp_enqueue_media();
+        wp_enqueue_script('the-newsmag-image-uploader', get_template_directory_uri() . '/js/image-uploader' . $suffix . '.js', false, false, true);
+    }
+}
+
+add_action('admin_enqueue_scripts', 'the_newsmag_widgets_scripts');
 
 /**
  * Implement the Custom Header feature.
