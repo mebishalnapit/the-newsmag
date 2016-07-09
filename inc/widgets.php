@@ -1158,4 +1158,114 @@ class The_NewsMag_300x250_Widget extends WP_Widget {
     }
 
 }
+
+class The_NewsMag_125x125_Widget extends WP_Widget {
+
+    function __construct() {
+        parent::__construct(
+                'the_newsmag_125x125_widget', esc_html__('TNM: 125 x 125 Advertisement Widget', 'the-newsmag'), // Name of the widget
+                array('description' => esc_html__('Add the required 125 x 125 advertisement in your site with the help of the image.', 'the-newsmag'), 'classname' => 'widget-entry-meta the-newsmag-125x125-widget clear') // Arguments of the widget, here it is provided with the description
+        );
+    }
+
+    function form($instance) {
+        $title = !empty($instance['title']) ? $instance['title'] : '';
+        for ($i = 1; $i < 7; $i++) {
+            $image_link = !empty($instance['image_link' . $i]) ? $instance['image_link' . $i] : '';
+            $image_url = !empty($instance['image_url' . $i]) ? $instance['image_url' . $i] : '';
+        }
+        ?>
+        <p>
+            <label for="<?php echo $this->get_field_id('title'); ?>"><?php esc_html_e('Title', 'the-newsmag'); ?></label>
+            <input id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo esc_attr($title); ?>" />
+        </p>
+
+        <?php for ($i = 1; $i < 7; $i++) { ?>
+            <p>
+                <label for="<?php echo $this->get_field_id('image_link' . $i); ?>"><?php
+                    esc_html_e('Advertisement Image Link', 'the-newsmag');
+                    echo $i;
+                    ?></label>
+                <input class="widefat" id="<?php echo $this->get_field_id('image_link' . $i); ?>" name="<?php echo $this->get_field_name('image_link' . $i); ?>" type="text" value="<?php echo esc_url($instance['image_link' . $i]); ?>" />
+            </p>
+
+            <label for="<?php echo $this->get_field_id('image_url' . $i); ?>"><?php
+                esc_html_e('Advertisement Image', 'the-newsmag');
+                echo $i;
+                ?></label>
+            <div class="media-uploader" id="<?php echo $this->get_field_id('image_url' . $i); ?>">
+                <div class="custom_media_preview">
+                    <?php if (!empty($instance['image_url' . $i])) : ?>
+                        <img class="custom_media_preview_default" src="<?php echo esc_url($instance['image_url' . $i]); ?>" style="max-width:100%;" />
+                    <?php endif; ?>
+                </div>
+                <input type="text" class="widefat custom_media_input" id="<?php echo $this->get_field_id('image_url' . $i); ?>" name="<?php echo $this->get_field_name('image_url' . $i); ?>" value="<?php echo esc_url($instance['image_url' . $i]); ?>" style="margin-top:2px;"/>
+                <button class="custom_media_upload button button-primary" id="<?php echo $this->get_field_id('image_url' . $i); ?>" data-choose="<?php esc_attr_e('Choose image', 'the-newsmag'); ?>" data-update="<?php esc_attr_e('Use image', 'the-newsmag'); ?>" style="margin-top:6px;"><?php esc_html_e('Select Image', 'the-newsmag'); ?></button>
+            </div>
+            <?php
+        }
+    }
+
+    function update($new_instance, $old_instance) {
+        $instance = array();
+        $instance['title'] = strip_tags($new_instance['title']);
+        for ($i = 1; $i < 7; $i++) {
+            $instance['image_link' . $i] = esc_url_raw($new_instance['image_link' . $i]);
+            $instance['image_url' . $i] = esc_url_raw($new_instance['image_url' . $i]);
+        }
+
+        return $instance;
+    }
+
+    function widget($args, $instance) {
+        $title = isset($instance['title']) ? $instance['title'] : '';
+        $image_array = array();
+        $link_array = array();
+        for ($i = 1; $i < 7; $i++) {
+            $image_link = isset($instance['image_link' . $i]) ? $instance['image_link' . $i] : '';
+            $image_url = isset($instance['image_url' . $i]) ? $instance['image_url' . $i] : '';
+            if (!empty($image_link)) {
+                array_push($link_array, $image_link);
+            }
+            if (!empty($image_url)) {
+                array_push($image_array, $image_url);
+            }
+        }
+
+        echo $args['before_widget'];
+        ?>
+
+        <div class="advertisement-125x125">
+            <?php if (!empty($title)) { ?>
+                <div class="advertisement-title">
+                    <?php echo $args['before_title'] . esc_html($title) . $args['after_title']; ?>
+                </div>
+            <?php } ?>
+
+            <?php
+            $output = '';
+            if (!empty($image_array)) {
+                $output .= '<div class="advertisement-image">';
+                for ($i = 1; $i < 7; $i++) {
+                    $j = $i - 1;
+                    if (!empty($image_array[$j])) {
+                        if (!empty($link_array[$j])) {
+                            $output .= '<a href="' . $link_array[$j] . '" class="advetisement-125x125" target="_blank" rel="nofollow">
+                                 <img src="' . $image_array[$j] . '" width="125" height="125">
+                              </a>';
+                        } else {
+                            $output .= '<img src="' . $image_array[$j] . '" width="125" height="125">';
+                        }
+                    }
+                }
+                $output .= '</div>';
+                echo $output;
+            }
+            ?>
+        </div>
+        <?php
+        echo $args['after_widget'];
+    }
+
+}
 ?>

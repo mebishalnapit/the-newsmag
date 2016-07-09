@@ -46,6 +46,7 @@ If you would like to contribute to the translations of this theme to your native
 * Added TNM: Posts Extended Widget
 * Added TNM: 728 x 90 Advertisement Widget
 * Added TNM: 300 x 250 Advertisement Widget
+* Added TNM: 125 x 125 Advertisement Widget
 * Font Awesome icons updated to version 4.6.3
 * Theme tags updated according to the new introduced theme tags.
 

@@ -2825,6 +2825,10 @@ li.comments-tab-widget p {
     text-align: center;
 }
 
+.widget-entry-meta .advertisement-125x125 .advertisement-image img {
+    margin: 0 10px 10px;
+}
+
 /*--------------------------------------------------------------
 # Magazine templates
 --------------------------------------------------------------*/
