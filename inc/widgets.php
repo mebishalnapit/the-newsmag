@@ -1171,8 +1171,8 @@ class The_NewsMag_125x125_Widget extends WP_Widget {
     function form($instance) {
         $title = !empty($instance['title']) ? $instance['title'] : '';
         for ($i = 1; $i < 7; $i++) {
-            $image_link = !empty($instance['image_link' . $i]) ? $instance['image_link' . $i] : '';
-            $image_url = !empty($instance['image_url' . $i]) ? $instance['image_url' . $i] : '';
+            $instance['image_link' . $i] = !empty($instance['image_link' . $i]) ? $instance['image_link' . $i] : '';
+            $instance['image_url' . $i] = !empty($instance['image_url' . $i]) ? $instance['image_url' . $i] : '';
         }
         ?>
         <p>
