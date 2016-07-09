@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The NewsMag\n"
-"POT-Creation-Date: 2016-06-08 21:39+0545\n"
-"PO-Revision-Date: 2016-06-08 21:40+0545\n"
+"POT-Creation-Date: 2016-07-09 15:48+0545\n"
+"PO-Revision-Date: 2016-07-09 15:50+0545\n"
 "Last-Translator: \n"
 "Language-Team: Bishal Napit <mebishalnapit@gmail.com>\n"
 "Language: en\n"
@@ -207,17 +207,17 @@ msgstr ""
 msgid "Display your widgets in the Masonry Footer Sidebar Area."
 msgstr ""
 
-#: functions.php:381
+#: functions.php:389
 msgctxt "Noto Sans font: on or off"
 msgid "on"
 msgstr ""
 
-#: functions.php:389
+#: functions.php:397
 msgctxt "Lobster Two font: on or off"
 msgid "on"
 msgstr ""
 
-#: functions.php:397
+#: functions.php:405
 msgctxt "Add new subset ( cyrillic, greek, vietnamese, devanagari )"
 msgid "no-subset"
 msgstr ""
@@ -564,12 +564,12 @@ msgstr ""
 msgid "Google Plus"
 msgstr ""
 
-#: inc/extras.php:670 template-parts/content-aside.php:24
-#: template-parts/content-audio.php:28 template-parts/content-chat.php:28
-#: template-parts/content-gallery.php:42 template-parts/content-image.php:53
-#: template-parts/content-link.php:28 template-parts/content-quote.php:28
-#: template-parts/content-status.php:33 template-parts/content-video.php:28
-#: template-parts/content.php:47
+#: inc/extras.php:670 template-parts/content-aside.php:25
+#: template-parts/content-audio.php:29 template-parts/content-chat.php:29
+#: template-parts/content-gallery.php:43 template-parts/content-image.php:61
+#: template-parts/content-link.php:29 template-parts/content-quote.php:29
+#: template-parts/content-status.php:34 template-parts/content-video.php:29
+#: template-parts/content.php:51
 #, php-format
 msgctxt "comments title"
 msgid "<i class=\"fa fa-comment\"></i> 1"
@@ -636,7 +636,7 @@ msgid "%1$s"
 msgstr ""
 
 #. translators: %s: Name of current post
-#: inc/template-tags.php:69 template-parts/content-page.php:59
+#: inc/template-tags.php:69 template-parts/content-page.php:60
 #, php-format
 msgid "<i class=\"fa fa-edit\"></i>Edit %s"
 msgstr ""
@@ -688,6 +688,135 @@ msgstr ""
 
 #: inc/widgets.php:221
 msgid "No Comments"
+msgstr ""
+
+#: inc/widgets.php:240
+msgid "TNM: Posts Slider Widget"
+msgstr ""
+
+#: inc/widgets.php:241
+msgid ""
+"Displays the latest posts or posts from certain category chosen to be used "
+"as the slider."
+msgstr ""
+
+#: inc/widgets.php:252 inc/widgets.php:373 inc/widgets.php:501
+#: inc/widgets.php:682 inc/widgets.php:863
+msgid "Show latest posts."
+msgstr ""
+
+#: inc/widgets.php:256 inc/widgets.php:377 inc/widgets.php:505
+#: inc/widgets.php:686 inc/widgets.php:867
+msgid "Show posts from a certain category."
+msgstr ""
+
+#: inc/widgets.php:261 inc/widgets.php:382 inc/widgets.php:510
+#: inc/widgets.php:691 inc/widgets.php:872
+msgid "Select the category:"
+msgstr ""
+
+#: inc/widgets.php:273 inc/widgets.php:394 inc/widgets.php:522
+#: inc/widgets.php:703 inc/widgets.php:884
+msgid "Number of posts to display:"
+msgstr ""
+
+#: inc/widgets.php:361
+msgid "TNM: Posts Grid Widget"
+msgstr ""
+
+#: inc/widgets.php:362
+msgid ""
+"Displays the latest posts or posts from certain category chosen to be used "
+"in beside the slider area."
+msgstr ""
+
+#: inc/widgets.php:477
+msgid "TNM: Posts One Column Widget"
+msgstr ""
+
+#: inc/widgets.php:478
+msgid ""
+"Displays the latest posts or posts from certain category chosen to display "
+"the posts in single column."
+msgstr ""
+
+#: inc/widgets.php:490 inc/widgets.php:671 inc/widgets.php:852
+#: inc/widgets.php:1011 inc/widgets.php:1094 inc/widgets.php:1179
+msgid "Title"
+msgstr ""
+
+#: inc/widgets.php:495 inc/widgets.php:676 inc/widgets.php:857
+msgid "Description"
+msgstr ""
+
+#: inc/widgets.php:658
+msgid "TNM: Posts Two Column Widget"
+msgstr ""
+
+#: inc/widgets.php:659
+msgid ""
+"Displays the latest posts or posts from certain category chosen to display "
+"the posts in double column."
+msgstr ""
+
+#: inc/widgets.php:839
+msgid "TNM: Posts Extended Widget"
+msgstr ""
+
+#: inc/widgets.php:840
+msgid ""
+"Displays the latest posts or posts from certain category chosen to display "
+"the posts and its excerpt."
+msgstr ""
+
+#: inc/widgets.php:1000
+msgid "TNM: 728 x 90 Advertisement Widget"
+msgstr ""
+
+#: inc/widgets.php:1001
+msgid ""
+"Add the required 728 x 90 advertisement in your site with the help of the "
+"image."
+msgstr ""
+
+#: inc/widgets.php:1016 inc/widgets.php:1099 inc/widgets.php:1186
+msgid "Advertisement Image Link"
+msgstr ""
+
+#: inc/widgets.php:1020 inc/widgets.php:1103 inc/widgets.php:1193
+msgid "Advertisement Image"
+msgstr ""
+
+#: inc/widgets.php:1028 inc/widgets.php:1111 inc/widgets.php:1203
+msgid "Choose image"
+msgstr ""
+
+#: inc/widgets.php:1028 inc/widgets.php:1111 inc/widgets.php:1203
+msgid "Use image"
+msgstr ""
+
+#: inc/widgets.php:1028 inc/widgets.php:1111 inc/widgets.php:1203
+msgid "Select Image"
+msgstr ""
+
+#: inc/widgets.php:1083
+msgid "TNM: 300 x 250 Advertisement Widget"
+msgstr ""
+
+#: inc/widgets.php:1084
+msgid ""
+"Add the required 300 x 250 advertisement in your site with the help of the "
+"image."
+msgstr ""
+
+#: inc/widgets.php:1166
+msgid "TNM: 125 x 125 Advertisement Widget"
+msgstr ""
+
+#: inc/widgets.php:1167
+msgid ""
+"Add the required 125 x 125 advertisement in your site with the help of the "
+"image."
 msgstr ""
 
 #: search.php:20
@@ -744,25 +873,25 @@ msgstr ""
 msgid "Previous post:"
 msgstr ""
 
-#: template-parts/content-aside.php:50 template-parts/content-audio.php:60
-#: template-parts/content-chat.php:56 template-parts/content-gallery.php:74
-#: template-parts/content-image.php:85 template-parts/content-link.php:60
-#: template-parts/content-page.php:48 template-parts/content-quote.php:60
-#: template-parts/content-status.php:65 template-parts/content-video.php:60
-#: template-parts/content.php:87
+#: template-parts/content-aside.php:55 template-parts/content-audio.php:65
+#: template-parts/content-chat.php:61 template-parts/content-gallery.php:79
+#: template-parts/content-image.php:100 template-parts/content-link.php:65
+#: template-parts/content-page.php:49 template-parts/content-quote.php:65
+#: template-parts/content-status.php:70 template-parts/content-video.php:65
+#: template-parts/content.php:98
 msgid "Pages:"
 msgstr ""
 
 #. translators: %s: Name of current post.
-#: template-parts/content-audio.php:70 template-parts/content-gallery.php:84
-#: template-parts/content-image.php:95 template-parts/content-link.php:70
-#: template-parts/content-quote.php:70 template-parts/content-status.php:75
-#: template-parts/content-video.php:70 template-parts/content.php:79
-#: template-parts/content.php:97
+#: template-parts/content-audio.php:75 template-parts/content-gallery.php:89
+#: template-parts/content-image.php:110 template-parts/content-link.php:75
+#: template-parts/content-quote.php:75 template-parts/content-status.php:80
+#: template-parts/content-video.php:75 template-parts/content.php:90
+#: template-parts/content.php:108
 msgid "Read More <i class=\"fa fa-arrow-circle-o-right\"></i>"
 msgstr ""
 
-#: template-parts/content-link.php:15
+#: template-parts/content-link.php:16
 msgid "Link"
 msgstr ""
 
