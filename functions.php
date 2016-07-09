@@ -364,6 +364,7 @@ function the_newsmag_widgets_init() {
     register_widget('The_NewsMag_Posts_Two_Column_Widget');
     register_widget('The_NewsMag_Posts_Extended_Widget');
     register_widget('The_NewsMag_728x90_Widget');
+    register_widget('The_NewsMag_300x250_Widget');
 }
 
 add_action('widgets_init', 'the_newsmag_widgets_init');

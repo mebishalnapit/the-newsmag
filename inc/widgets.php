@@ -1075,4 +1075,87 @@ class The_NewsMag_728x90_Widget extends WP_Widget {
     }
 
 }
+
+class The_NewsMag_300x250_Widget extends WP_Widget {
+
+    function __construct() {
+        parent::__construct(
+                'the_newsmag_300x250_widget', esc_html__('TNM: 300 x 250 Advertisement Widget', 'the-newsmag'), // Name of the widget
+                array('description' => esc_html__('Add the required 300 x 250 advertisement in your site with the help of the image.', 'the-newsmag'), 'classname' => 'widget-entry-meta the-newsmag-300x250-widget clear') // Arguments of the widget, here it is provided with the description
+        );
+    }
+
+    function form($instance) {
+        $title = !empty($instance['title']) ? $instance['title'] : '';
+        $image_link = !empty($instance['image_link']) ? $instance['image_link'] : '';
+        $image_url = !empty($instance['image_url']) ? $instance['image_url'] : '';
+        ?>
+        <p>
+            <label for="<?php echo $this->get_field_id('title'); ?>"><?php esc_html_e('Title', 'the-newsmag'); ?></label>
+            <input id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo esc_attr($title); ?>" />
+        </p>
+
+        <p>
+            <label for="<?php echo $this->get_field_id('image_link'); ?>"><?php esc_html_e('Advertisement Image Link', 'the-newsmag'); ?></label>
+            <input class="widefat" id="<?php echo $this->get_field_id('image_link'); ?>" name="<?php echo $this->get_field_name('image_link'); ?>" type="text" value="<?php echo esc_url($image_link); ?>" />
+        </p>
+
+        <label for="<?php echo $this->get_field_id('image_url'); ?>"><?php esc_html_e('Advertisement Image', 'the-newsmag'); ?></label>
+        <div class="media-uploader" id="<?php echo $this->get_field_id('image_url'); ?>">
+            <div class="custom_media_preview">
+                <?php if (!empty($image_url)) : ?>
+                    <img class="custom_media_preview_default" src="<?php echo esc_url($image_url); ?>" style="max-width:100%;" />
+                <?php endif; ?>
+            </div>
+            <input type="text" class="widefat custom_media_input" id="<?php echo $this->get_field_id('image_url'); ?>" name="<?php echo $this->get_field_name('image_url'); ?>" value="<?php echo esc_url($image_url); ?>" style="margin-top:2px;"/>
+            <button class="custom_media_upload button button-primary" id="<?php echo $this->get_field_id('image_url'); ?>" data-choose="<?php esc_attr_e('Choose image', 'the-newsmag'); ?>" data-update="<?php esc_attr_e('Use image', 'the-newsmag'); ?>" style="margin-top:6px;"><?php esc_html_e('Select Image', 'the-newsmag'); ?></button>
+        </div>
+        <?php
+    }
+
+    function update($new_instance, $old_instance) {
+        $instance = array();
+        $instance['title'] = strip_tags($new_instance['title']);
+        $instance['image_link'] = esc_url_raw($new_instance['image_link']);
+        $instance['image_url'] = esc_url_raw($new_instance['image_url']);
+
+        return $instance;
+    }
+
+    function widget($args, $instance) {
+        $title = isset($instance['title']) ? $instance['title'] : '';
+        $image_link = isset($instance['image_link']) ? $instance['image_link'] : '';
+        $image_url = isset($instance['image_url']) ? $instance['image_url'] : '';
+
+        echo $args['before_widget'];
+        ?>
+
+        <div class="advertisement-300x250">
+            <?php if (!empty($title)) { ?>
+                <div class="advertisement-title">
+                    <?php echo $args['before_title'] . esc_html($title) . $args['after_title']; ?>
+                </div>
+            <?php } ?>
+
+            <?php
+            $output = '';
+            if (!empty($image_url)) {
+                $output .= '<div class="advertisement-image">';
+                if (!empty($image_link)) {
+                    $output .= '<a href="' . $image_link . '" class="advetisement-300x250" target="_blank" rel="nofollow">
+                                    <img src="' . $image_url . '" width="300" height="250">
+                           </a>';
+                } else {
+                    $output .= '<img src="' . $image_url . '" width="300" height="250">';
+                }
+                $output .= '</div>';
+                echo $output;
+            }
+            ?>
+        </div>
+        <?php
+        echo $args['after_widget'];
+    }
+
+}
 ?>

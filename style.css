@@ -2819,6 +2819,13 @@ li.comments-tab-widget p {
 }
 
 /*--------------------------------------------------------------
+# Advertisement widgets
+--------------------------------------------------------------*/
+.widget-entry-meta .advertisement-image {
+    text-align: center;
+}
+
+/*--------------------------------------------------------------
 # Magazine templates
 --------------------------------------------------------------*/
 .magazine-page-top-area .slider-area,
