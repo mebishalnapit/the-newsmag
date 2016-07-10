@@ -2197,9 +2197,21 @@ footer .widget_rss li a:hover:before {
     margin-right: 10px;
 }
 
+.widget-entry-meta .entry-meta .comments-link {
+    margin-right: 0;
+}
+
+footer .widget-entry-meta .entry-meta .comments-link a {
+    color: #fff;
+}
+
+footer .widget-entry-meta .entry-meta .comments-link a:hover {
+    color: #4169e1;
+}
+
 .widget-entry-meta .posted-on .fa-calendar,
 .widget-entry-meta .comments-link .fa-comment {
-    font-size: 18px;
+    font-size: 14px;
 }
 
 .widget-entry-meta .comments-link a {
@@ -2210,12 +2222,12 @@ footer .widget_rss li a:hover:before {
 .widget-entry-meta .posted-on .fa-calendar,
 .widget-entry-meta .comments-link .fa-comment {
     float: left;
-    margin-top: 5px;
+    margin-top: 3px;
     margin-right: 5px;
 }
 
 .widget-entry-meta .byline .avatar {
-    margin-top: 0;
+    margin-top: -2px;
 }
 
 .widget-entry-meta .entry-meta .author.vcard,
@@ -2223,7 +2235,7 @@ footer .widget_rss li a:hover:before {
 .widget-entry-meta .comments-link,
 .widget-entry-meta .comments-link .fa {
     float: left;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 .widget-entry-meta .comments-link .fa {
@@ -2540,6 +2552,17 @@ li.comments-tab-widget p {
     color: #222;
 }
 
+footer .the-newsmag-one-column-widget .following-post .entry-title a,
+footer .the-newsmag-one-column-widget .following-post .author a,
+footer .the-newsmag-one-column-widget .following-post .posted-on a,
+footer .the-newsmag-one-column-widget .following-post .comments-link a,
+footer .the-newsmag-one-column-widget .first-post .no-featured-image .entry-title a,
+footer .the-newsmag-one-column-widget .first-post .no-featured-image .author a,
+footer .the-newsmag-one-column-widget .first-post .no-featured-image .posted-on a,
+footer .the-newsmag-one-column-widget .first-post .no-featured-image .comments-link a {
+    color: #fff;
+}
+
 .the-newsmag-one-column-widget .following-post .entry-title a:hover,
 .the-newsmag-one-column-widget .following-post .author a:hover,
 .the-newsmag-one-column-widget .following-post .posted-on a:hover,
@@ -2655,6 +2678,17 @@ li.comments-tab-widget p {
     color: #222;
 }
 
+footer .the-newsmag-two-column-widget .following-post .entry-title a,
+footer .the-newsmag-two-column-widget .following-post .author a,
+footer .the-newsmag-two-column-widget .following-post .posted-on a,
+footer .the-newsmag-two-column-widget .following-post .comments-link a,
+footer .the-newsmag-two-column-widget .first-post .no-featured-image .entry-title a,
+footer .the-newsmag-two-column-widget .first-post .no-featured-image .author a,
+footer .the-newsmag-two-column-widget .first-post .no-featured-image .posted-on a,
+footer .the-newsmag-two-column-widget .first-post .no-featured-image .comments-link a {
+    color: #fff;
+}
+
 .the-newsmag-two-column-widget .following-post .entry-title a:hover,
 .the-newsmag-two-column-widget .following-post .author a:hover,
 .the-newsmag-two-column-widget .following-post .posted-on a:hover,
@@ -2743,6 +2777,11 @@ li.comments-tab-widget p {
     margin-right: 15px;
 }
 
+footer .the-newsmag-posts-extended-widget .featured-image {
+    width: 100%;
+    margin-right: 0;
+}
+
 .the-newsmag-posts-extended-widget .category-links {
     position: absolute;
     top: 5px;
@@ -2796,6 +2835,13 @@ li.comments-tab-widget p {
 .the-newsmag-posts-extended-widget .entry-meta .posted-on a,
 .the-newsmag-posts-extended-widget .entry-meta .comments-link a {
     color: #222;
+}
+
+footer .the-newsmag-posts-extended-widget .entry-meta .entry-title a,
+footer .the-newsmag-posts-extended-widget .entry-meta .author a,
+footer .the-newsmag-posts-extended-widget .entry-meta .posted-on a,
+footer .the-newsmag-posts-extended-widget .entry-meta .comments-link a {
+    color: #fff;
 }
 
 .the-newsmag-posts-extended-widget .entry-meta .entry-title a:hover,
@@ -3014,7 +3060,8 @@ a.entry-meta-comments:hover {
     margin-bottom: 5px;
 }
 
-.category-links a:hover {
+.category-links a:hover,
+footer .category-links a:hover {
     color: #fff;
 }
 
