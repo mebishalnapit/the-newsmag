@@ -55,14 +55,13 @@ if (!function_exists('the_newsmag_social_menu')) :
                     array(
                         'theme_location' => 'social',
                         'container' => 'div',
-                        'container_id' => 'main-menu-social',
                         'container_class' => 'the-newsmag-social-menu',
                         'depth' => 1,
-                        'menu_id' => 'menu-social',
+                        'menu_class' => 'menu-social',
                         'fallback_cb' => false,
                         'link_before' => '<span class="screen-reader-text">',
                         'link_after' => '</span>',
-                        'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+                        'items_wrap' => '<ul class="%2$s">%3$s</ul>',
                     )
             );
         }

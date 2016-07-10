@@ -335,7 +335,7 @@ form.search-form {
 /*--------------------------------------------------------------
 # Social menu settings
 --------------------------------------------------------------*/
-#menu-social li a:before {
+.menu-social li a:before {
     display: inline-block;
     padding: 0 10px;
     font-family: "fontawesome";
@@ -345,301 +345,301 @@ form.search-form {
     font-size: 20px;
 }
 
-#menu-social li {
+.menu-social li {
     display: inline-block;
     list-style: none;
 }
 
-ul#menu-social {
+ul.menu-social {
     padding-left: 0;
     text-align: right;
     margin: 0;
 }
 
-#menu-social li a[href*="facebook.com"]:before {
+.menu-social li a[href*="facebook.com"]:before {
     content: '\f09a';
     color: #3b5998;
 }
 
-#menu-social li a[href*="twitter.com"]:before {
+.menu-social li a[href*="twitter.com"]:before {
     content: '\f099';
     color: #00aced;
 }
 
-#menu-social li a[href*="plus.google.com"]:before {
+.menu-social li a[href*="plus.google.com"]:before {
     content: '\f0d5';
     color: #dd4b39;
 }
 
-#menu-social li a[href*="youtube.com"]:before {
+.menu-social li a[href*="youtube.com"]:before {
     content: '\f167';
     color: #bb0000;
 }
 
-#menu-social li a[href*="pinterest.com"]:before {
+.menu-social li a[href*="pinterest.com"]:before {
     content: '\f0d2';
     color: #cb2027;
 }
 
-#menu-social li a[href*="instagram.com"]:before {
+.menu-social li a[href*="instagram.com"]:before {
     content: '\f16d';
     color: #517fa4;
 }
 
-#menu-social li a[href*="vimeo.com"]:before {
+.menu-social li a[href*="vimeo.com"]:before {
     content: '\f194';
     color: #44bbff;
 }
 
-#menu-social li a[href*="skype.com"]:before {
+.menu-social li a[href*="skype.com"]:before {
     content: '\f17e';
     color: #009cef;
 }
 
-#menu-social li a[href*="linkedin.com"]:before {
+.menu-social li a[href*="linkedin.com"]:before {
     content: '\f0e1';
     color: #007bb6;
 }
 
-#menu-social li a[href*="github.com"]:before {
+.menu-social li a[href*="github.com"]:before {
     content: '\f09b';
     color: #4183c4;
 }
 
-#menu-social li a[href*="flickr.com"]:before {
+.menu-social li a[href*="flickr.com"]:before {
     content: '\f16e';
     color: #0062dd;
 }
 
-#menu-social li a[href*="dribbble.com"]:before {
+.menu-social li a[href*="dribbble.com"]:before {
     content: '\f17d';
     color: #e24d87;
 }
 
-#menu-social li a[href*="stumbleupon.com"]:before {
+.menu-social li a[href*="stumbleupon.com"]:before {
     content: '\f1a4';
     color: #ec4823;
 }
 
-#menu-social li a[href*="tumblr.com"]:before {
+.menu-social li a[href*="tumblr.com"]:before {
     content: '\f173';
     color: #45546b;
 }
 
-#menu-social li a[href*="wordpress.com"]:before,
-#menu-social li a[href*="wordpress.org"]:before {
+.menu-social li a[href*="wordpress.com"]:before,
+.menu-social li a[href*="wordpress.org"]:before {
     content: '\f19a';
     color: #21759b;
 }
 
-#menu-social li a[href*="codepen.io"]:before {
+.menu-social li a[href*="codepen.io"]:before {
     content: '\f1cb';
     color: #cccccc;
 }
 
-#menu-social li a[href*="digg.com"]:before {
+.menu-social li a[href*="digg.com"]:before {
     content: '\f1a6';
     color: #14589e;
 }
 
-#menu-social li a[href*="reddit.com"]:before {
+.menu-social li a[href*="reddit.com"]:before {
     content: '\f1a1';
     color: #ff4500;
 }
 
-#menu-social li a[href*="xing.com"]:before {
+.menu-social li a[href*="xing.com"]:before {
     content: '\f168';
     color: #026466;
 }
 
-#menu-social li a[href*="vk.com"]:before {
+.menu-social li a[href*="vk.com"]:before {
     content: '\f189';
     color: #45668e;
 }
 
-#menu-social li a[href*="weibo.com"]:before {
+.menu-social li a[href*="weibo.com"]:before {
     content: '\f18a';
     color: #e6162d;
 }
 
-#menu-social li a[href*="leanpub.com"]:before {
+.menu-social li a[href*="leanpub.com"]:before {
     content: '\f212';
     color: #000000;
 }
 
-#menu-social li a[href*="renren.com"]:before {
+.menu-social li a[href*="renren.com"]:before {
     content: '\f18b';
     color: #237bc2;
 }
 
-#menu-social li a[href$="/feed/"]:before,
-#menu-social li a[href*="rss.com"]:before,
-#menu-social li a[href*="feedburner.com"]:before {
+.menu-social li a[href$="/feed/"]:before,
+.menu-social li a[href*="rss.com"]:before,
+.menu-social li a[href*="feedburner.com"]:before {
     content: '\f09e';
     color: #f26522;
 }
 
-#menu-social li a[href*="soundcloud.com"]:before {
+.menu-social li a[href*="soundcloud.com"]:before {
     content: '\f1be';
     color: #ff3a00;
 }
 
-#menu-social li a[href*="vine.co"]:before {
+.menu-social li a[href*="vine.co"]:before {
     content: '\f1ca';
     color: #00bf8f;
 }
 
-#menu-social li a[href*="delicious.com"]:before {
+.menu-social li a[href*="delicious.com"]:before {
     content: '\f1a5';
     color: #2a96ff;
 }
 
-#menu-social li a:hover:before,
-#menu-social li a[href*="facebook.com"]:hover:before,
-#menu-social li a[href*="twitter.com"]:hover:before,
-#menu-social li a[href*="plus.google.com"]:hover:before,
-#menu-social li a[href*="youtube.com"]:hover:before,
-#menu-social li a[href*="pinterest.com"]:hover:before,
-#menu-social li a[href*="instagram.com"]:hover:before,
-#menu-social li a[href*="vimeo.com"]:hover:before,
-#menu-social li a[href*="skype.com"]:hover:before,
-#menu-social li a[href*="linkedin.com"]:hover:before,
-#menu-social li a[href*="github.com"]:hover:before,
-#menu-social li a[href*="flickr.com"]:hover:before,
-#menu-social li a[href*="dribbble.com"]:hover:before,
-#menu-social li a[href*="stumbleupon.com"]:hover:before,
-#menu-social li a[href*="tumblr.com"]:hover:before,
-#menu-social li a[href*="wordpress.com"]:hover:before,
-#menu-social li a[href*="wordpress.org"]:hover:before,
-#menu-social li a[href*="codepen.io"]:hover:before,
-#menu-social li a[href*="digg.com"]:hover:before,
-#menu-social li a[href*="reddit.com"]:hover:before,
-#menu-social li a[href*="xing.com"]:hover:before,
-#menu-social li a[href*="vk.com"]:hover:before,
-#menu-social li a[href*="weibo.com"]:hover:before,
-#menu-social li a[href*="leanpub.com"]:hover:before,
-#menu-social li a[href*="renren.com"]:hover:before,
-#menu-social li a[href$="/feed/"]:hover:before,
-#menu-social li a[href*="rss.com"]:hover:before,
-#menu-social li a[href*="feedburner.com"]:hover:before,
-#menu-social li a[href*="soundcloud.com"]:hover:before,
-#menu-social li a[href*="vine.co"]:hover:before,
-#menu-social li a[href*="delicious.com"]:hover:before {
+.menu-social li a:hover:before,
+.menu-social li a[href*="facebook.com"]:hover:before,
+.menu-social li a[href*="twitter.com"]:hover:before,
+.menu-social li a[href*="plus.google.com"]:hover:before,
+.menu-social li a[href*="youtube.com"]:hover:before,
+.menu-social li a[href*="pinterest.com"]:hover:before,
+.menu-social li a[href*="instagram.com"]:hover:before,
+.menu-social li a[href*="vimeo.com"]:hover:before,
+.menu-social li a[href*="skype.com"]:hover:before,
+.menu-social li a[href*="linkedin.com"]:hover:before,
+.menu-social li a[href*="github.com"]:hover:before,
+.menu-social li a[href*="flickr.com"]:hover:before,
+.menu-social li a[href*="dribbble.com"]:hover:before,
+.menu-social li a[href*="stumbleupon.com"]:hover:before,
+.menu-social li a[href*="tumblr.com"]:hover:before,
+.menu-social li a[href*="wordpress.com"]:hover:before,
+.menu-social li a[href*="wordpress.org"]:hover:before,
+.menu-social li a[href*="codepen.io"]:hover:before,
+.menu-social li a[href*="digg.com"]:hover:before,
+.menu-social li a[href*="reddit.com"]:hover:before,
+.menu-social li a[href*="xing.com"]:hover:before,
+.menu-social li a[href*="vk.com"]:hover:before,
+.menu-social li a[href*="weibo.com"]:hover:before,
+.menu-social li a[href*="leanpub.com"]:hover:before,
+.menu-social li a[href*="renren.com"]:hover:before,
+.menu-social li a[href$="/feed/"]:hover:before,
+.menu-social li a[href*="rss.com"]:hover:before,
+.menu-social li a[href*="feedburner.com"]:hover:before,
+.menu-social li a[href*="soundcloud.com"]:hover:before,
+.menu-social li a[href*="vine.co"]:hover:before,
+.menu-social li a[href*="delicious.com"]:hover:before {
     color: #fff;
 }
 
-#menu-social li a:hover:before {
+.menu-social li a:hover:before {
     background: #4169e1;
 }
 
-#menu-social li a[href*="facebook.com"]:hover:hover:before {
+.menu-social li a[href*="facebook.com"]:hover:hover:before {
     background: #3b5998;
 }
 
-#menu-social li a[href*="twitter.com"]:hover:before {
+.menu-social li a[href*="twitter.com"]:hover:before {
     background: #00aced;
 }
 
-#menu-social li a[href*="plus.google.com"]:hover:before {
+.menu-social li a[href*="plus.google.com"]:hover:before {
     background: #dd4b39;
 }
 
-#menu-social li a[href*="youtube.com"]:hover:before {
+.menu-social li a[href*="youtube.com"]:hover:before {
     background: #bb0000;
 }
 
-#menu-social li a[href*="pinterest.com"]:hover:before {
+.menu-social li a[href*="pinterest.com"]:hover:before {
     background: #cb2027;
 }
 
-#menu-social li a[href*="instagram.com"]:hover:before {
+.menu-social li a[href*="instagram.com"]:hover:before {
     background: #517fa4;
 }
 
-#menu-social li a[href*="vimeo.com"]:hover:before {
+.menu-social li a[href*="vimeo.com"]:hover:before {
     background: #44bbff;
 }
 
-#menu-social li a[href*="skype.com"]:hover:before {
+.menu-social li a[href*="skype.com"]:hover:before {
     background: #009cef;
 }
 
-#menu-social li a[href*="linkedin.com"]:hover:before {
+.menu-social li a[href*="linkedin.com"]:hover:before {
     background: #007bb6;
 }
 
-#menu-social li a[href*="github.com"]:hover:before {
+.menu-social li a[href*="github.com"]:hover:before {
     background: #4183c4;
 }
 
-#menu-social li a[href*="flickr.com"]:hover:before {
+.menu-social li a[href*="flickr.com"]:hover:before {
     background: #0062dd;
 }
 
-#menu-social li a[href*="dribbble.com"]:hover:before {
+.menu-social li a[href*="dribbble.com"]:hover:before {
     background: #e24d87;
 }
 
-#menu-social li a[href*="stumbleupon.com"]:hover:before {
+.menu-social li a[href*="stumbleupon.com"]:hover:before {
     background: #ec4823;
 }
 
-#menu-social li a[href*="tumblr.com"]:hover:before {
+.menu-social li a[href*="tumblr.com"]:hover:before {
     background: #45546b;
 }
 
-#menu-social li a[href*="wordpress.com"]:hover:before,
-#menu-social li a[href*="wordpress.org"]:hover:before {
+.menu-social li a[href*="wordpress.com"]:hover:before,
+.menu-social li a[href*="wordpress.org"]:hover:before {
     background: #21759b;
 }
 
-#menu-social li a[href*="codepen.io"]:hover:before {
+.menu-social li a[href*="codepen.io"]:hover:before {
     background: #cccccc;
 }
 
-#menu-social li a[href*="digg.com"]:hover:before {
+.menu-social li a[href*="digg.com"]:hover:before {
     background: #14589e;
 }
 
-#menu-social li a[href*="reddit.com"]:hover:before {
+.menu-social li a[href*="reddit.com"]:hover:before {
     background: #ff4500;
 }
 
-#menu-social li a[href*="xing.com"]:hover:before {
+.menu-social li a[href*="xing.com"]:hover:before {
     background: #026466;
 }
 
-#menu-social li a[href*="vk.com"]:hover:before {
+.menu-social li a[href*="vk.com"]:hover:before {
     background: #45668e;
 }
 
-#menu-social li a[href*="weibo.com"]:hover:before {
+.menu-social li a[href*="weibo.com"]:hover:before {
     background: #e6162d;
 }
 
-#menu-social li a[href*="leanpub.com"]:hover:before {
+.menu-social li a[href*="leanpub.com"]:hover:before {
     background: #000000;
 }
 
-#menu-social li a[href*="renren.com"]:hover:before {
+.menu-social li a[href*="renren.com"]:hover:before {
     background: #237bc2;
 }
 
-#menu-social li a[href$="/feed/"]:hover:before,
-#menu-social li a[href*="rss.com"]:hover:before,
-#menu-social li a[href*="feedburner.com"]:hover:before {
+.menu-social li a[href$="/feed/"]:hover:before,
+.menu-social li a[href*="rss.com"]:hover:before,
+.menu-social li a[href*="feedburner.com"]:hover:before {
     background: #f26522;
 }
 
-#menu-social li a[href*="soundcloud.com"]:hover:before {
+.menu-social li a[href*="soundcloud.com"]:hover:before {
     background: #ff3a00;
 }
 
-#menu-social li a[href*="vine.co"]:hover:before {
+.menu-social li a[href*="vine.co"]:hover:before {
     background: #00bf8f;
 }
 
-#menu-social li a[href*="delicious.com"]:hover:before {
+.menu-social li a[href*="delicious.com"]:hover:before {
     background: #2a96ff;
 }
 
@@ -657,11 +657,11 @@ footer .footer-social-menu {
     border-top: 4px solid #4169e1;
 }
 
-footer ul#menu-social {
+footer ul.menu-social {
     text-align: center;
 }
 
-footer #menu-social li a:before {
+footer .menu-social li a:before {
     font-size: 50px;
 }
 
@@ -753,11 +753,11 @@ footer #menu-social li a:before {
         border-top: 0;
     }
 
-    ul#menu-social {
+    ul.menu-social {
         text-align: left;
     }
 
-    footer #menu-social li a:before {
+    footer .menu-social li a:before {
         font-size: 40px;
     }
 }
@@ -777,12 +777,12 @@ footer #menu-social li a:before {
         text-align: center;
     }
 
-    ul#menu-social {
+    ul.menu-social {
         font-size: 18px;
         text-align: center;
     }
 
-    footer #menu-social li a:before {
+    footer .menu-social li a:before {
         font-size: 35px;
     }
 
@@ -2195,6 +2195,24 @@ footer .widget_rss li a:hover:before {
     text-align: left;
     display: inline-block;
     margin-right: 10px;
+}
+
+.widget-entry-meta .entry-meta .byline a,
+.widget-entry-meta .entry-meta .posted-on a,
+.widget-entry-meta .entry-meta .comments-link a {
+    color: #222;
+}
+
+footer .widget-entry-meta .entry-meta .byline a,
+footer .widget-entry-meta .entry-meta .posted-on a,
+footer .widget-entry-meta .entry-meta .comments-link a {
+    color: #fff;
+}
+
+.widget-entry-meta .entry-meta .byline a:hover,
+.widget-entry-meta .entry-meta .posted-on a:hover,
+.widget-entry-meta .entry-meta .comments-link a:hover {
+    color: #4169e1;
 }
 
 .widget-entry-meta .entry-meta .comments-link {
