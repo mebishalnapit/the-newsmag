@@ -738,6 +738,9 @@ footer .menu-social li a:before {
 .latest-news {
     visibility: hidden;
     height: 0;
+}
+
+.breaking-news {
     display: none;
 }
 
@@ -2319,7 +2322,6 @@ li.comments-tab-widget p {
 .the-newsmag-category-slider {
     visibility: hidden;
     height: 0;
-    display: none;
 }
 
 .the-newsmag-posts-slider-widget .bx-wrapper {
@@ -2735,7 +2737,8 @@ footer .the-newsmag-two-column-widget .first-post .no-featured-image .comments-l
     margin-right: 15px;
 }
 
-footer .the-newsmag-posts-extended-widget .featured-image {
+footer .the-newsmag-posts-extended-widget .featured-image,
+#secondary .the-newsmag-posts-extended-widget .featured-image {
     width: 100%;
     margin-right: 0;
 }
@@ -2745,6 +2748,7 @@ footer .the-newsmag-posts-extended-widget .featured-image {
     top: 5px;
     left: 5px;
     font-size: 14px;
+    max-width: 50%;
 }
 
 .the-newsmag-posts-extended-widget .posts-column-wrapper.no-featured-image .category-links {
@@ -2770,6 +2774,11 @@ footer .the-newsmag-posts-extended-widget .featured-image {
 
 .the-newsmag-posts-extended-widget .no-featured-image .entry-title {
     margin: 15px 0 15px;
+}
+
+footer .the-newsmag-posts-extended-widget .category-links,
+#secondary .the-newsmag-posts-extended-widget .category-links {
+    max-width: 100%;
 }
 
 @media screen and (max-width: 600px) {
@@ -3043,13 +3052,8 @@ footer .category-links a:hover {
     position: absolute;
     top: 10px;
     left: 10px;
-    width: 85%;
-    max-width: 85%;
-}
-
-.single .format-standard.has-post-thumbnail .category-links {
-    width: 100%;
-    max-width: 100%;
+    width: 84%;
+    max-width: 84%;
 }
 
 .format-standard.has-post-thumbnail .entry-title {
@@ -3372,13 +3376,8 @@ footer .category-links a:hover {
     position: absolute;
     top: 10px;
     left: 10px;
-    width: 85%;
-    max-width: 85%;
-}
-
-.single .format-image.has-post-thumbnail .category-links {
-    width: 100%;
-    max-width: 100%;
+    width: 84%;
+    max-width: 84%;
 }
 
 .format-image.has-post-thumbnail .entry-title {
@@ -3519,10 +3518,6 @@ footer .category-links a:hover {
     font-weight: bold;
     font-size: 22px;
     margin: 0;
-}
-
-.gallery-slider {
-    display: none;
 }
 
 .format-gallery .gallery-slider {

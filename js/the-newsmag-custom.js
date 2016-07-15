@@ -19,6 +19,9 @@ jQuery(document).ready(function () {
     }
     initMainNavigation(jQuery('.main-navigation'));
 
+    // display the breaking news area on full page load
+    jQuery('.breaking-news').show();
+
     // display the magazine top area on full page load
     jQuery('.magazine-page-top-area').show();
 
@@ -112,7 +115,7 @@ jQuery(document).ready(function () {
     // setting for the bxslider
     if (typeof jQuery.fn.bxSlider !== 'undefined') {
         // setting for the breaking news
-        jQuery('.latest-news').show().bxSlider({
+        jQuery('.latest-news').bxSlider({
             minSlides: 3,
             maxSlides: 3,
             slideWidth: 380,
@@ -127,7 +130,7 @@ jQuery(document).ready(function () {
             }
         });
 
-        jQuery('.gallery-slider').show().bxSlider({
+        jQuery('.gallery-slider').bxSlider({
             mode: 'horizontal',
             speed: 2000,
             auto: true,
@@ -142,7 +145,7 @@ jQuery(document).ready(function () {
             }
         });
 
-        jQuery('.the-newsmag-category-slider').show().bxSlider({
+        jQuery('.the-newsmag-category-slider').bxSlider({
             mode: 'horizontal',
             speed: 2000,
             auto: true,
