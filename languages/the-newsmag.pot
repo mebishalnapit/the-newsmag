@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The NewsMag\n"
-"POT-Creation-Date: 2016-07-09 15:48+0545\n"
-"PO-Revision-Date: 2016-07-09 15:50+0545\n"
+"POT-Creation-Date: 2016-07-15 07:42+0545\n"
+"PO-Revision-Date: 2016-07-15 07:43+0545\n"
 "Last-Translator: \n"
 "Language-Team: Bishal Napit <mebishalnapit@gmail.com>\n"
 "Language: en\n"
@@ -297,7 +297,7 @@ msgstr ""
 msgid "Check to add the home icon in the primary menu."
 msgstr ""
 
-#: inc/customizer.php:153 inc/extras.php:253
+#: inc/customizer.php:153 inc/extras.php:266
 msgid "Random Post"
 msgstr ""
 
@@ -417,50 +417,54 @@ msgstr ""
 msgid "Check to enable the header image to link back to the home page."
 msgstr ""
 
-#: inc/customizer.php:453
+#: inc/customizer.php:458
+msgid "Primary Color"
+msgstr ""
+
+#: inc/customizer.php:467
 msgid ""
 "Change the Additional Settings from here as you want to best suite your site."
 msgstr ""
 
-#: inc/customizer.php:455
+#: inc/customizer.php:469
 msgid "Additional Options"
 msgstr ""
 
-#: inc/customizer.php:461
+#: inc/customizer.php:475
 msgid "Related Posts"
 msgstr ""
 
-#: inc/customizer.php:473
+#: inc/customizer.php:487
 msgid "Check to activate the related posts."
 msgstr ""
 
-#: inc/customizer.php:486
+#: inc/customizer.php:500
 msgid "Related Posts To Be Shown As:"
 msgstr ""
 
-#: inc/customizer.php:490
+#: inc/customizer.php:504
 msgid "Related Posts By Categories"
 msgstr ""
 
-#: inc/customizer.php:491
+#: inc/customizer.php:505
 msgid "Related Posts By Tags"
 msgstr ""
 
-#: inc/customizer.php:498
+#: inc/customizer.php:512
 msgid "Image Lightbox"
 msgstr ""
 
-#: inc/customizer.php:510
+#: inc/customizer.php:524
 msgid ""
 "Check to enable the lightbox feature for the featured images in single post "
 "page and pages."
 msgstr ""
 
-#: inc/customizer.php:518
+#: inc/customizer.php:532
 msgid "Social Links In Author Bio"
 msgstr ""
 
-#: inc/customizer.php:530
+#: inc/customizer.php:544
 msgid ""
 "Check to enable the social links in the Author Bio section. For this to "
 "work, you need to add the URL of your social sites in the profile section. "
@@ -468,103 +472,103 @@ msgid ""
 "feature."
 msgstr ""
 
-#: inc/customizer.php:539
+#: inc/customizer.php:553
 msgid "Category Color Options"
 msgstr ""
 
-#: inc/customizer.php:541
+#: inc/customizer.php:555
 msgid ""
 "Change the color of each category items as you want to best suit your site "
 "requirement."
 msgstr ""
 
-#: inc/customizer.php:546
+#: inc/customizer.php:560
 msgid "Category Color Settings"
 msgstr ""
 
-#: inc/customizer.php:570
+#: inc/customizer.php:584
 #, php-format
 msgid "%s"
 msgstr ""
 
-#: inc/extras.php:82
+#: inc/extras.php:81
 msgid "WordPress"
 msgstr ""
 
-#: inc/extras.php:84
+#: inc/extras.php:83
 msgid "Bishal Napit"
 msgstr ""
 
-#: inc/extras.php:86
+#: inc/extras.php:85
 #, php-format
 msgid "Copyright &copy; %1$s %2$s. All rights reserved."
 msgstr ""
 
-#: inc/extras.php:86
+#: inc/extras.php:85
 #, php-format
 msgid "Theme: %1$s by %2$s."
 msgstr ""
 
-#: inc/extras.php:86
+#: inc/extras.php:85
 msgid "The NewsMag"
 msgstr ""
 
-#: inc/extras.php:86
+#: inc/extras.php:85
 #, php-format
 msgid "Powered by %s."
 msgstr ""
 
-#: inc/extras.php:323 inc/extras.php:325
+#: inc/extras.php:336 inc/extras.php:338
 #, php-format
 msgid "Category: %s"
 msgstr ""
 
-#: inc/extras.php:478 inc/extras.php:654 inc/template-tags.php:25
+#: inc/extras.php:491 inc/extras.php:667 inc/template-tags.php:25
 #, php-format
 msgctxt "post date"
 msgid "%s"
 msgstr ""
 
-#: inc/extras.php:482 inc/extras.php:658 inc/template-tags.php:29
+#: inc/extras.php:495 inc/extras.php:671 inc/template-tags.php:29
 #, php-format
 msgctxt "post author"
 msgid "%s"
 msgstr ""
 
-#: inc/extras.php:490
+#: inc/extras.php:503
 msgid "<i class=\"fa fa-comment\"></i>Leave a reply"
 msgstr ""
 
-#: inc/extras.php:490
+#: inc/extras.php:503
 msgid "<i class=\"fa fa-comment\"></i>1 Comment"
 msgstr ""
 
-#: inc/extras.php:490
+#: inc/extras.php:503
 msgid "<i class=\"fa fa-comment\"></i>% Comments"
 msgstr ""
 
-#: inc/extras.php:490
+#: inc/extras.php:503
 msgid "<i class=\"fa fa-comment\"></i>Comments Disabled"
 msgstr ""
 
-#: inc/extras.php:535
+#: inc/extras.php:548
 #, php-format
 msgid "Follow %s on:"
 msgstr ""
 
-#: inc/extras.php:537
+#: inc/extras.php:550
 msgid "Facebook"
 msgstr ""
 
-#: inc/extras.php:540
+#: inc/extras.php:553
 msgid "Twitter"
 msgstr ""
 
-#: inc/extras.php:543
+#: inc/extras.php:556
 msgid "Google Plus"
 msgstr ""
 
-#: inc/extras.php:670 template-parts/content-aside.php:25
+#: inc/extras.php:683 template-parts/content-aside.php:25
 #: template-parts/content-audio.php:29 template-parts/content-chat.php:29
 #: template-parts/content-gallery.php:43 template-parts/content-image.php:61
 #: template-parts/content-link.php:29 template-parts/content-quote.php:29

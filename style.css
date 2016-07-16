@@ -1260,7 +1260,7 @@ table {
 }
 
 tr, td, th {
-    border: 2px solid #4169E1;
+    border: 2px solid #4169e1;
     padding: 5px;
     text-align: center;
 }
@@ -1425,6 +1425,10 @@ a:active {
     font-family: "Noto Sans", sans-serif;
 }
 
+.main-navigation a:hover {
+    color: #fff;
+}
+
 .main-navigation ul ul {
     float: left;
     position: absolute;
@@ -1520,7 +1524,7 @@ a:active {
     right: 20px;
     border-radius: 5px;
     top: 70px;
-    z-index: 9999;
+    z-index: 99999;
     background-color: #222;
     border: 4px solid #4169e1;
 }
@@ -2386,7 +2390,7 @@ li.comments-tab-widget p {
 .the-newsmag-posts-slider-widget .slide-prev,
 .the-newsmag-posts-slider-widget .slide-next {
     font-size: 24px;
-    background-color: rgba(65,105,225,0.5);
+    background: rgba(65,105,225,0.5);
     color: #fff;
     padding: 2px 12px;
     border-radius: 5px;
@@ -2794,6 +2798,10 @@ footer .the-newsmag-posts-extended-widget .category-links,
         float: none;
         width: 100%;
         margin-right: 0;
+    }
+
+    .the-newsmag-posts-extended-widget .category-links {
+        max-width: 100%;
     }
 }
 
@@ -3307,7 +3315,7 @@ footer .category-links a:hover {
     position: absolute;
     padding: 10px 12px;
     bottom: -3px;
-    background: rgba(65,105,2555,0.5);
+    background: rgba(65,105,255,0.5);
     text-align: left;
     width: 100%;
     max-width: 100%;
@@ -3546,7 +3554,7 @@ footer .category-links a:hover {
 .format-gallery .slide-prev,
 .format-gallery .slide-next {
     font-size: 30px;
-    background-color: rgba(65,105,225,0.5);
+    background: rgba(65,105,225,0.5);
     color: #fff;
     padding: 2px 16px;
     border-radius: 5px;

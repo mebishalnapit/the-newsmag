@@ -50,6 +50,7 @@ If you would like to contribute to the translations of this theme to your native
 ## CHANGELOG
 #### VERSION 0.2
 * Screenshot Changed
+* Added primary color options
 * Added TNM: Posts Slider Widget
 * Added TNM: Posts Grid Widget
 * Added TNM: Posts One Column Widget

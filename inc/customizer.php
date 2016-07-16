@@ -446,6 +446,20 @@ function the_newsmag_customize_register($wp_customize) {
         'settings' => 'the_newsmag_header_image_link'
     ));
 
+    // primary color options
+    $wp_customize->add_setting('the_newsmag_primary_color', array(
+        'default' => '#4169e1',
+        'capability' => 'edit_theme_options',
+        'sanitize_callback' => 'the_newsmag_color_option_hex_sanitize',
+        'sanitize_js_callback' => 'the_newsmag_color_escaping_option_sanitize'
+    ));
+
+    $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'the_newsmag_primary_color', array(
+        'label' => esc_html__('Primary Color', 'the-newsmag'),
+        'section' => 'colors',
+        'settings' => 'the_newsmag_primary_color'
+    )));
+
     // End of the WordPress default sections for theme related options
     // Start of Additional Options
     $wp_customize->add_panel('the_newsmag_additional_options', array(
