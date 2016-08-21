@@ -44,7 +44,8 @@ if (!function_exists('the_newsmag_setup')) :
         add_theme_support('post-thumbnails');
         add_image_size('the-newsmag-featured-small-thumbnail', 120, 90, true);
         add_image_size('the-newsmag-featured-medium-thumbnail', 600, 450, true);
-        add_image_size('the-newsmag-featured-large-thumbnail', 880, 660, true);
+        add_image_size('the-newsmag-featured-large-thumbnail', 800, 600, true);
+        add_image_size('the-newsmag-featured-related-posts-thumbnail', 400, 300, true);
 
         // This theme uses wp_nav_menu() in one location.
         register_nav_menus(array(

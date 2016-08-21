@@ -21,7 +21,7 @@
                         <?php if (has_post_thumbnail()): ?>
                             <figure class="featured-image">
                                 <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-                                    <?php the_post_thumbnail('the-newsmag-featured-medium-thumbnail'); ?>
+                                    <?php the_post_thumbnail('the-newsmag-featured-related-posts-thumbnail'); ?>
                                 </a>
 
                                 <h3 class="entry-title">

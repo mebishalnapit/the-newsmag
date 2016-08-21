@@ -3338,7 +3338,7 @@ footer .category-links a:hover {
     margin: 0 0 50px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
     .related-posts.columns {
         width: 100%;
         float: none;

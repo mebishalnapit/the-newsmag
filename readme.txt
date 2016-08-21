@@ -50,6 +50,7 @@ If you would like to contribute to the translations of this theme to your native
 == CHANGELOG ==
 = VERSION 0.3 =
 * Theme support forum link added in customizer options
+* Change in featured image size for the related posts feature
 
 = VERSION 0.2 =
 * Screenshot Changed
