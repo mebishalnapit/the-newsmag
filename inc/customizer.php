@@ -34,9 +34,13 @@ function the_newsmag_customize_register($wp_customize) {
                     'link' => esc_url('http://demo.napitwptech.com/the-newsmag/'),
                     'text' => esc_html__('View Theme Demo', 'the-newsmag'),
                 ),
-                'support' => array(
+                'contact' => array(
                     'link' => esc_url('http://napitwptech.com/contact-us/'),
-                    'text' => esc_html__('Theme Support', 'the-newsmag'),
+                    'text' => esc_html__('Contact Us', 'the-newsmag'),
+                ),
+                'forum' => array(
+                    'link' => esc_url('http://support.napitwptech.com/forums/forum/the-newsmag/'),
+                    'text' => esc_html__('Support Forum', 'the-newsmag'),
                 ),
                 'rating' => array(
                     'link' => esc_url('http://wordpress.org/support/view/theme-reviews/the-newsmag'),
