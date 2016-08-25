@@ -50,17 +50,6 @@ function the_newsmag_customize_register($wp_customize) {
             foreach ($important_links as $important_link) {
                 echo '<p><a target="_blank" href="' . esc_url($important_link['link']) . '" >' . esc_attr($important_link['text']) . ' </a></p>';
             }
-            ?>
-            <div style="text-align: center;background-color: #fff;padding: 10px;">
-                <strong><?php esc_attr_e('If you like our work. Buy us a beer.', 'the-newsmag'); ?></strong>
-                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-                    <input type="hidden" name="cmd" value="_s-xclick">
-                    <input type="hidden" name="hosted_button_id" value="3NT8RH73FFM3L">
-                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="<?php esc_html_e('PayPal - The safer, easier way to pay online!', 'the-newsmag'); ?>">
-                    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-                </form>
-            </div>
-            <?php
         }
 
     }
@@ -607,11 +596,7 @@ function the_newsmag_customize_register($wp_customize) {
 
     // checkbox sanitization
     function the_newsmag_checkbox_sanitize($input) {
-        if ($input == 1) {
-            return 1;
-        } else {
-            return '';
-        }
+        return (1 === absint($input)) ? 1 : 0;
     }
 
     // color sanitization
