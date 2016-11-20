@@ -48,6 +48,9 @@ Magazine: In this theme, we have added the Magazine template so that you can dis
 If you would like to contribute to the translations of this theme to your native language, then, you can visit this link: https://translate.wordpress.org/projects/wp-themes/the-newsmag/ and then contribute to the translation.
 
 == CHANGELOG ==
+= VERSION 0.4 =
+* Font Awesome icons updated to version 4.7.0
+
 = VERSION 0.3 =
 * Footer credit link has been updated
 * Theme support forum link added in customizer options
