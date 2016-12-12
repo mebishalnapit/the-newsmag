@@ -50,6 +50,7 @@ If you would like to contribute to the translations of this theme to your native
 == CHANGELOG ==
 = VERSION 0.4 =
 * Font Awesome icons updated to version 4.7.0
+* Migrated the Custom CSS code added in theme options to Additional CSS section introduced in WordPress 4.7
 
 = VERSION 0.3 =
 * Footer credit link has been updated
