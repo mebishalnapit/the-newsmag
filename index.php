@@ -17,42 +17,42 @@ get_header();
 <?php do_action('the_newsmag_before_body_content'); ?>
 
 <div id="primary" class="content-area">
-    <main id="main" class="site-main" role="main">
+	<main id="main" class="site-main" role="main">
 
-        <?php
-        if (have_posts()) :
+		<?php
+		if (have_posts()) :
 
-            if (is_home() && !is_front_page()) :
-                ?>
-                <header>
-                    <h1 class="page-title screen-reader-text"><span><?php single_post_title(); ?></span></h1>
-                </header>
+			if (is_home() && !is_front_page()) :
+				?>
+				<header>
+					<h1 class="page-title screen-reader-text"><span><?php single_post_title(); ?></span></h1>
+				</header>
 
-                <?php
-            endif;
+				<?php
+			endif;
 
-            /* Start the Loop */
-            while (have_posts()) : the_post();
+			/* Start the Loop */
+			while (have_posts()) : the_post();
 
-                /*
-                 * Include the Post-Format-specific template for the content.
-                 * If you want to override this in a child theme, then include a file
-                 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-                 */
-                get_template_part('template-parts/content', get_post_format());
+				/*
+				 * Include the Post-Format-specific template for the content.
+				 * If you want to override this in a child theme, then include a file
+				 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
+				 */
+				get_template_part('template-parts/content', get_post_format());
 
-            endwhile;
+			endwhile;
 
-            the_posts_pagination();
+			the_posts_pagination();
 
-        else :
+		else :
 
-            get_template_part('template-parts/content', 'none');
+			get_template_part('template-parts/content', 'none');
 
-        endif;
-        ?>
+		endif;
+		?>
 
-    </main><!-- #main -->
+	</main><!-- #main -->
 </div><!-- #primary -->
 
 <?php the_newsmag_sidebar_select(); ?>

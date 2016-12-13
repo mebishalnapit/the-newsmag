@@ -10,14 +10,14 @@ External resources linked to the theme.
 
 Resources packed within the theme.
 * Images in the screenshot is from http://pixabay.com/. License: CC0 Public Domain
-    Links: https://pixabay.com/en/beauty-woman-portrait-face-hair-1319951/
-           https://pixabay.com/en/gravel-road-lady-walking-road-1031726/
-           https://pixabay.com/en/guess-attic-girl-woman-pretty-hair-837156/
-           https://pixabay.com/en/mountain-bike-dirt-road-wet-1149074/
-           https://pixabay.com/en/girl-read-reading-newspaper-791231/
-           https://pixabay.com/en/portrait-woman-girl-beautiful-woman-1462944/
-           https://pixabay.com/en/snow-bike-winter-landscape-1498454/
-           https://pixabay.com/en/photographers-scenery-nature-1150033/
+	Links: https://pixabay.com/en/beauty-woman-portrait-face-hair-1319951/
+		 https://pixabay.com/en/gravel-road-lady-walking-road-1031726/
+		 https://pixabay.com/en/guess-attic-girl-woman-pretty-hair-837156/
+		 https://pixabay.com/en/mountain-bike-dirt-road-wet-1149074/
+		 https://pixabay.com/en/girl-read-reading-newspaper-791231/
+		 https://pixabay.com/en/portrait-woman-girl-beautiful-woman-1462944/
+		 https://pixabay.com/en/snow-bike-winter-landscape-1498454/
+		 https://pixabay.com/en/photographers-scenery-nature-1150033/
 * Font Awesome by Dave Gandy http://fortawesome.github.io/Font-Awesome/
   SIL OFL 1.1 http://scripts.sil.org/OFL.
 * HTML5 Shiv @afarkas @jdalton @jon_neal @rem | MIT/GPL2 Licensed
