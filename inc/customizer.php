@@ -23,27 +23,27 @@ function the_newsmag_customize_register($wp_customize) {
 		public function render_content() {
 			$important_links = array(
 				'theme-info' => array(
-					'link' => esc_url('http://napitwptech.com/themes/the-newsmag/'),
+					'link' => esc_url('https://napitwptech.com/themes/the-newsmag/'),
 					'text' => esc_html__('View Theme Info', 'the-newsmag'),
 				),
 				'documentation' => array(
-					'link' => esc_url('http://napitwptech.com/themes/the-newsmag/the-newsmag-wordpress-theme-documentation/'),
+					'link' => esc_url('https://napitwptech.com/themes/the-newsmag/the-newsmag-wordpress-theme-documentation/'),
 					'text' => esc_html__('Theme Documentation', 'the-newsmag'),
 				),
 				'demo' => array(
-					'link' => esc_url('http://demo.napitwptech.com/the-newsmag/'),
+					'link' => esc_url('https://demo.napitwptech.com/the-newsmag/'),
 					'text' => esc_html__('View Theme Demo', 'the-newsmag'),
 				),
 				'contact' => array(
-					'link' => esc_url('http://napitwptech.com/contact-us/'),
+					'link' => esc_url('https://napitwptech.com/contact-us/'),
 					'text' => esc_html__('Contact Us', 'the-newsmag'),
 				),
 				'forum' => array(
-					'link' => esc_url('http://support.napitwptech.com/forums/forum/the-newsmag/'),
+					'link' => esc_url('https://support.napitwptech.com/forums/forum/the-newsmag/'),
 					'text' => esc_html__('Support Forum', 'the-newsmag'),
 				),
 				'rating' => array(
-					'link' => esc_url('http://wordpress.org/support/view/theme-reviews/the-newsmag'),
+					'link' => esc_url('https://wordpress.org/support/theme/the-newsmag/reviews/'),
 					'text' => esc_html__('Rate This Theme', 'the-newsmag'),
 				),
 			);
