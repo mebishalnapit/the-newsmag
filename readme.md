@@ -51,6 +51,9 @@ If you would like to contribute to the translations of this theme to your native
 #### VERSION 0.4
 * Font Awesome icons updated to version 4.7.0
 * Migrated the Custom CSS code added in theme options to Additional CSS section introduced in WordPress 4.7
+* Proper escaping of HTML attributes
+* String translation of non translatable strings issue fixed
+* Fixing for the metabox design related input data using wp_unslash() function
 
 #### VERSION 0.3
 * Footer credit link has been updated

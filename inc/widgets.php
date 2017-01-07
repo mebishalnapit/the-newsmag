@@ -20,7 +20,7 @@ class The_NewsMag_Random_Posts_Widget extends WP_Widget {
 		?>
 		<p>
 			<label for="<?php echo $this->get_field_id('title'); ?>"><?php esc_html_e('Title:', 'the-newsmag'); ?></label>
-			<input id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo esc_textarea($title); ?>" />
+			<input id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo esc_attr($title); ?>" />
 		</p>
 		<p>
 			<label for="<?php echo $this->get_field_id('number'); ?>"><?php esc_html_e('Number of random posts to display:', 'the-newsmag'); ?></label>
@@ -579,7 +579,7 @@ class The_NewsMag_Posts_One_Column_Widget extends WP_Widget {
 		}
 		if (!empty($text)) {
 			?>
-			<p><?php echo esc_textarea($text); ?></p>
+			<p><?php echo esc_html($text); ?></p>
 		<?php } ?>
 
 		<div class="the-newsmag-one-column-posts">
@@ -760,7 +760,7 @@ class The_NewsMag_Posts_Two_Column_Widget extends WP_Widget {
 		}
 		if (!empty($text)) {
 			?>
-			<p><?php echo esc_textarea($text); ?></p>
+			<p><?php echo esc_html($text); ?></p>
 		<?php } ?>
 
 		<div class="the-newsmag-two-column-posts">
@@ -941,7 +941,7 @@ class The_NewsMag_Posts_Extended_Widget extends WP_Widget {
 		}
 		if (!empty($text)) {
 			?>
-			<p><?php echo esc_textarea($text); ?></p>
+			<p><?php echo esc_html($text); ?></p>
 		<?php } ?>
 
 		<div class="the-newsmag-extended-posts-widget">

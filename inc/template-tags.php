@@ -22,11 +22,11 @@ if (!function_exists('the_newsmag_posted_on')) :
 		);
 
 		$posted_on = sprintf(
-				esc_html_x('%s', 'post date', 'the-newsmag'), '<span class="entry-meta-left-calendar"><a href="' . esc_url(get_permalink()) . '" rel="bookmark"><i class="fa fa-calendar"></i></a></span>' . '<span class="entry-meta-left-section">' . esc_html__('Posted on:', 'the-newsmag') . '<a href="' . esc_url(get_permalink()) . '" rel="bookmark">' . $time_string . '</a></span>'
+				'%s', '<span class="entry-meta-left-calendar"><a href="' . esc_url(get_permalink()) . '" rel="bookmark"><i class="fa fa-calendar"></i></a></span>' . '<span class="entry-meta-left-section">' . esc_html__('Posted on:', 'the-newsmag') . '<a href="' . esc_url(get_permalink()) . '" rel="bookmark">' . $time_string . '</a></span>'
 		);
 
 		$byline = sprintf(
-				esc_html_x('%s', 'post author', 'the-newsmag'), '<span class="entry-meta-left-author"><a href="' . esc_url(get_author_posts_url(get_the_author_meta('ID'))) . '">' . get_avatar(get_the_author_meta('user_email'), '60') . '</a></span>' . '<span class="entry-meta-left-section">' . esc_html__('Written by:', 'the-newsmag') . '<span class="author vcard"><a class="url fn n" href="' . esc_url(get_author_posts_url(get_the_author_meta('ID'))) . '">' . esc_html(get_the_author()) . '</a></span></span>'
+				'%s', '<span class="entry-meta-left-author"><a href="' . esc_url(get_author_posts_url(get_the_author_meta('ID'))) . '">' . get_avatar(get_the_author_meta('user_email'), '60') . '</a></span>' . '<span class="entry-meta-left-section">' . esc_html__('Written by:', 'the-newsmag') . '<span class="author vcard"><a class="url fn n" href="' . esc_url(get_author_posts_url(get_the_author_meta('ID'))) . '">' . esc_html(get_the_author()) . '</a></span></span>'
 		);
 
 		echo '<span class="byline"> ' . $byline . '</span>';

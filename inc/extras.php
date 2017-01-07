@@ -228,7 +228,7 @@ add_action('wp_head', 'the_newsmag_custom_css');
 function the_newsmag_custom_css() {
 	// changing color options
 	$the_newsmag_custom_options_color = '';
-	$primary_color = get_theme_mod('the_newsmag_primary_color', '#4169e1');
+	$primary_color = esc_html(get_theme_mod('the_newsmag_primary_color', '#4169e1'));
 	if ($primary_color != '#4169e1') {
 		$the_newsmag_custom_options_color .= '.category-title-meta-wrapper{background:rgba(' . the_newsmag_hex2rgb($primary_color) . ')}.the-newsmag-posts-slider-widget .slide-next,.the-newsmag-posts-slider-widget .slide-prev{background:rgba(' . the_newsmag_hex2rgb($primary_color) . ')}.format-image .featured-image .featured-image-caption,.format-image.has-post-thumbnail .entry-meta-comments,.format-image.has-post-thumbnail .entry-title,.format-standard.has-post-thumbnail .entry-meta-comments,.format-standard.has-post-thumbnail .entry-title,.page.has-post-thumbnail .entry-title,.related-post-contents .featured-image .entry-title,.the-newsmag-one-column-widget .first-post .category-title-meta-wrapper,.the-newsmag-posts-grid .category-title-meta-wrapper,.the-newsmag-two-column-widget .first-post .category-title-meta-wrapper{background:rgba(' . the_newsmag_hex2rgb($primary_color) . ')}.format-gallery .slide-next,.format-gallery .slide-prev{background:rgba(' . the_newsmag_hex2rgb($primary_color) . ')}.breaking-news,.header-top-area{border-bottom:4px solid ' . $primary_color . '}.bypostauthor>.comment-body .fn:after,.category-links a,.comment-awaiting-moderation,.date-in-header,.format-chat .chat-details,.format-gallery .slide-next:hover,.format-gallery .slide-prev:hover,.format-quote .quote-details,.main-navigation .current-menu-ancestor>a,.main-navigation .current-menu-item>a,.main-navigation .current_page_ancestor>a,.main-navigation .current_page_item>a,.main-navigation li.focus>a,.main-navigation li:hover>a,.nav-links .page-numbers.current,.nav-links .page-numbers:hover,.page-title span,blockquote,ul.the-newsmag-tabs .ui-tabs-active{background-color:' . $primary_color . '}#footer-menu a:hover,.entry-footer .tags-links,.entry-footer .tags-links .fa-tags,.entry-title a:hover,.footer-copyright a,.latest-news-lists .entry-date:hover,.latest-news-lists .entry-title:hover,.menu-social li a:before,.sticky .category-links a,.sticky .category-links a:hover,.the-newsmag-two-column-widget .first-post .no-featured-image .author a:hover,.the-newsmag-two-column-widget .first-post .no-featured-image .comments-link a:hover,.the-newsmag-two-column-widget .first-post .no-featured-image .entry-title a:hover,.the-newsmag-two-column-widget .first-post .no-featured-image .posted-on a:hover,.widget_archive li a:before,.widget_categories li a:before,.widget_nav_menu li a:before,.widget_pages li a:before,.widget_recent_comments li:before,.widget_recent_entries li a:before,.widget_rss li a:before,a,a#scroll-up i,a.entry-meta-comments:hover,a:active,a:focus,a:hover,footer .footer-sidebar-masonry-area a:hover,footer .footer-sidebar-top-area a:hover,footer .the-newsmag-one-column-widget .first-post .no-featured-image .author a:hover,footer .the-newsmag-one-column-widget .first-post .no-featured-image .comments-link a:hover,footer .the-newsmag-one-column-widget .first-post .no-featured-image .entry-title a:hover,footer .the-newsmag-one-column-widget .first-post .no-featured-image .posted-on a:hover,footer .widget_archive li a:hover:before,footer .widget_categories li a:hover:before,footer .widget_nav_menu li a:hover:before,footer .widget_pages li a:hover:before,footer .widget_recent_comments li:hover:before,footer .widget_recent_entries li a:hover:before,footer .widget_rss li a:hover:before{color:' . $primary_color . '}#infinite-handle span,.continue-more-link,.format-link .link-details,.home .main-navigation a.home-icon,.main-navigation a.home-icon:hover,.main-navigation a.random-post:hover,.menu-social li a:hover:before,.page-links a,.related-posts-main-title span,.sticky,.sticky .continue-more-link,button,input[type=button],input[type=reset],input[type=submit],ins,mark{background:' . $primary_color . '}footer .footer-social-menu{border-top:4px solid ' . $primary_color . '}.latest-news-lists{border:1px solid ' . $primary_color . '}.footer-bottom-area{border-top:4px solid ' . $primary_color . ';border-bottom:4px solid ' . $primary_color . '}button,input[type=button],input[type=reset],input[type=submit],input[type=search],td,th,tr{border:2px solid ' . $primary_color . '}.main-navigation,.main-navigation ul ul a,.post-navigation,.widget-title{border-bottom:4px solid ' . $primary_color . '}.footer-sidebar-masonry-area,.footer-sidebar-top-area,.post-navigation,.post-navigation div+div{border-top:4px solid ' . $primary_color . '}.search-form-top{border:4px solid ' . $primary_color . '}.content-top-sidebar-area,.widget_nav_menu a,.widget_pages a,.widget_recent_comments li,.widget_recent_entries li,li.comments-tab-widget,ul.the-newsmag-tabs{border-bottom:2px solid ' . $primary_color . '}.widget-title span{background:' . $primary_color . '}.content-bottom-sidebar-area{border-top:2px solid ' . $primary_color . '}.widget-entry-meta .comments-link a,.widget-entry-meta .entry-meta .byline a:hover,.widget-entry-meta .entry-meta .comments-link a:hover,.widget-entry-meta .entry-meta .posted-on a:hover,footer .widget-entry-meta .entry-meta .comments-link a:hover{color:' . $primary_color . '}.page-title,.related-posts-main-title{border-bottom:4px solid ' . $primary_color . '}.the-newsmag-posts-slider-widget .slide-next:hover,.the-newsmag-posts-slider-widget .slide-prev:hover{background-color:' . $primary_color . '}.author .author-box,.format-status .status-details{border:2px solid ' . $primary_color . '}.navigation.pagination .nav-links{border-top:2px solid ' . $primary_color . ';border-bottom:2px solid ' . $primary_color . '}.comment-body{border-bottom:2px solid ' . $primary_color . '}.wp-caption{border:1px solid ' . $primary_color . '}@media screen and (max-width:768px){.social-menu,ul#footer-menu{border-top:4px solid ' . $primary_color . '}}';
 	}
@@ -236,7 +236,7 @@ function the_newsmag_custom_css() {
 	// color change options code
 	if (!empty($the_newsmag_custom_options_color)) {
 		echo '<!-- ' . get_bloginfo('name') . ' Internal Styles -->';
-		?><style type="text/css"><?php echo strip_tags($the_newsmag_custom_options_color); ?></style>
+		?><style type="text/css"><?php echo esc_html($the_newsmag_custom_options_color); ?></style>
 		<?php
 	}
 
@@ -263,7 +263,7 @@ if (!function_exists('the_newsmag_random_post')) :
 		));
 		?>
 		<?php while ($get_random_post->have_posts()):$get_random_post->the_post(); ?>
-			<?php return '<a href="' . esc_url(get_the_permalink()) . '" title="' . esc_html__('Random Post', 'the-newsmag') . '" class="random-post"><i class="fa fa-random"></i></a>'; ?>
+			<?php return '<a href="' . esc_url(get_the_permalink()) . '" title="' . esc_attr__('Random Post', 'the-newsmag') . '" class="random-post"><i class="fa fa-random"></i></a>'; ?>
 		<?php endwhile; ?>
 		<?php
 		// Reset Post Data
@@ -488,11 +488,11 @@ if (!function_exists('the_newsmag_posts_posted_on')) :
 		);
 
 		$posted_on = sprintf(
-				esc_html_x('%s', 'post date', 'the-newsmag'), '<a href="' . esc_url(get_permalink()) . '" rel="bookmark"><i class="fa fa-calendar"></i></a>' . '<a href="' . esc_url(get_permalink()) . '" rel="bookmark">' . $time_string . '</a>'
+				'%s', '<a href="' . esc_url(get_permalink()) . '" rel="bookmark"><i class="fa fa-calendar"></i></a>' . '<a href="' . esc_url(get_permalink()) . '" rel="bookmark">' . $time_string . '</a>'
 		);
 
 		$byline = sprintf(
-				esc_html_x('%s', 'post author', 'the-newsmag'), '<a href="' . esc_url(get_author_posts_url(get_the_author_meta('ID'))) . '">' . get_avatar(get_the_author_meta('user_email'), '25') . '</a>' . '<span class="author vcard"><a class="url fn n" href="' . esc_url(get_author_posts_url(get_the_author_meta('ID'))) . '">' . esc_html(get_the_author()) . '</a></span>'
+				'%s', '<a href="' . esc_url(get_author_posts_url(get_the_author_meta('ID'))) . '">' . get_avatar(get_the_author_meta('user_email'), '25') . '</a>' . '<span class="author vcard"><a class="url fn n" href="' . esc_url(get_author_posts_url(get_the_author_meta('ID'))) . '">' . esc_html(get_the_author()) . '</a></span>'
 		);
 
 		echo '<span class="byline"> ' . $byline . '</span>';
@@ -547,13 +547,13 @@ if (!function_exists('the_newsmag_author_bio_links')) :
 			echo '<div class="author-social-links">';
 			printf(esc_html__('Follow %s on:', 'the-newsmag'), $author_name);
 			if ($author_facebook_link) {
-				echo '<a href="' . esc_url($author_facebook_link) . '" title="' . esc_html__('Facebook', 'the-newsmag') . '" target="_blank"><i class="fa fa-facebook"></i><span class="screen-reader-text">' . esc_html__('Facebook', 'the-newsmag') . '</span></a>';
+				echo '<a href="' . esc_url($author_facebook_link) . '" title="' . esc_attr__('Facebook', 'the-newsmag') . '" target="_blank"><i class="fa fa-facebook"></i><span class="screen-reader-text">' . esc_html__('Facebook', 'the-newsmag') . '</span></a>';
 			}
 			if ($author_twitter_link) {
-				echo '<a href="https://twitter.com/' . esc_attr($author_twitter_link) . '" title="' . esc_html__('Twitter', 'the-newsmag') . '" target="_blank"><i class="fa fa-twitter"></i><span class="screen-reader-text">' . esc_html__('Twitter', 'the-newsmag') . '</span></a>';
+				echo '<a href="https://twitter.com/' . esc_attr($author_twitter_link) . '" title="' . esc_attr__('Twitter', 'the-newsmag') . '" target="_blank"><i class="fa fa-twitter"></i><span class="screen-reader-text">' . esc_html__('Twitter', 'the-newsmag') . '</span></a>';
 			}
 			if ($author_googleplus_link) {
-				echo '<a href="' . esc_url($author_googleplus_link) . '" title="' . esc_html__('Google Plus', 'the-newsmag') . '" rel="author" target="_blank"><i class="fa fa-google-plus"></i><span class="screen-reader-text">' . esc_html__('Google Plus', 'the-newsmag') . '</span></a>';
+				echo '<a href="' . esc_url($author_googleplus_link) . '" title="' . esc_attr__('Google Plus', 'the-newsmag') . '" rel="author" target="_blank"><i class="fa fa-google-plus"></i><span class="screen-reader-text">' . esc_html__('Google Plus', 'the-newsmag') . '</span></a>';
 			}
 			echo '</div>';
 		}
@@ -664,11 +664,11 @@ if (!function_exists('the_newsmag_widget_posts_posted_on')) :
 		);
 
 		$posted_on = sprintf(
-				esc_html_x('%s', 'post date', 'the-newsmag'), '<a href="' . esc_url(get_permalink()) . '" rel="bookmark"><i class="fa fa-calendar"></i></a>' . '<a href="' . esc_url(get_permalink()) . '" rel="bookmark">' . $time_string . '</a>'
+				'%s', '<a href="' . esc_url(get_permalink()) . '" rel="bookmark"><i class="fa fa-calendar"></i></a>' . '<a href="' . esc_url(get_permalink()) . '" rel="bookmark">' . $time_string . '</a>'
 		);
 
 		$byline = sprintf(
-				esc_html_x('%s', 'post author', 'the-newsmag'), '<a href="' . esc_url(get_author_posts_url(get_the_author_meta('ID'))) . '">' . get_avatar(get_the_author_meta('user_email'), '25') . '</a>' . '<span class="author vcard"><a class="url fn n" href="' . esc_url(get_author_posts_url(get_the_author_meta('ID'))) . '">' . esc_html(get_the_author()) . '</a></span>'
+				'%s', '<a href="' . esc_url(get_author_posts_url(get_the_author_meta('ID'))) . '">' . get_avatar(get_the_author_meta('user_email'), '25') . '</a>' . '<span class="author vcard"><a class="url fn n" href="' . esc_url(get_author_posts_url(get_the_author_meta('ID'))) . '">' . esc_html(get_the_author()) . '</a></span>'
 		);
 
 		echo '<span class="byline"> ' . $byline . '</span>';

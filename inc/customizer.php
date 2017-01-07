@@ -312,7 +312,7 @@ function the_newsmag_customize_register($wp_customize) {
 														  $this->link();
 														  checked($this->value(), $value);
 														  ?> />
-							<img src='<?php echo esc_html($label); ?>' class='<?php echo esc_html($class); ?>' />
+							<img src='<?php echo esc_url($label); ?>' class='<?php echo esc_attr($class); ?>' />
 						</label>
 					</li>
 					<?php

@@ -1,10 +1,8 @@
-# Copyright (C) 2016 Bishal Napit
-# This file is distributed under the GNU General Public License v3 or later.
 msgid ""
 msgstr ""
 "Project-Id-Version: The NewsMag\n"
-"POT-Creation-Date: 2016-08-25 20:13+0545\n"
-"PO-Revision-Date: 2016-08-25 20:13+0545\n"
+"POT-Creation-Date: 2017-01-07 11:37+0545\n"
+"PO-Revision-Date: 2017-01-07 11:38+0545\n"
 "Last-Translator: \n"
 "Language-Team: Bishal Napit <mebishalnapit@gmail.com>\n"
 "Language: en\n"
@@ -401,66 +399,66 @@ msgid ""
 "single posts unless unique layout is set for the specific post."
 msgstr ""
 
-#: inc/customizer.php:408
+#: inc/customizer.php:409
 msgid "Custom CSS"
 msgstr ""
 
-#: inc/customizer.php:421
+#: inc/customizer.php:422
 msgid "Write your custom css and design live."
 msgstr ""
 
-#: inc/customizer.php:437
+#: inc/customizer.php:438
 msgid "Check to enable the header image to link back to the home page."
 msgstr ""
 
-#: inc/customizer.php:451
+#: inc/customizer.php:452
 msgid "Primary Color"
 msgstr ""
 
-#: inc/customizer.php:460
+#: inc/customizer.php:461
 msgid ""
 "Change the Additional Settings from here as you want to best suite your site."
 msgstr ""
 
-#: inc/customizer.php:462
+#: inc/customizer.php:463
 msgid "Additional Options"
 msgstr ""
 
-#: inc/customizer.php:468
+#: inc/customizer.php:469
 msgid "Related Posts"
 msgstr ""
 
-#: inc/customizer.php:480
+#: inc/customizer.php:481
 msgid "Check to activate the related posts."
 msgstr ""
 
-#: inc/customizer.php:493
+#: inc/customizer.php:494
 msgid "Related Posts To Be Shown As:"
 msgstr ""
 
-#: inc/customizer.php:497
+#: inc/customizer.php:498
 msgid "Related Posts By Categories"
 msgstr ""
 
-#: inc/customizer.php:498
+#: inc/customizer.php:499
 msgid "Related Posts By Tags"
 msgstr ""
 
-#: inc/customizer.php:505
+#: inc/customizer.php:506
 msgid "Image Lightbox"
 msgstr ""
 
-#: inc/customizer.php:517
+#: inc/customizer.php:518
 msgid ""
 "Check to enable the lightbox feature for the featured images in single post "
 "page and pages."
 msgstr ""
 
-#: inc/customizer.php:525
+#: inc/customizer.php:526
 msgid "Social Links In Author Bio"
 msgstr ""
 
-#: inc/customizer.php:537
+#: inc/customizer.php:538
 msgid ""
 "Check to enable the social links in the Author Bio section. For this to "
 "work, you need to add the URL of your social sites in the profile section. "
@@ -468,21 +466,21 @@ msgid ""
 "feature."
 msgstr ""
 
-#: inc/customizer.php:546
+#: inc/customizer.php:547
 msgid "Category Color Options"
 msgstr ""
 
-#: inc/customizer.php:548
+#: inc/customizer.php:549
 msgid ""
 "Change the color of each category items as you want to best suit your site "
 "requirement."
 msgstr ""
 
-#: inc/customizer.php:553
+#: inc/customizer.php:554
 msgid "Category Color Settings"
 msgstr ""
 
-#: inc/customizer.php:577
+#: inc/customizer.php:578
 #, php-format
 msgid "%s"
 msgstr ""
@@ -517,18 +515,6 @@ msgstr ""
 #: inc/extras.php:336 inc/extras.php:338
 #, php-format
 msgid "Category: %s"
-msgstr ""
-
-#: inc/extras.php:491 inc/extras.php:667 inc/template-tags.php:25
-#, php-format
-msgctxt "post date"
-msgid "%s"
-msgstr ""
-
-#: inc/extras.php:495 inc/extras.php:671 inc/template-tags.php:29
-#, php-format
-msgctxt "post author"
-msgid "%s"
 msgstr ""
 
 #: inc/extras.php:503
@@ -847,10 +833,10 @@ msgstr ""
 #: sidebar-left.php:33 sidebar.php:33
 #, php-format
 msgid ""
-"This is an example widget to show how the %s Sidebar looks by default. You "
-"can add custom widgets from the %swidgets screen%s in the admin area. If the "
-"custom widget is added in this sidebar, then, this will be replaced by those "
-"widgets."
+"This is an example widget to show how the %1$s Sidebar looks by default. You "
+"can add custom widgets from the %2$swidgets screen%3$s in the admin area. If "
+"the custom widget is added in this sidebar, then, this will be replaced by "
+"those widgets."
 msgstr ""
 
 #: sidebar.php:27

@@ -30,7 +30,7 @@
 		// displaying the default widget text if no widget is associated with it
 		the_widget('WP_Widget_Text', array(
 			'title' => esc_html__('Example Widget', 'the-newsmag'),
-			'text' => sprintf(esc_html__('This is an example widget to show how the %s Sidebar looks by default. You can add custom widgets from the %swidgets screen%s in the admin area. If the custom widget is added in this sidebar, then, this will be replaced by those widgets.', 'the-newsmag'), $sidebar_display_text, current_user_can('edit_theme_options') ? '<a href="' . esc_url(admin_url('widgets.php')) . '">' : '', current_user_can('edit_theme_options') ? '</a>' : '' ),
+			'text' => sprintf(esc_html__('This is an example widget to show how the %1$s Sidebar looks by default. You can add custom widgets from the %2$swidgets screen%3$s in the admin area. If the custom widget is added in this sidebar, then, this will be replaced by those widgets.', 'the-newsmag'), $sidebar_display_text, current_user_can('edit_theme_options') ? '<a href="' . esc_url(admin_url('widgets.php')) . '">' : '', current_user_can('edit_theme_options') ? '</a>' : '' ),
 			'filter' => true,
 				), array(
 			'before_widget' => '<section class="widget widget_text">',

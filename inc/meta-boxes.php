@@ -78,14 +78,22 @@ if (!function_exists('the_newsmag_save_custom_meta_data')) :
 		global $the_newsmag_page_layout, $post;
 
 		// Verify the nonce before proceeding.
-		if (!isset($_POST['custom_meta_box_nonce']) || !wp_verify_nonce($_POST['custom_meta_box_nonce'], basename(__FILE__)))
+		if (isset($_POST['custom_meta_box_nonce'])) {
+			$the_newsmag_metabox_nonce = sanitize_text_field(wp_unslash($_POST['custom_meta_box_nonce']));
+		}
+		if (!$the_newsmag_metabox_nonce || !wp_verify_nonce($the_newsmag_metabox_nonce, basename(__FILE__))) {
 			return;
+		}
 
 		// Stop WP from clearing custom fields on autosave
-		if (defined('DOING_AUTOSAVE') && DOING_AUTOSAVE)
+		if (defined('DOING_AUTOSAVE') && DOING_AUTOSAVE) {
 			return;
+		}
 
-		if ('page' == $_POST['post_type']) {
+		if (isset($_POST['post_type'])) {
+			$the_newsmag_post_type = sanitize_text_field(wp_unslash($_POST['post_type']));
+		}
+		if ('page' == $the_newsmag_post_type) {
 			if (!current_user_can('edit_page', $post_id))
 				return $post_id;
 		} elseif (!current_user_can('edit_post', $post_id)) {
@@ -94,8 +102,12 @@ if (!function_exists('the_newsmag_save_custom_meta_data')) :
 
 		foreach ($the_newsmag_page_layout as $field) {
 			// Execute this saving function
+			if (isset($_POST[$field['id']])) {
+				$the_newsmag_field_id = sanitize_key(wp_unslash($_POST[$field['id']]));
+			}
+
 			$old_meta_data = get_post_meta($post_id, $field['id'], true);
-			$new_meta_data = sanitize_key($_POST[$field['id']]);
+			$new_meta_data = $the_newsmag_field_id;
 			if ($new_meta_data && $new_meta_data != $old_meta_data) {
 				update_post_meta($post_id, $field['id'], $new_meta_data);
 			} elseif ('' == $new_meta_data && $old_meta_data) {
