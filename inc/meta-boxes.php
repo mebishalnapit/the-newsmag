@@ -78,6 +78,7 @@ if (!function_exists('the_newsmag_save_custom_meta_data')) :
 		global $the_newsmag_page_layout, $post;
 
 		// Verify the nonce before proceeding.
+		$the_newsmag_metabox_nonce = '';
 		if (isset($_POST['custom_meta_box_nonce'])) {
 			$the_newsmag_metabox_nonce = sanitize_text_field(wp_unslash($_POST['custom_meta_box_nonce']));
 		}
@@ -90,6 +91,7 @@ if (!function_exists('the_newsmag_save_custom_meta_data')) :
 			return;
 		}
 
+		$the_newsmag_post_type = '';
 		if (isset($_POST['post_type'])) {
 			$the_newsmag_post_type = sanitize_text_field(wp_unslash($_POST['post_type']));
 		}
@@ -102,6 +104,7 @@ if (!function_exists('the_newsmag_save_custom_meta_data')) :
 
 		foreach ($the_newsmag_page_layout as $field) {
 			// Execute this saving function
+			$the_newsmag_field_id = '';
 			if (isset($_POST[$field['id']])) {
 				$the_newsmag_field_id = sanitize_key(wp_unslash($_POST[$field['id']]));
 			}
