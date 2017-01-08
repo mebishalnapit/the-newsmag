@@ -10,7 +10,7 @@ External resources linked to the theme.
 
 Resources packed within the theme.
 * Images in the screenshot is from http://pixabay.com/. License: CC0 Public Domain
-	Links: https://pixabay.com/en/beauty-woman-portrait-face-hair-1319951/
+  Links: https://pixabay.com/en/beauty-woman-portrait-face-hair-1319951/
 		 https://pixabay.com/en/gravel-road-lady-walking-road-1031726/
 		 https://pixabay.com/en/guess-attic-girl-woman-pretty-hair-837156/
 		 https://pixabay.com/en/mountain-bike-dirt-road-wet-1149074/
@@ -28,6 +28,8 @@ Resources packed within the theme.
 * Bxslider by Steven Wanderski | MIT license
 * Magnific Popup by Dmitry Semenov | MIT Licensed
 * FitVids by Chris Coyier and Paravel | WTFPL Licensed
+* Theia Sticky Sidebar by WeCodePixels | MIT Licensed
+* ResizeSensor by Marc J. Schmidt | MIT Licensed
 * Other custom js files are our own creation and is licensed under the same license as this theme.
 * Other custom images in screenshot are our own creation and is licensed under the same license as this theme.
 
@@ -48,6 +50,9 @@ Magazine: In this theme, we have added the Magazine template so that you can dis
 If you would like to contribute to the translations of this theme to your native language, then, you can visit this link: https://translate.wordpress.org/projects/wp-themes/the-newsmag/ and then contribute to the translation.
 
 == CHANGELOG ==
+= VERSION 0.5 =
+* Added the option to make the content and sidebar area sticky
+
 = VERSION 0.4 =
 * Font Awesome icons updated to version 4.7.0
 * Migrated the Custom CSS code added in theme options to Additional CSS section introduced in WordPress 4.7

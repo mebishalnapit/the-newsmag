@@ -236,7 +236,7 @@ function the_newsmag_custom_css() {
 	// color change options code
 	if (!empty($the_newsmag_custom_options_color)) {
 		echo '<!-- ' . get_bloginfo('name') . ' Internal Styles -->';
-		?><style type="text/css"><?php echo esc_html($the_newsmag_custom_options_color); ?></style>
+		?><style type="text/css"><?php echo strip_tags($the_newsmag_custom_options_color); ?></style>
 		<?php
 	}
 

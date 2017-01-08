@@ -540,7 +540,27 @@ function the_newsmag_customize_register($wp_customize) {
 		'settings' => 'the_newsmag_author_bio_social_links'
 	));
 
+	// Sticky Sidebar and Content area
+	$wp_customize->add_section('the_newsmag_sticky_sidebar_content_setting', array(
+		'priority' => 3,
+		'title' => esc_html__('Sticky Sidebar And Content Area', 'the-newsmag'),
+		'panel' => 'the_newsmag_additional_options'
+	));
+
+	$wp_customize->add_setting('the_newsmag_sticky_sidebar_content', array(
+		'default' => 0,
+		'capability' => 'edit_theme_options',
+		'sanitize_callback' => 'the_newsmag_checkbox_sanitize'
+	));
+
+	$wp_customize->add_control('the_newsmag_sticky_sidebar_content', array(
+		'type' => 'checkbox',
+		'label' => esc_html__('Check to enable the feature of sticky sidebar and content area.', 'the-newsmag'),
+		'section' => 'the_newsmag_sticky_sidebar_content_setting',
+		'settings' => 'the_newsmag_sticky_sidebar_content'
+	));
 	// End of Additional Options
+
 	// Category Color Options
 	$wp_customize->add_panel('the_newsmag_category_color_panel', array(
 		'priority' => 700,

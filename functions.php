@@ -485,6 +485,12 @@ function the_newsmag_scripts() {
 		wp_enqueue_style('magnific-popup', get_template_directory_uri() . '/js/magnific-popup/magnific-popup' . $suffix . '.css');
 	}
 
+	// enqueueing sticky content and sidebar area required js files
+	if (get_theme_mod('the_newsmag_sticky_sidebar_content', 0) == 1) {
+		wp_enqueue_script('ResizeSensor', get_template_directory_uri() . '/js/theia-sticky-sidebar/ResizeSensor' . $suffix . '.js', array('jquery'), false, true);
+		wp_enqueue_script('theia-sticky-sidebar', get_template_directory_uri() . '/js/theia-sticky-sidebar/theia-sticky-sidebar' . $suffix . '.js', array('jquery'), false, true);
+	}
+
 	// enqueueing the navigation script
 	wp_enqueue_script('the-newsmag-navigation', get_template_directory_uri() . '/js/navigation' . $suffix . '.js', array(), '20151215', true);
 
