@@ -145,6 +145,20 @@
 			<?php do_action('the_newsmag_after_header'); ?>
 			<?php do_action('the_newsmag_before_main'); ?>
 
+			<?php if (!is_front_page() && (function_exists('bcn_display') || function_exists('yoast_breadcrumb'))) : ?>
+				<div class="breadcrumbs-area">
+					<div class="inner-wrap">
+						<?php if (function_exists('bcn_display')) { ?>
+							<div class="breadcrumbs" typeof="BreadcrumbList" vocab="https://schema.org/">
+								<?php bcn_display(); ?>
+							</div>
+						<?php } elseif (function_exists('yoast_breadcrumb')) {
+							yoast_breadcrumb('<div class="breadcrumbs">','</div>');
+						} ?>
+					</div>
+				</div>
+			<?php endif; ?>
+
 			<?php if (is_active_sidebar('the-newsmag-content-top-sidebar')) { ?>
 				<div class="content-top-sidebar-area">
 					<div class="inner-wrap">

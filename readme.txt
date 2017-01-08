@@ -52,6 +52,7 @@ If you would like to contribute to the translations of this theme to your native
 == CHANGELOG ==
 = VERSION 0.5 =
 * Added the option to make the content and sidebar area sticky
+* Added support for Yoast Breadcrumbs and Breadcrumb NavXT plugin
 
 = VERSION 0.4 =
 * Font Awesome icons updated to version 4.7.0
