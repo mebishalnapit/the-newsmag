@@ -1,8 +1,10 @@
+# Copyright (C) 2016 Bishal Napit
+# This file is distributed under the GNU General Public License v3 or later.
 msgid ""
 msgstr ""
 "Project-Id-Version: The NewsMag\n"
-"POT-Creation-Date: 2017-01-07 11:37+0545\n"
-"PO-Revision-Date: 2017-01-07 11:38+0545\n"
+"POT-Creation-Date: 2017-01-09 20:29+0545\n"
+"PO-Revision-Date: 2017-01-09 20:30+0545\n"
 "Last-Translator: \n"
 "Language-Team: Bishal Napit <mebishalnapit@gmail.com>\n"
 "Language: en\n"
@@ -466,21 +468,29 @@ msgid ""
 "feature."
 msgstr ""
 
-#: inc/customizer.php:547
+#: inc/customizer.php:546
+msgid "Sticky Sidebar And Content Area"
+msgstr ""
+
+#: inc/customizer.php:558
+msgid "Check to enable the feature of sticky sidebar and content area."
+msgstr ""
+
+#: inc/customizer.php:567
 msgid "Category Color Options"
 msgstr ""
 
-#: inc/customizer.php:549
+#: inc/customizer.php:569
 msgid ""
 "Change the color of each category items as you want to best suit your site "
 "requirement."
 msgstr ""
 
-#: inc/customizer.php:554
+#: inc/customizer.php:574
 msgid "Category Color Settings"
 msgstr ""
 
-#: inc/customizer.php:578
+#: inc/customizer.php:598
 #, php-format
 msgid "%s"
 msgstr ""
