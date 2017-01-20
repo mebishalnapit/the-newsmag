@@ -50,6 +50,9 @@ All the available options of this theme can be used from Appearance > Customize.
 If you would like to contribute to the translations of this theme to your native language, then, you can visit this link: https://translate.wordpress.org/projects/wp-themes/the-newsmag/ and then contribute to the translation.
 
 ## CHANGELOG
+#### VERSION 0.6
+* Make the menu reveal on scroll up option now goes to full width too if the chosen layout in Site Layout option is Boxed Layout
+
 #### VERSION 0.5
 * Added the option to make the content and sidebar area sticky
 * Added support for Breadcrumb NavXT plugin
