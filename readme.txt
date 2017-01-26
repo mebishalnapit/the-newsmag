@@ -51,6 +51,7 @@ If you would like to contribute to the translations of this theme to your native
 
 == CHANGELOG ==
 = VERSION 0.7 =
+* Theme is now WooCommerce plugin compatible
 
 = VERSION 0.6 =
 * Make the menu reveal on scroll up option now goes to full width too if the chosen layout in Site Layout option is Boxed Layout
