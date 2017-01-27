@@ -212,7 +212,7 @@ class The_NewsMag_Tabbed_Widget extends WP_Widget {
 				$commented = '';
 				$commented .= '<ul class="comments-tab">';
 				if ($comments) : foreach ($comments as $comment) :
-						$commented .= '<li class="comments-tab-widget"><a class="author" href="' . esc_url(get_permalink($comment->comment_post_ID)) . '#comment-' . $comment->comment_ID . '">';
+						$commented .= '<li class="comments-tab-widget clear"><a class="author" href="' . esc_url(get_permalink($comment->comment_post_ID)) . '#comment-' . $comment->comment_ID . '">';
 						$commented .= get_avatar($comment->comment_author_email, '60');
 						$commented .= get_comment_author($comment->comment_ID) . '</a>' . ' ' . esc_html__('says:', 'the-newsmag');
 						$commented .= '<p class="commented-post">' . strip_tags(substr(apply_filters('get_comment_text', $comment->comment_content), 0, '50')) . '&hellip;</p></li>';
@@ -323,7 +323,7 @@ class The_NewsMag_Posts_Slider_Widget extends WP_Widget {
 				$category_posts_slider->the_post();
 				?>
 				<?php if (has_post_thumbnail()) { ?>
-					<div class="single-article-content clear">
+					<div class="single-article-content">
 						<div class="category-links">
 							<?php the_newsmag_colored_category(); ?>
 						</div><!-- .entry-meta -->
@@ -332,7 +332,7 @@ class The_NewsMag_Posts_Slider_Widget extends WP_Widget {
 							<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail('the-newsmag-featured-large-thumbnail'); ?></a>
 						</figure>
 
-						<div class="category-title-meta-wrapper clear">
+						<div class="category-title-meta-wrapper">
 							<h3 class="entry-title">
 								<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
 							</h3>
@@ -439,7 +439,7 @@ class The_NewsMag_Posts_Grid_Widget extends WP_Widget {
 				$category_posts_grid->the_post();
 				?>
 				<?php if (has_post_thumbnail()) { ?>
-					<div class="single-article-content clear">
+					<div class="single-article-content">
 						<div class="category-links">
 							<?php the_newsmag_colored_category(); ?>
 						</div><!-- .entry-meta -->
@@ -448,7 +448,7 @@ class The_NewsMag_Posts_Grid_Widget extends WP_Widget {
 							<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail('the-newsmag-featured-medium-thumbnail'); ?></a>
 						</figure>
 
-						<div class="category-title-meta-wrapper clear">
+						<div class="category-title-meta-wrapper">
 							<h3 class="entry-title">
 								<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
 							</h3>
@@ -602,7 +602,7 @@ class The_NewsMag_Posts_One_Column_Widget extends WP_Widget {
 				}
 				?>
 				<div class="single-article-content clear">
-					<div class="posts-column-wrapper <?php echo esc_attr($class); ?> clear">
+					<div class="posts-column-wrapper <?php echo esc_attr($class); ?>">
 						<?php if ($i == 1) { ?>
 							<div class="category-links">
 								<?php the_newsmag_colored_category(); ?>
@@ -615,7 +615,7 @@ class The_NewsMag_Posts_One_Column_Widget extends WP_Widget {
 							</figure>
 						<?php } ?>
 
-						<div class="category-title-meta-wrapper clear">
+						<div class="category-title-meta-wrapper">
 							<h3 class="entry-title">
 								<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
 							</h3>
@@ -783,7 +783,7 @@ class The_NewsMag_Posts_Two_Column_Widget extends WP_Widget {
 				}
 				?>
 				<div class="single-article-content clear">
-					<div class="posts-column-wrapper <?php echo esc_attr($class); ?> clear">
+					<div class="posts-column-wrapper <?php echo esc_attr($class); ?>">
 						<?php if ($i == 1) { ?>
 							<div class="category-links">
 								<?php the_newsmag_colored_category(); ?>
@@ -796,7 +796,7 @@ class The_NewsMag_Posts_Two_Column_Widget extends WP_Widget {
 							</figure>
 						<?php } ?>
 
-						<div class="category-title-meta-wrapper clear">
+						<div class="category-title-meta-wrapper">
 							<h3 class="entry-title">
 								<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
 							</h3>
@@ -956,7 +956,7 @@ class The_NewsMag_Posts_Extended_Widget extends WP_Widget {
 				}
 				?>
 				<div class="single-article-content clear">
-					<div class="posts-column-wrapper <?php echo esc_attr($class); ?> clear">
+					<div class="posts-column-wrapper <?php echo esc_attr($class); ?>">
 						<div class="category-links">
 							<?php the_newsmag_colored_category(); ?>
 						</div><!-- .entry-meta -->
@@ -967,7 +967,7 @@ class The_NewsMag_Posts_Extended_Widget extends WP_Widget {
 							</figure>
 						<?php } ?>
 
-						<div class="post-details clear">
+						<div class="post-details">
 							<h3 class="entry-title">
 								<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
 							</h3>

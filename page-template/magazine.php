@@ -49,7 +49,7 @@ get_header();
 				?>
 			</div>
 
-			<div class="magazine-page-half magazine-page-half-last clear">
+			<div class="magazine-page-half magazine-page-half-last">
 				<?php
 				if (is_active_sidebar('the-newsmag-magazine-middle-right-sidebar')) {
 					dynamic_sidebar('the-newsmag-magazine-middle-right-sidebar');
