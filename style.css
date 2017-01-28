@@ -3904,6 +3904,19 @@ a#scroll-up:hover {
 }
 
 /*--------------------------------------------------------------
+## WooCommerce Plugin CSS
+--------------------------------------------------------------*/
+.woocommerce-page .page-title {
+	border-bottom: 0;
+}
+
+.woocommerce div.product p.price ins,
+.woocommerce div.product span.price ins,
+.woocommerce ul.products li.product .price ins {
+	color: #77a464;
+}
+
+/*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
 .page-content .wp-smiley,

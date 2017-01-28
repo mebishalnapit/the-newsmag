@@ -739,6 +739,8 @@ add_action('after_setup_theme', 'the_newsmag_custom_css_migrate');
 // Remove WooCommerce default wrapper
 remove_action('woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10);
 remove_action('woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10);
+// Remove WooCommerce default sidebar
+remove_action('woocommerce_sidebar', 'woocommerce_get_sidebar', 10);
 
 // Add theme wrapper for WooCommerce pages
 add_action('woocommerce_before_main_content', 'the_newsmag_wrapper_start', 10);
@@ -749,5 +751,6 @@ function the_newsmag_wrapper_start() {
 }
 
 function the_newsmag_wrapper_end() {
-	echo '</main></div>';
+	echo '</main></div><!-- #primary -->';
+	the_newsmag_sidebar_select();
 }
