@@ -741,6 +741,8 @@ remove_action('woocommerce_before_main_content', 'woocommerce_output_content_wra
 remove_action('woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10);
 // Remove WooCommerce default sidebar
 remove_action('woocommerce_sidebar', 'woocommerce_get_sidebar', 10);
+// Remove WooCommerce Breadcrumb
+remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0);
 
 // Add theme wrapper for WooCommerce pages
 add_action('woocommerce_before_main_content', 'the_newsmag_wrapper_start', 10);
