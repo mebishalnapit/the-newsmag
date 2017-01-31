@@ -80,7 +80,7 @@ if (!function_exists('the_newsmag_footer_copyright')) :
 
 		$wp_link = '<a href="https://wordpress.org" target="_blank" title="' . esc_attr__('WordPress', 'the-newsmag') . '"><span>' . esc_html__('WordPress', 'the-newsmag') . '</span></a>';
 
-		$my_link_name = '<a href="https://napitwptech.com/themes/the-newsmag/" target="_blank" title="' . esc_attr__('Bishal Napit', 'the-newsmag') . '"><span>' . esc_html__('Bishal Napit', 'the-newsmag') . '</span></a>';
+		$my_link_name = '<a href="' . esc_url('https://napitwptech.com/themes/the-newsmag/') . '" target="_blank" title="' . esc_attr__('Bishal Napit', 'the-newsmag') . '"><span>' . esc_html__('Bishal Napit', 'the-newsmag') . '</span></a>';
 
 		$default_footer_value = sprintf(esc_html__('Copyright &copy; %1$s %2$s. All rights reserved.', 'the-newsmag'), date('Y'), $site_link) . '<br />' . sprintf(esc_html__('Theme: %1$s by %2$s.', 'the-newsmag'), esc_html__('The NewsMag', 'the-newsmag'), $my_link_name) . ' ' . sprintf(esc_html__('Powered by %s.', 'the-newsmag'), $wp_link);
 
