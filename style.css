@@ -3946,7 +3946,7 @@ a#scroll-up:hover {
 .woocommerce div.product p.price ins,
 .woocommerce div.product span.price ins,
 .woocommerce ul.products li.product .price ins {
-	color: #77a464;
+	color: inherit;
 }
 
 .woocommerce-page tr,
