@@ -2559,6 +2559,10 @@ li.comments-tab-widget p {
 		width: 100%;
 		float: none;
 	}
+
+	.the-newsmag-posts-grid .category-title-meta-wrapper {
+		bottom: 7px;
+	}
 }
 
 /*--------------------------------------------------------------
