@@ -100,6 +100,24 @@ function the_newsmag_customize_register($wp_customize) {
 		'settings' => 'the_newsmag_date_display'
 	));
 
+	// date in header display type
+	$wp_customize->add_setting('the_newsmag_date_display_type', array(
+		'default' => 'theme_default',
+		'capability' => 'edit_theme_options',
+		'sanitize_callback' => 'the_newsmag_radio_select_sanitize'
+	));
+
+	$wp_customize->add_control('the_newsmag_date_display_type', array(
+		'type' => 'radio',
+		'label' => esc_html__('Date in header display type:', 'the-newsmag'),
+		'choices' => array(
+			'theme_default' => esc_html__('Theme Default Setting', 'the-newsmag'),
+			'wordpress_date_setting' => esc_html__('WordPress General Date Setting', 'the-newsmag'),
+		),
+		'section' => 'the_newsmag_date_display_section',
+		'settings' => 'the_newsmag_date_display_type'
+	));
+
 	// small info text in header
 	$wp_customize->add_section('the_newsmag_header_text_setting', array(
 		'priority' => 2,
@@ -560,7 +578,6 @@ function the_newsmag_customize_register($wp_customize) {
 		'settings' => 'the_newsmag_sticky_sidebar_content'
 	));
 	// End of Additional Options
-
 	// Category Color Options
 	$wp_customize->add_panel('the_newsmag_category_color_panel', array(
 		'priority' => 700,

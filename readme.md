@@ -52,6 +52,7 @@ If you would like to contribute to the translations of this theme to your native
 ## CHANGELOG
 #### VERSION 0.8
 * BxSlider updated to version 4.2.7
+* Option added to display the date in header from WordPress date setting
 
 #### VERSION 0.7
 * Theme is now WooCommerce plugin compatible
