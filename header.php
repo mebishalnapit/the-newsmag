@@ -101,13 +101,18 @@
 					<div class="the-newsmag-header-image">
 						<?php if (get_theme_mod('the_newsmag_header_image_link', 0) == 1) { ?>
 							<a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
-							<?php } ?>
-							<img src="<?php header_image(); ?>" width="<?php echo esc_attr(get_custom_header()->width); ?>" height="<?php echo esc_attr(get_custom_header()->height); ?>" alt="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" class="header-image">
-							<?php if (get_theme_mod('the_newsmag_header_image_link', 0) == 1) { ?>
+								<?php
+							}
+
+							// display the header image
+							the_header_image_tag();
+
+							if (get_theme_mod('the_newsmag_header_image_link', 0) == 1) {
+								?>
 							</a>
 						<?php } ?>
 					</div>
-				<?php endif; // End header image check. ?>
+				<?php endif; // End header image check.  ?>
 
 				<nav id="site-navigation" class="main-navigation clear" role="navigation">
 					<div class="inner-wrap">
