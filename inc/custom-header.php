@@ -35,11 +35,11 @@ if (!function_exists('the_newsmag_header_style')) :
 	function the_newsmag_header_style() {
 		$header_text_color = get_header_textcolor();
 
-		/*
+		/**
 		 * If no custom options for text are set, let's bail.
-		 * get_header_textcolor() options: Any hex value, 'blank' to hide text. Default: HEADER_TEXTCOLOR.
+		 * get_header_textcolor() options: Any hex value, 'blank' to hide text. Default: add_theme_support('custom-header').
 		 */
-		if (HEADER_TEXTCOLOR === $header_text_color) {
+		if (get_theme_support('custom-header', 'default-text-color') === $header_text_color) {
 			return;
 		}
 
