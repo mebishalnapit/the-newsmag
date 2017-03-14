@@ -532,7 +532,7 @@ ul.menu-social {
 	background: #4169e1;
 }
 
-.menu-social li a[href*="facebook.com"]:hover:hover:before {
+.menu-social li a[href*="facebook.com"]:hover:before {
 	background: #3b5998;
 }
 

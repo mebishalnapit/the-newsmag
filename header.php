@@ -147,9 +147,6 @@
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
 
-			<?php do_action('the_newsmag_after_header'); ?>
-			<?php do_action('the_newsmag_before_main'); ?>
-
 			<?php if (!is_front_page() && function_exists('bcn_display')) : ?>
 				<div class="breadcrumbs-area">
 					<div class="inner-wrap">
@@ -159,6 +156,9 @@
 					</div>
 				</div>
 			<?php endif; ?>
+
+			<?php do_action('the_newsmag_after_header'); ?>
+			<?php do_action('the_newsmag_before_main'); ?>
 
 			<?php if (is_active_sidebar('the-newsmag-content-top-sidebar')) { ?>
 				<div class="content-top-sidebar-area">

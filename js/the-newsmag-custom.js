@@ -49,7 +49,7 @@ jQuery(document).ready(function () {
 	});
 
 	// setting for the menu superfish feature
-	if (typeof jQuery.fn.superfish !== 'undefined' && 'undefined' !== 'enquire') {
+	if (typeof jQuery.fn.superfish !== 'undefined' && typeof enquire !== 'undefined') {
 		var sf = jQuery('ul.nav-menu');
 		enquire.register("screen and (min-width: 768px)", {
 			// Triggered when a media query matches.
