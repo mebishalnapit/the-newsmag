@@ -52,6 +52,7 @@ If you would like to contribute to the translations of this theme to your native
 == CHANGELOG ==
 = VERSION 0.9 =
 * Remove use of deprecated constant HEADER_TEXTCOLOR
+* Add support for WooCommerce 2.7's new gallery feature
 
 = VERSION 0.8 =
 * BxSlider updated to version 4.2.7
