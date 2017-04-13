@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: The NewsMag\n"
-"POT-Creation-Date: 2017-02-26 08:25+0545\n"
-"PO-Revision-Date: 2017-02-26 08:26+0545\n"
+"POT-Creation-Date: 2017-04-13 06:34+0545\n"
+"PO-Revision-Date: 2017-04-13 06:34+0545\n"
 "Last-Translator: \n"
 "Language-Team: Bishal Napit <mebishalnapit@gmail.com>\n"
 "Language: en\n"
@@ -71,153 +71,153 @@ msgstr ""
 msgid "Footer Menu"
 msgstr ""
 
-#: functions.php:178 inc/meta-boxes.php:32
+#: functions.php:181 inc/meta-boxes.php:32
 msgid "Right Sidebar"
 msgstr ""
 
-#: functions.php:180
+#: functions.php:183
 msgid "Display your widgets in the Right Sidebar Area."
 msgstr ""
 
-#: functions.php:189 inc/meta-boxes.php:37
+#: functions.php:192 inc/meta-boxes.php:37
 msgid "Left Sidebar"
 msgstr ""
 
-#: functions.php:191
+#: functions.php:194
 msgid "Display your widgets in the Left Sidebar Area."
 msgstr ""
 
-#: functions.php:200
+#: functions.php:203
 msgid "Header Sidebar"
 msgstr ""
 
-#: functions.php:202
+#: functions.php:205
 msgid "Display your widgets in the Header Sidebar Area."
 msgstr ""
 
-#: functions.php:211
+#: functions.php:214
 msgid "Magazine Slider Sidebar"
 msgstr ""
 
-#: functions.php:213
+#: functions.php:216
 msgid "Display your widgets in the Magazine Slider Sidebar Area."
 msgstr ""
 
-#: functions.php:222
+#: functions.php:225
 msgid "Magazine Beside Slider Sidebar"
 msgstr ""
 
-#: functions.php:224
+#: functions.php:227
 msgid "Display your widgets in the Magazine Beside Slider Sidebar Area."
 msgstr ""
 
-#: functions.php:233
+#: functions.php:236
 msgid "Magazine Top Content Sidebar"
 msgstr ""
 
-#: functions.php:235
+#: functions.php:238
 msgid "Display your widgets in the Magazine Top Content Sidebar Area."
 msgstr ""
 
-#: functions.php:244
+#: functions.php:247
 msgid "Magazine Middle Left Sidebar"
 msgstr ""
 
-#: functions.php:246
+#: functions.php:249
 msgid "Display your widgets in the Magazine Middle Left Sidebar Area."
 msgstr ""
 
-#: functions.php:255
+#: functions.php:258
 msgid "Magazine Middle Right Sidebar"
 msgstr ""
 
-#: functions.php:257
+#: functions.php:260
 msgid "Display your widgets in the Magazine Middle Right Sidebar Area."
 msgstr ""
 
-#: functions.php:266
+#: functions.php:269
 msgid "Magazine Bottom Content Sidebar"
 msgstr ""
 
-#: functions.php:268
+#: functions.php:271
 msgid "Display your widgets in the Magazine Bottom Content Sidebar Area."
 msgstr ""
 
-#: functions.php:277
+#: functions.php:280
 msgid "Content Top Sidebar"
 msgstr ""
 
-#: functions.php:279
+#: functions.php:282
 msgid "Display your widgets in the Content Top Sidebar Area."
 msgstr ""
 
-#: functions.php:288
+#: functions.php:291
 msgid "Content Bottom Sidebar"
 msgstr ""
 
-#: functions.php:290
+#: functions.php:293
 msgid "Display your widgets in the Content Bottom Sidebar Area."
 msgstr ""
 
-#: functions.php:299
+#: functions.php:302
 msgid "404 Sidebar"
 msgstr ""
 
-#: functions.php:301
+#: functions.php:304
 msgid "Display your widgets in the 404 Error Page Sidebar Area."
 msgstr ""
 
-#: functions.php:310
+#: functions.php:313
 msgid "Contact Page Sidebar"
 msgstr ""
 
-#: functions.php:312
+#: functions.php:315
 msgid "Display your widgets in the Contact Page Sidebar Area."
 msgstr ""
 
-#: functions.php:321
+#: functions.php:324
 msgid "Large Footer Sidebar"
 msgstr ""
 
-#: functions.php:323
+#: functions.php:326
 msgid "Display your widgets in the Large Footer Sidebar Area."
 msgstr ""
 
-#: functions.php:332
+#: functions.php:335
 msgid "Small Footer Sidebar One"
 msgstr ""
 
-#: functions.php:334
+#: functions.php:337
 msgid "Display your widgets in the Small Footer Sidebar Area One."
 msgstr ""
 
-#: functions.php:343
+#: functions.php:346
 msgid "Small Footer Sidebar Two"
 msgstr ""
 
-#: functions.php:345
+#: functions.php:348
 msgid "Display your widgets in the Small Footer Sidebar Area Two."
 msgstr ""
 
-#: functions.php:354
+#: functions.php:357
 msgid "Masonry Footer Sidebar"
 msgstr ""
 
-#: functions.php:356
+#: functions.php:359
 msgid "Display your widgets in the Masonry Footer Sidebar Area."
 msgstr ""
 
-#: functions.php:393
+#: functions.php:396
 msgctxt "Noto Sans font: on or off"
 msgid "on"
 msgstr ""
 
-#: functions.php:401
+#: functions.php:404
 msgctxt "Lobster Two font: on or off"
 msgid "on"
 msgstr ""
 
-#: functions.php:409
+#: functions.php:412
 msgctxt "Add new subset ( cyrillic, greek, vietnamese, devanagari )"
 msgid "no-subset"
 msgstr ""
@@ -226,7 +226,7 @@ msgstr ""
 msgid "Skip to content"
 msgstr ""
 
-#: header.php:133
+#: header.php:138
 msgid "Menu"
 msgstr ""
 
