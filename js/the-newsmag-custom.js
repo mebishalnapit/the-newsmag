@@ -183,8 +183,16 @@ jQuery(document).ready(function () {
 
 	// setting for sticky sidebar and content area
 	if ((typeof jQuery.fn.theiaStickySidebar !== 'undefined') && (typeof ResizeSensor !== 'undefined')) {
+		// Calculate the whole height of sticky menu
+		var height = jQuery('#site-navigation-sticky-wrapper').outerHeight();
+
+		// Assign height value to 0 if it returns null
+		if (height === null) {
+			height = 0;
+		}
+
 		jQuery('#primary, #secondary').theiaStickySidebar({
-			additionalMarginTop: 40
+			additionalMarginTop: 40 + height
 		});
 	}
 

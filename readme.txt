@@ -51,10 +51,11 @@ If you would like to contribute to the translations of this theme to your native
 
 == CHANGELOG ==
 = VERSION 1.0 =
+* Fix the display of hidden contents when the menu and content area both are sticky
 
 = VERSION 0.9 =
 * Remove use of deprecated constant HEADER_TEXTCOLOR
-* Add support for WooCommerce 2.7's new gallery feature
+* Add support for WooCommerce 3.0's new gallery feature
 
 = VERSION 0.8 =
 * BxSlider updated to version 4.2.7
