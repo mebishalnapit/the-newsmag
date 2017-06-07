@@ -97,22 +97,26 @@
 					</div>
 				</div><!-- .site-branding -->
 
-				<?php if (get_header_image()) : ?>
+				<?php if (get_header_image() || (function_exists('the_custom_header_markup'))) : ?>
 					<div class="the-newsmag-header-image">
-						<?php if (get_theme_mod('the_newsmag_header_image_link', 0) == 1) { ?>
+						<?php if ((get_theme_mod('the_newsmag_header_image_link', 0) == 1) && ((function_exists('the_custom_header_markup') && (!is_header_video_active() || !has_header_video())) || (!function_exists('the_custom_header_markup')))) { ?>
 							<a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
 								<?php
 							}
 
-							// display the header image
-							the_header_image_tag();
+							// Display the header video and header image
+							if (function_exists('the_custom_header_markup')) :
+								the_custom_header_markup();
+							else :
+								the_header_image_tag();
+							endif;
 
-							if (get_theme_mod('the_newsmag_header_image_link', 0) == 1) {
+							if ((get_theme_mod('the_newsmag_header_image_link', 0) == 1) && ((function_exists('the_custom_header_markup') && (!is_header_video_active() || !has_header_video())) || (!function_exists('the_custom_header_markup')))) {
 								?>
 							</a>
 						<?php } ?>
 					</div>
-				<?php endif; // End header image check.  ?>
+				<?php endif; // End header image check. ?>
 
 				<nav id="site-navigation" class="main-navigation clear" role="navigation">
 					<div class="inner-wrap">

@@ -18,6 +18,8 @@ function the_newsmag_custom_header_setup() {
 		'default-text-color' => '4169e1',
 		'width' => 1500,
 		'height' => 500,
+		'video' => true,
+		'flex-width' => true,
 		'flex-height' => true,
 		'wp-head-callback' => 'the_newsmag_header_style',
 	)));

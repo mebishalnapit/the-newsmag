@@ -3979,6 +3979,27 @@ object {
 }
 
 /*--------------------------------------------------------------
+# Header Video CSS
+--------------------------------------------------------------*/
+.wp-custom-header {
+	position: relative;
+}
+
+.wp-custom-header-video-button {
+	position: absolute;
+	left: 2%;
+	top: 85%;
+	max-width: 100%;
+	border: 2px solid #4169e1;
+	border-radius: 3px;
+	background: #4169e1;
+	font-size: 18px;
+	padding: 8px 15px;
+	font-weight: bold;
+	color: #fff;
+}
+
+/*--------------------------------------------------------------
 ## Captions
 --------------------------------------------------------------*/
 .wp-caption {

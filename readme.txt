@@ -52,6 +52,7 @@ If you would like to contribute to the translations of this theme to your native
 == CHANGELOG ==
 = VERSION 1.0 =
 * Fix the display of hidden contents when the menu and content area both are sticky
+* Add theme support for Header Video introduced in WordPress 4.7
 
 = VERSION 0.9 =
 * Remove use of deprecated constant HEADER_TEXTCOLOR
