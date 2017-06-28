@@ -226,7 +226,7 @@ if (!function_exists('the_newsmag_sidebar_select')) :
 
 endif;
 
-add_action('wp_head', 'the_newsmag_custom_css');
+add_action('wp_head', 'the_newsmag_custom_css', 100);
 
 /**
  * Hooks the Custom Internal CSS to head section

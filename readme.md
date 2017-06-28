@@ -50,6 +50,9 @@ All the available options of this theme can be used from Appearance > Customize.
 If you would like to contribute to the translations of this theme to your native language, then, you can visit this link: https://translate.wordpress.org/projects/wp-themes/the-newsmag/ and then contribute to the translation.
 
 ## CHANGELOG
+#### VERSION TBD
+* Change the priority for the theme Custom CSS wp_head hook
+
 #### VERSION 1.0
 * Fix the display of hidden contents when the menu and content area both are sticky
 * Add theme support for Header Video introduced in WordPress 4.7
