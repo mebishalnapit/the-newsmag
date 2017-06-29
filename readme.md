@@ -52,6 +52,7 @@ If you would like to contribute to the translations of this theme to your native
 ## CHANGELOG
 #### VERSION TBD
 * Change the priority for the theme Custom CSS wp_head hook
+* Add theme support for selective refresh for widgets
 
 #### VERSION 1.0
 * Fix the display of hidden contents when the menu and content area both are sticky

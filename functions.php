@@ -96,6 +96,9 @@ if (!function_exists('the_newsmag_setup')) :
 			'flex-height' => true,
 		));
 
+		// Add theme support for selective refresh for widgets.
+		add_theme_support('customize-selective-refresh-widgets');
+
 		// Add theme support for WooCommerce plugin
 		add_theme_support('woocommerce');
 		add_theme_support('wc-product-gallery-zoom');
