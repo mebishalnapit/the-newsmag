@@ -1,24 +1,27 @@
 # Copyright (C) 2016 Bishal Napit
 # This file is distributed under the GNU General Public License v3 or later.
+#, fuzzy
 msgid ""
 msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: The NewsMag\n"
-"POT-Creation-Date: 2017-04-13 06:34+0545\n"
-"PO-Revision-Date: 2017-04-13 06:34+0545\n"
-"Last-Translator: \n"
+"POT-Creation-Date: 2018-03-19 06:13+0545\n"
+"PO-Revision-Date: 2018-03-19 06:13+0545\n"
+"Last-Translator: Bishal Napit <mebishalnapit@gmail.com>\n"
 "Language-Team: Bishal Napit <mebishalnapit@gmail.com>\n"
-"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.7\n"
+"X-Generator: Poedit 2.0.3\n"
 "X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: style.css\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
 "esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
 "_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
 
 #: 404.php:20 404.php:28
 msgid "404 Error!"
@@ -30,7 +33,7 @@ msgid ""
 "this location. Maybe try a search instead?"
 msgstr ""
 
-#: author.php:21
+#: author.php:30
 #, php-format
 msgid "Author: %s"
 msgstr ""
@@ -71,153 +74,153 @@ msgstr ""
 msgid "Footer Menu"
 msgstr ""
 
-#: functions.php:181 inc/meta-boxes.php:32
+#: functions.php:184 inc/meta-boxes.php:32
 msgid "Right Sidebar"
 msgstr ""
 
-#: functions.php:183
+#: functions.php:186
 msgid "Display your widgets in the Right Sidebar Area."
 msgstr ""
 
-#: functions.php:192 inc/meta-boxes.php:37
+#: functions.php:195 inc/meta-boxes.php:37
 msgid "Left Sidebar"
 msgstr ""
 
-#: functions.php:194
+#: functions.php:197
 msgid "Display your widgets in the Left Sidebar Area."
 msgstr ""
 
-#: functions.php:203
+#: functions.php:206
 msgid "Header Sidebar"
 msgstr ""
 
-#: functions.php:205
+#: functions.php:208
 msgid "Display your widgets in the Header Sidebar Area."
 msgstr ""
 
-#: functions.php:214
+#: functions.php:217
 msgid "Magazine Slider Sidebar"
 msgstr ""
 
-#: functions.php:216
+#: functions.php:219
 msgid "Display your widgets in the Magazine Slider Sidebar Area."
 msgstr ""
 
-#: functions.php:225
+#: functions.php:228
 msgid "Magazine Beside Slider Sidebar"
 msgstr ""
 
-#: functions.php:227
+#: functions.php:230
 msgid "Display your widgets in the Magazine Beside Slider Sidebar Area."
 msgstr ""
 
-#: functions.php:236
+#: functions.php:239
 msgid "Magazine Top Content Sidebar"
 msgstr ""
 
-#: functions.php:238
+#: functions.php:241
 msgid "Display your widgets in the Magazine Top Content Sidebar Area."
 msgstr ""
 
-#: functions.php:247
+#: functions.php:250
 msgid "Magazine Middle Left Sidebar"
 msgstr ""
 
-#: functions.php:249
+#: functions.php:252
 msgid "Display your widgets in the Magazine Middle Left Sidebar Area."
 msgstr ""
 
-#: functions.php:258
+#: functions.php:261
 msgid "Magazine Middle Right Sidebar"
 msgstr ""
 
-#: functions.php:260
+#: functions.php:263
 msgid "Display your widgets in the Magazine Middle Right Sidebar Area."
 msgstr ""
 
-#: functions.php:269
+#: functions.php:272
 msgid "Magazine Bottom Content Sidebar"
 msgstr ""
 
-#: functions.php:271
+#: functions.php:274
 msgid "Display your widgets in the Magazine Bottom Content Sidebar Area."
 msgstr ""
 
-#: functions.php:280
+#: functions.php:283
 msgid "Content Top Sidebar"
 msgstr ""
 
-#: functions.php:282
+#: functions.php:285
 msgid "Display your widgets in the Content Top Sidebar Area."
 msgstr ""
 
-#: functions.php:291
+#: functions.php:294
 msgid "Content Bottom Sidebar"
 msgstr ""
 
-#: functions.php:293
+#: functions.php:296
 msgid "Display your widgets in the Content Bottom Sidebar Area."
 msgstr ""
 
-#: functions.php:302
+#: functions.php:305
 msgid "404 Sidebar"
 msgstr ""
 
-#: functions.php:304
+#: functions.php:307
 msgid "Display your widgets in the 404 Error Page Sidebar Area."
 msgstr ""
 
-#: functions.php:313
+#: functions.php:316
 msgid "Contact Page Sidebar"
 msgstr ""
 
-#: functions.php:315
+#: functions.php:318
 msgid "Display your widgets in the Contact Page Sidebar Area."
 msgstr ""
 
-#: functions.php:324
+#: functions.php:327
 msgid "Large Footer Sidebar"
 msgstr ""
 
-#: functions.php:326
+#: functions.php:329
 msgid "Display your widgets in the Large Footer Sidebar Area."
 msgstr ""
 
-#: functions.php:335
+#: functions.php:338
 msgid "Small Footer Sidebar One"
 msgstr ""
 
-#: functions.php:337
+#: functions.php:340
 msgid "Display your widgets in the Small Footer Sidebar Area One."
 msgstr ""
 
-#: functions.php:346
+#: functions.php:349
 msgid "Small Footer Sidebar Two"
 msgstr ""
 
-#: functions.php:348
+#: functions.php:351
 msgid "Display your widgets in the Small Footer Sidebar Area Two."
 msgstr ""
 
-#: functions.php:357
+#: functions.php:360
 msgid "Masonry Footer Sidebar"
 msgstr ""
 
-#: functions.php:359
+#: functions.php:362
 msgid "Display your widgets in the Masonry Footer Sidebar Area."
 msgstr ""
 
-#: functions.php:396
+#: functions.php:399
 msgctxt "Noto Sans font: on or off"
 msgid "on"
 msgstr ""
 
-#: functions.php:404
+#: functions.php:407
 msgctxt "Lobster Two font: on or off"
 msgid "on"
 msgstr ""
 
-#: functions.php:412
+#: functions.php:415
 msgctxt "Add new subset ( cyrillic, greek, vietnamese, devanagari )"
 msgid "no-subset"
 msgstr ""
@@ -226,7 +229,7 @@ msgstr ""
 msgid "Skip to content"
 msgstr ""
 
-#: header.php:138
+#: header.php:142
 msgid "Menu"
 msgstr ""
 
@@ -511,6 +514,7 @@ msgstr ""
 msgid "WordPress"
 msgstr ""
 
+#. Author of the plugin/theme
 #: inc/extras.php:89
 msgid "Bishal Napit"
 msgstr ""
@@ -525,6 +529,7 @@ msgstr ""
 msgid "Theme: %1$s by %2$s."
 msgstr ""
 
+#. Theme Name of the plugin/theme
 #: inc/extras.php:91
 msgid "The NewsMag"
 msgstr ""
@@ -539,40 +544,40 @@ msgstr ""
 msgid "Category: %s"
 msgstr ""
 
-#: inc/extras.php:509
+#: inc/extras.php:499
 msgid "<i class=\"fa fa-comment\"></i>Leave a reply"
 msgstr ""
 
-#: inc/extras.php:509
+#: inc/extras.php:499
 msgid "<i class=\"fa fa-comment\"></i>1 Comment"
 msgstr ""
 
-#: inc/extras.php:509
+#: inc/extras.php:499
 msgid "<i class=\"fa fa-comment\"></i>% Comments"
 msgstr ""
 
-#: inc/extras.php:509
+#: inc/extras.php:499
 msgid "<i class=\"fa fa-comment\"></i>Comments Disabled"
 msgstr ""
 
-#: inc/extras.php:554
+#: inc/extras.php:544
 #, php-format
 msgid "Follow %s on:"
 msgstr ""
 
-#: inc/extras.php:556
+#: inc/extras.php:546
 msgid "Facebook"
 msgstr ""
 
-#: inc/extras.php:559
+#: inc/extras.php:549
 msgid "Twitter"
 msgstr ""
 
-#: inc/extras.php:562
+#: inc/extras.php:552
 msgid "Google Plus"
 msgstr ""
 
-#: inc/extras.php:689 template-parts/content-aside.php:25
+#: inc/extras.php:679 template-parts/content-aside.php:25
 #: template-parts/content-audio.php:29 template-parts/content-chat.php:29
 #: template-parts/content-gallery.php:43 template-parts/content-image.php:61
 #: template-parts/content-link.php:29 template-parts/content-quote.php:29
@@ -649,179 +654,179 @@ msgstr ""
 msgid "<i class=\"fa fa-edit\"></i>Edit %s"
 msgstr ""
 
-#: inc/widgets.php:12
+#: inc/widgets.php:13
 msgid "TNM: Random Posts Widget"
 msgstr ""
 
-#: inc/widgets.php:13
+#: inc/widgets.php:15
 msgid "Displays the random posts from your site."
 msgstr ""
 
-#: inc/widgets.php:22
+#: inc/widgets.php:28
 msgid "Title:"
 msgstr ""
 
-#: inc/widgets.php:26
+#: inc/widgets.php:32
 msgid "Number of random posts to display:"
 msgstr ""
 
-#: inc/widgets.php:100
+#: inc/widgets.php:107
 msgid "TNM: Tabbed Widget"
 msgstr ""
 
-#: inc/widgets.php:101
+#: inc/widgets.php:109
 msgid ""
 "Displays the popular posts, recent posts and the recent comments in the tabs."
 msgstr ""
 
-#: inc/widgets.php:109
+#: inc/widgets.php:119
 msgid "Number of popular posts, recent posts and comments to display:"
 msgstr ""
 
-#: inc/widgets.php:135
+#: inc/widgets.php:146
 msgid "Popular"
 msgstr ""
 
-#: inc/widgets.php:136
+#: inc/widgets.php:149
 msgid "Recent"
 msgstr ""
 
-#: inc/widgets.php:137
+#: inc/widgets.php:152
 msgid "Comment"
 msgstr ""
 
-#: inc/widgets.php:217
+#: inc/widgets.php:233
 msgid "says:"
 msgstr ""
 
-#: inc/widgets.php:221
+#: inc/widgets.php:237
 msgid "No Comments"
 msgstr ""
 
-#: inc/widgets.php:240
+#: inc/widgets.php:257
 msgid "TNM: Posts Slider Widget"
 msgstr ""
 
-#: inc/widgets.php:241
+#: inc/widgets.php:259
 msgid ""
 "Displays the latest posts or posts from certain category chosen to be used "
 "as the slider."
 msgstr ""
 
-#: inc/widgets.php:252 inc/widgets.php:373 inc/widgets.php:501
-#: inc/widgets.php:682 inc/widgets.php:863
+#: inc/widgets.php:272 inc/widgets.php:398 inc/widgets.php:531
+#: inc/widgets.php:717 inc/widgets.php:903
 msgid "Show latest posts."
 msgstr ""
 
-#: inc/widgets.php:256 inc/widgets.php:377 inc/widgets.php:505
-#: inc/widgets.php:686 inc/widgets.php:867
+#: inc/widgets.php:276 inc/widgets.php:402 inc/widgets.php:535
+#: inc/widgets.php:721 inc/widgets.php:907
 msgid "Show posts from a certain category."
 msgstr ""
 
-#: inc/widgets.php:261 inc/widgets.php:382 inc/widgets.php:510
-#: inc/widgets.php:691 inc/widgets.php:872
+#: inc/widgets.php:281 inc/widgets.php:407 inc/widgets.php:540
+#: inc/widgets.php:726 inc/widgets.php:912
 msgid "Select the category:"
 msgstr ""
 
-#: inc/widgets.php:273 inc/widgets.php:394 inc/widgets.php:522
-#: inc/widgets.php:703 inc/widgets.php:884
+#: inc/widgets.php:293 inc/widgets.php:419 inc/widgets.php:552
+#: inc/widgets.php:738 inc/widgets.php:924
 msgid "Number of posts to display:"
 msgstr ""
 
-#: inc/widgets.php:361
+#: inc/widgets.php:382
 msgid "TNM: Posts Grid Widget"
 msgstr ""
 
-#: inc/widgets.php:362
+#: inc/widgets.php:384
 msgid ""
 "Displays the latest posts or posts from certain category chosen to be used "
 "in beside the slider area."
 msgstr ""
 
-#: inc/widgets.php:477
+#: inc/widgets.php:503
 msgid "TNM: Posts One Column Widget"
 msgstr ""
 
-#: inc/widgets.php:478
+#: inc/widgets.php:505
 msgid ""
 "Displays the latest posts or posts from certain category chosen to display "
 "the posts in single column."
 msgstr ""
 
-#: inc/widgets.php:490 inc/widgets.php:671 inc/widgets.php:852
-#: inc/widgets.php:1011 inc/widgets.php:1094 inc/widgets.php:1179
+#: inc/widgets.php:520 inc/widgets.php:706 inc/widgets.php:892
+#: inc/widgets.php:1056 inc/widgets.php:1144 inc/widgets.php:1234
 msgid "Title"
 msgstr ""
 
-#: inc/widgets.php:495 inc/widgets.php:676 inc/widgets.php:857
+#: inc/widgets.php:525 inc/widgets.php:711 inc/widgets.php:897
 msgid "Description"
 msgstr ""
 
-#: inc/widgets.php:658
+#: inc/widgets.php:689
 msgid "TNM: Posts Two Column Widget"
 msgstr ""
 
-#: inc/widgets.php:659
+#: inc/widgets.php:691
 msgid ""
 "Displays the latest posts or posts from certain category chosen to display "
 "the posts in double column."
 msgstr ""
 
-#: inc/widgets.php:839
+#: inc/widgets.php:875
 msgid "TNM: Posts Extended Widget"
 msgstr ""
 
-#: inc/widgets.php:840
+#: inc/widgets.php:877
 msgid ""
 "Displays the latest posts or posts from certain category chosen to display "
 "the posts and its excerpt."
 msgstr ""
 
-#: inc/widgets.php:1000
+#: inc/widgets.php:1041
 msgid "TNM: 728 x 90 Advertisement Widget"
 msgstr ""
 
-#: inc/widgets.php:1001
+#: inc/widgets.php:1043
 msgid ""
 "Add the required 728 x 90 advertisement in your site with the help of the "
 "image."
 msgstr ""
 
-#: inc/widgets.php:1016 inc/widgets.php:1099 inc/widgets.php:1186
+#: inc/widgets.php:1061 inc/widgets.php:1149 inc/widgets.php:1241
 msgid "Advertisement Image Link"
 msgstr ""
 
-#: inc/widgets.php:1020 inc/widgets.php:1103 inc/widgets.php:1193
+#: inc/widgets.php:1065 inc/widgets.php:1153 inc/widgets.php:1248
 msgid "Advertisement Image"
 msgstr ""
 
-#: inc/widgets.php:1028 inc/widgets.php:1111 inc/widgets.php:1203
+#: inc/widgets.php:1073 inc/widgets.php:1161 inc/widgets.php:1258
 msgid "Choose image"
 msgstr ""
 
-#: inc/widgets.php:1028 inc/widgets.php:1111 inc/widgets.php:1203
+#: inc/widgets.php:1073 inc/widgets.php:1161 inc/widgets.php:1258
 msgid "Use image"
 msgstr ""
 
-#: inc/widgets.php:1028 inc/widgets.php:1111 inc/widgets.php:1203
+#: inc/widgets.php:1073 inc/widgets.php:1161 inc/widgets.php:1258
 msgid "Select Image"
 msgstr ""
 
-#: inc/widgets.php:1083
+#: inc/widgets.php:1129
 msgid "TNM: 300 x 250 Advertisement Widget"
 msgstr ""
 
-#: inc/widgets.php:1084
+#: inc/widgets.php:1131
 msgid ""
 "Add the required 300 x 250 advertisement in your site with the help of the "
 "image."
 msgstr ""
 
-#: inc/widgets.php:1166
+#: inc/widgets.php:1217
 msgid "TNM: 125 x 125 Advertisement Widget"
 msgstr ""
 
-#: inc/widgets.php:1167
+#: inc/widgets.php:1219
 msgid ""
 "Add the required 125 x 125 advertisement in your site with the help of the "
 "image."
@@ -923,4 +928,26 @@ msgstr ""
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "https://napitwptech.com/themes/the-newsmag/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"The NewsMag is the WordPress theme that perfectly suites your need in "
+"creating the magazine and news sites  easily. It is suitable for creating "
+"the blog and personal sites. This theme supports almost all of the post "
+"format available in WordPress to display the post uniquely in your site. "
+"This theme features the display of latest post as headline and supports the "
+"custom social menu. All of the magazine style in this theme is controlled by "
+"the widget to make them display uniquely. You can see the demo of this theme "
+"through this link: https://demo.napitwptech.com/the-newsmag/ and get free "
+"theme support from this link: https://support.napitwptech.com/forums/forum/"
+"the-newsmag/."
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://napitwptech.com/themes/"
 msgstr ""

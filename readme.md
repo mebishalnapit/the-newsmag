@@ -50,8 +50,9 @@ All the available options of this theme can be used from Appearance > Customize.
 If you would like to contribute to the translations of this theme to your native language, then, you can visit this link: https://translate.wordpress.org/projects/wp-themes/the-newsmag/ and then contribute to the translation.
 
 ## CHANGELOG
-#### VERSION TBD
+#### VERSION 1.0.2
 * Add theme support for customizer selective refresh for theme bundled widgets
+* Fix author details display on author page when more than 1 author is added in site
 
 #### VERSION 1.0.1
 * Change the priority for the theme Custom CSS wp_head hook
