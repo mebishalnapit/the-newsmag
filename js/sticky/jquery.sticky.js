@@ -1,4 +1,4 @@
-// Sticky Plugin v1.0.3 for jQuery
+// Sticky Plugin v1.0.4 for jQuery
 // =============
 // Author: Anthony Garand
 // Improvements by German M. Bravo (Kronuz) and Ruud Kamphuis (ruudk)
@@ -33,7 +33,8 @@
       center: false,
       getWidthFrom: '',
       widthFromWrapper: true, // works only when .getWidthFrom is empty
-      responsiveWidth: false
+      responsiveWidth: false,
+      zIndex: 'auto'
     },
     $window = $(window),
     $document = $(document),
@@ -59,7 +60,8 @@
               .css({
                 'width': '',
                 'position': '',
-                'top': ''
+                'top': '',
+                'z-index': ''
               });
             s.stickyElement.parent().removeClass(s.className);
             s.stickyElement.trigger('sticky-end', [s]);
@@ -87,7 +89,8 @@
             s.stickyElement
               .css('width', newWidth)
               .css('position', 'fixed')
-              .css('top', newTop);
+              .css('top', newTop)
+              .css('z-index', s.zIndex);
 
             s.stickyElement.parent().addClass(s.className);
 
@@ -117,12 +120,14 @@
             s.stickyElement
               .css('position', 'absolute')
               .css('top', '')
-              .css('bottom', 0);
+              .css('bottom', 0)
+              .css('z-index', '');
           } else {
             s.stickyElement
               .css('position', 'fixed')
               .css('top', newTop)
-              .css('bottom', '');
+              .css('bottom', '')
+              .css('z-index', s.zIndex);
           }
         }
       }
@@ -147,8 +152,8 @@
     },
     methods = {
       init: function(options) {
-        var o = $.extend({}, defaults, options);
         return this.each(function() {
+          var o = $.extend({}, defaults, options);
           var stickyElement = $(this);
 
           var stickyId = stickyElement.attr('id');
@@ -157,7 +162,11 @@
             .attr('id', wrapperId)
             .addClass(o.wrapperClassName);
 
-          stickyElement.wrapAll(wrapper);
+          stickyElement.wrapAll(function() {
+            if ($(this).parent("#" + wrapperId).length == 0) {
+                    return wrapper;
+            }
+});
 
           var stickyWrapper = stickyElement.parent();
 
@@ -197,12 +206,21 @@
           });
           mutationObserver.observe(stickyElement, {subtree: true, childList: true});
         } else {
-          stickyElement.addEventListener('DOMNodeInserted', function() {
-            methods.setWrapperHeight(stickyElement);
-          }, false);
-          stickyElement.addEventListener('DOMNodeRemoved', function() {
-            methods.setWrapperHeight(stickyElement);
-          }, false);
+          if (window.addEventListener) {
+            stickyElement.addEventListener('DOMNodeInserted', function() {
+              methods.setWrapperHeight(stickyElement);
+            }, false);
+            stickyElement.addEventListener('DOMNodeRemoved', function() {
+              methods.setWrapperHeight(stickyElement);
+            }, false);
+          } else if (window.attachEvent) {
+            stickyElement.attachEvent('onDOMNodeInserted', function() {
+              methods.setWrapperHeight(stickyElement);
+            });
+            stickyElement.attachEvent('onDOMNodeRemoved', function() {
+              methods.setWrapperHeight(stickyElement);
+            });
+          }
         }
       },
       update: scroller,
@@ -226,7 +244,8 @@
                 'width': '',
                 'position': '',
                 'top': '',
-                'float': ''
+                'float': '',
+                'z-index': ''
               })
             ;
           }
