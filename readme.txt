@@ -52,6 +52,7 @@ If you would like to contribute to the translations of this theme to your native
 == CHANGELOG ==
 = VERSION TBD =
 * Modify pingback url autodiscovery for single posts, pages, or attachments.
+* BxSlider updated to 4.2.15
 
 = VERSION 1.0.3 =
 * BxSlider updated to version 4.2.12
