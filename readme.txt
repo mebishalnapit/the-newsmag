@@ -50,6 +50,9 @@ Magazine: In this theme, we have added the Magazine template so that you can dis
 If you would like to contribute to the translations of this theme to your native language, then, you can visit this link: https://translate.wordpress.org/projects/wp-themes/the-newsmag/ and then contribute to the translation.
 
 == CHANGELOG ==
+= VERSION TBD =
+* Modify pingback url autodiscovery for single posts, pages, or attachments.
+
 = VERSION 1.0.3 =
 * BxSlider updated to version 4.2.12
 * Stickyjs updated to 1.0.4
