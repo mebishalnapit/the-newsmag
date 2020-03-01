@@ -247,14 +247,6 @@ function the_newsmag_custom_css() {
 		<style type="text/css"><?php echo strip_tags( $the_newsmag_custom_options_color ); ?></style>
 		<?php
 	}
-
-	// custom CSS codes goes here
-	$the_newsmag_custom_css = get_theme_mod( 'the_newsmag_custom_css', '' );
-	if ( ! empty( $the_newsmag_custom_css ) && ! function_exists( 'wp_update_custom_css_post' ) ) {
-		echo '<!-- ' . get_bloginfo( 'name' ) . ' Custom Styles -->';
-		?>
-		<style type="text/css"><?php echo esc_html( $the_newsmag_custom_css ); ?></style><?php
-	}
 }
 
 /*
