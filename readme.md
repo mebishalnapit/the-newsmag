@@ -50,6 +50,10 @@ All the available options of this theme can be used from Appearance > Customize.
 If you would like to contribute to the translations of this theme to your native language, then, you can visit this link: https://translate.wordpress.org/projects/wp-themes/the-newsmag/ and then contribute to the translation.
 
 ## CHANGELOG
+#### VERSION TBD
+* Introduced `wp_body_open` WordPress hook available since 5.2.0
+* Remove Custom CSS Customize option provided via the theme
+
 #### VERSION 1.0.4
 * Modify pingback url autodiscovery for single posts, pages, or attachments.
 * BxSlider updated to 4.2.15
