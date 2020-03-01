@@ -20,9 +20,25 @@
 
 <body <?php body_class(); ?>>
 <?php do_action( 'the_newsmag_before' ); ?>
+
+<?php
+/**
+ * WordPress function to load custom scripts after body.
+ *
+ * Introduced in WordPress 5.2.0
+ */
+if ( function_exists( 'wp_body_open' ) ) {
+	wp_body_open();
+} else {
+	do_action( 'wp_body_open' );
+}
+?>
+
 <div id="page" class="site">
 	<?php do_action( 'the_newsmag_before_header' ); ?>
-	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'the-newsmag' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#main">
+		<?php esc_html_e( 'Skip to content', 'the-newsmag' ); ?>
+	</a>
 
 	<header id="masthead" class="site-header" role="banner">
 		<?php if ( ( get_theme_mod( 'the_newsmag_date_display', 0 ) == 1 ) || ( get_theme_mod( 'the_newsmag_header_text', 0 ) != '' ) || has_nav_menu( 'social' ) ) : ?>
@@ -72,11 +88,15 @@
 					<div class="site-info">
 						<?php if ( is_front_page() && is_home() ) : ?>
 							<h1 class="site-title">
-								<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+								<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+									<?php bloginfo( 'name' ); ?>
+								</a>
 							</h1>
 						<?php else : ?>
 							<p class="site-title">
-								<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+								<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+									<?php bloginfo( 'name' ); ?>
+								</a>
 							</p>
 						<?php
 						endif;
@@ -103,28 +123,32 @@
 		<?php if ( get_header_image() || ( function_exists( 'the_custom_header_markup' ) ) ) : ?>
 			<div class="the-newsmag-header-image">
 				<?php if ( ( get_theme_mod( 'the_newsmag_header_image_link', 0 ) == 1 ) && ( ( function_exists( 'the_custom_header_markup' ) && ( ! is_header_video_active() || ! has_header_video() ) ) || ( ! function_exists( 'the_custom_header_markup' ) ) ) ) { ?>
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-					<?php
-					}
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+						<?php
+						}
 
-					// Display the header video and header image
-					if ( function_exists( 'the_custom_header_markup' ) ) :
-						the_custom_header_markup();
-					else :
-						the_header_image_tag();
-					endif;
+						// Display the header video and header image
+						if ( function_exists( 'the_custom_header_markup' ) ) :
+							the_custom_header_markup();
+						else :
+							the_header_image_tag();
+						endif;
 
-					if ( ( get_theme_mod( 'the_newsmag_header_image_link', 0 ) == 1 ) && ( ( function_exists( 'the_custom_header_markup' ) && ( ! is_header_video_active() || ! has_header_video() ) ) || ( ! function_exists( 'the_custom_header_markup' ) ) ) ) {
-					?>
-				</a>
-			<?php } ?>
+						if ( ( get_theme_mod( 'the_newsmag_header_image_link', 0 ) == 1 ) && ( ( function_exists( 'the_custom_header_markup' ) && ( ! is_header_video_active() || ! has_header_video() ) ) || ( ! function_exists( 'the_custom_header_markup' ) ) ) ) {
+						?>
+					</a>
+				<?php } ?>
 			</div>
 		<?php endif; // End header image check. ?>
 
 		<nav id="site-navigation" class="main-navigation clear" role="navigation">
 			<div class="inner-wrap">
 				<?php if ( get_theme_mod( 'the_newsmag_home_icon_display', 0 ) == 1 ) { ?>
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" class="home-icon"><i class="fa fa-home"></i></a>
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>"
+					   title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"
+					   class="home-icon">
+						<i class="fa fa-home"></i>
+					</a>
 				<?php } ?>
 
 				<?php if ( get_theme_mod( 'the_newsmag_search_icon_in_menu', 0 ) == 1 ) { ?>
@@ -142,7 +166,9 @@
 				}
 				?>
 
-				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'the-newsmag' ); ?></button>
+				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+					<?php esc_html_e( 'Menu', 'the-newsmag' ); ?>
+				</button>
 				<?php
 				wp_nav_menu(
 					array(
