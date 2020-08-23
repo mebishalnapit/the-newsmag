@@ -50,7 +50,7 @@ All the available options of this theme can be used from Appearance > Customize.
 If you would like to contribute to the translations of this theme to your native language, then, you can visit this link: https://translate.wordpress.org/projects/wp-themes/the-newsmag/ and then contribute to the translation.
 
 ## CHANGELOG
-#### TBD
+#### VERSION 1.0.6
 * Added `Tested up to` and `Requires PHP` within `style.css` file
 
 #### VERSION 1.0.5
