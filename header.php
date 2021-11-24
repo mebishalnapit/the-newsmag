@@ -179,15 +179,38 @@ if ( function_exists( 'wp_body_open' ) ) {
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
-	<?php if ( ! is_front_page() && function_exists( 'bcn_display' ) ) : ?>
-		<div class="breadcrumbs-area">
-			<div class="inner-wrap">
-				<div class="breadcrumbs" typeof="BreadcrumbList" vocab="https://schema.org/">
-					<?php bcn_display(); ?>
+	<?php
+	if ( ! is_front_page() && ( function_exists( 'bcn_display' ) || function_exists( 'yoast_breadcrumb' ) || function_exists( 'rank_math_the_breadcrumbs' ) ) ) :
+
+		if ( function_exists( 'bcn_display' ) ) :
+			// Display the Breadcrumb NavXT plugin's breadcrumb.
+			?>
+			<div class="breadcrumbs-area">
+				<div class="inner-wrap">
+					<div class="breadcrumbs" typeof="BreadcrumbList" vocab="https://schema.org/">
+						<?php bcn_display(); ?>
+					</div>
 				</div>
 			</div>
-		</div>
-	<?php endif; ?>
+			<?php
+		elseif ( function_exists( 'yoast_breadcrumb' ) ) :
+			// Display the Yoast SEO plugin's breadcrumb.
+			yoast_breadcrumb(
+				'<div class="breadcrumbs-area"><div class="inner-wrap"><div class="breadcrumbs">',
+				'</div></div></div>'
+			);
+		elseif ( function_exists( 'rank_math_the_breadcrumbs' ) ) :
+			// Display the Rank Math SEO plugin's breadcrumb.
+			rank_math_the_breadcrumbs(
+				array(
+					'wrap_before' => '<div class="breadcrumbs-area"><div class="inner-wrap"><div class="breadcrumbs">',
+					'wrap_after'  => '</div></div></div>',
+				)
+			);
+		endif;
+
+	endif;
+	?>
 
 	<?php do_action( 'the_newsmag_after_header' ); ?>
 	<?php do_action( 'the_newsmag_before_main' ); ?>
