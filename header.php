@@ -8,6 +8,7 @@
  *
  * @package The NewsMag
  */
+
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -45,19 +46,18 @@ if ( function_exists( 'wp_body_open' ) ) {
 			<div class="header-top-area clear">
 				<div class="inner-wrap">
 					<?php
-					// date display option
+					// Date display option.
 					if ( get_theme_mod( 'the_newsmag_date_display', 0 ) == 1 ) :
 						the_newsmag_date_display();
 					endif;
 
-					// small info text display option
+					// Small info text display option.
 					if ( get_theme_mod( 'the_newsmag_header_text' ) != '' ) :
 						?>
 						<div class="small-info-text">
 							<?php echo do_shortcode( wp_kses_post( get_theme_mod( 'the_newsmag_header_text' ) ) ); ?>
 						</div>
-					<?php endif;
-					?>
+					<?php endif; ?>
 
 					<?php if ( has_nav_menu( 'social' ) ) : ?>
 						<div class="social-menu">
@@ -104,9 +104,8 @@ if ( function_exists( 'wp_body_open' ) ) {
 						$description = get_bloginfo( 'description', 'display' );
 						if ( $description || is_customize_preview() ) :
 							?>
-							<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
-						<?php endif;
-						?>
+							<p class="site-description"><?php echo $description; ?></p>
+						<?php endif; ?>
 					</div>
 				</div><!-- .site-details -->
 
@@ -124,18 +123,18 @@ if ( function_exists( 'wp_body_open' ) ) {
 			<div class="the-newsmag-header-image">
 				<?php if ( ( get_theme_mod( 'the_newsmag_header_image_link', 0 ) == 1 ) && ( ( function_exists( 'the_custom_header_markup' ) && ( ! is_header_video_active() || ! has_header_video() ) ) || ( ! function_exists( 'the_custom_header_markup' ) ) ) ) { ?>
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-						<?php
-						}
+					<?php
+				}
 
-						// Display the header video and header image
-						if ( function_exists( 'the_custom_header_markup' ) ) :
-							the_custom_header_markup();
-						else :
-							the_header_image_tag();
-						endif;
+				// Display the header video and header image.
+				if ( function_exists( 'the_custom_header_markup' ) ) :
+					the_custom_header_markup();
+				else :
+					the_header_image_tag();
+				endif;
 
-						if ( ( get_theme_mod( 'the_newsmag_header_image_link', 0 ) == 1 ) && ( ( function_exists( 'the_custom_header_markup' ) && ( ! is_header_video_active() || ! has_header_video() ) ) || ( ! function_exists( 'the_custom_header_markup' ) ) ) ) {
-						?>
+				if ( ( get_theme_mod( 'the_newsmag_header_image_link', 0 ) == 1 ) && ( ( function_exists( 'the_custom_header_markup' ) && ( ! is_header_video_active() || ! has_header_video() ) ) || ( ! function_exists( 'the_custom_header_markup' ) ) ) ) {
+				?>
 					</a>
 				<?php } ?>
 			</div>
@@ -144,9 +143,7 @@ if ( function_exists( 'wp_body_open' ) ) {
 		<nav id="site-navigation" class="main-navigation clear" role="navigation">
 			<div class="inner-wrap">
 				<?php if ( get_theme_mod( 'the_newsmag_home_icon_display', 0 ) == 1 ) { ?>
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>"
-					   title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"
-					   class="home-icon">
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" class="home-icon">
 						<i class="fa fa-home"></i>
 					</a>
 				<?php } ?>
