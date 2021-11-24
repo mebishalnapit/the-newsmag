@@ -8,6 +8,7 @@
  *
  * @package The NewsMag
  */
+
 ?>
 
 				</div><!-- .content -->
@@ -42,13 +43,15 @@
 
 							<div class="footer-menu">
 								<?php
-								if ( has_nav_menu( 'footer' ) ) {
-									wp_nav_menu( array(
-										'theme_location' => 'footer',
-										'depth'          => '-1',
-										'menu_id'        => 'footer-menu',
-									) );
-								}
+								if ( has_nav_menu( 'footer' ) ) :
+									wp_nav_menu(
+										array(
+											'theme_location' => 'footer',
+											'depth'          => '-1',
+											'menu_id'        => 'footer-menu',
+										)
+									);
+								endif;
 								?>
 							</div>
 						</div>
